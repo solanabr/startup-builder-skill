@@ -33,6 +33,7 @@ Two constraints from that charter shape everything here:
 | [positioning](skills/positioning/SKILL.md) | Before the deck, site, docs intro or launch post. Writes the one-liner, ICP with disqualifiers, job to be done, three named alternatives with the dimension you beat each on, sourced proof points and words to avoid into `.claude/context/positioning.md`. |
 | [pricing](skills/pricing/SKILL.md) | Deciding what an onchain product charges: fee surface, who pays, the floor-cost math (fees, rent, RPC, oracles), comparables pulled from public fee data, and the test that would prove the number wrong. Writes `.claude/context/pricing.md`. |
 | [fundraising](skills/fundraising/SKILL.md) | After the deck lands: a crypto data room index (program IDs, authorities, audits vs deployed commit, onchain metrics with their queries), a diligence question bank with honest answers, monthly investor updates from the same metrics, and token-vs-equity framing routed to crypto-legal-skill. Writes `.claude/context/data-room.md`. |
+| [launch](skills/launch/SKILL.md) | Mainnet goes live on a date and the announcement has to wait for a transaction. Writes a runbook gated on the onchain event: legal gates via `crypto-legal-skill`, slip and abort rules, channel order, the Superteam and partner layer, and pre-staged copy including the "it slipped" message. Also runs as `/launch`. |
 
 They chain. `idea-sprint` writes `.claude/context/idea.md`, `build-status` writes
 `.claude/context/build.md` and `positioning` writes `.claude/context/positioning.md`;
@@ -78,4 +79,4 @@ file, 240 entries), [ColosseumOrg/colosseum-copilot](https://github.com/Colosseu
 pinned or point at stable pages, so **nothing has to be installed** for the skills to work.
 Each skill's `references/upstream-packs.md` gives the details.
 
-Text adapted from solana-new and [beingsmit/technical-product-gtm](https://github.com/beingsmit/technical-product-gtm) keeps its MIT notice in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+Text adapted from solana-new, [beingsmit/technical-product-gtm](https://github.com/beingsmit/technical-product-gtm) and [jonathimer/devmarketing-skills](https://github.com/jonathimer/devmarketing-skills) keeps its MIT notice in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
