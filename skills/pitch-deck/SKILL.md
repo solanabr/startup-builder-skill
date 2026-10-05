@@ -10,8 +10,7 @@ user-invocable: true
 
 Interview → detect audience → pick narrative → build slides with speaking notes → self-score → objection prep.
 
-Reference links below point at upstream repositories and need no install. For local
-checkouts, see [upstream-packs.md](references/upstream-packs.md).
+Detail lives in `references/`. The one optional upstream pack (visual direction for the rendered deck) is in [upstream-packs.md](references/upstream-packs.md).
 
 ## Context handoff
 
@@ -38,28 +37,28 @@ Blunt, one at a time, skipping anything already answered by context files:
 
 ### 2. Audience detection → slide set
 
-Q10 decides the slide set — full breakdown in [investor-audience-guide.md](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/launch/create-pitch-deck/references/investor-audience-guide.md):
+Q10 decides the slide set — full breakdown and per-audience rubrics in [investor-audience-guide.md](references/investor-audience-guide.md):
 
 | Audience | Emphasis | Length |
 |----------|----------|--------|
-| Hackathon judges | working demo, technical novelty, why-Solana | 5–7 slides |
+| Hackathon judges | a startup pitch with a working product: team, insight, demo, traction | 5–7 slides |
 | VC | market size, traction slope, team, moat, ask | 10–12 |
 | Grant committee | ecosystem benefit, public-good angle, milestones, budget | 8–10 |
 | Accelerator | team velocity, learning rate, wedge → expansion path | 8–10 |
 
-Slide-by-slide order per audience: [pitch-structure.md](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/launch/create-pitch-deck/references/pitch-structure.md).
+Slide-by-slide order per audience, plus the optional Tokenomics and Regulatory readiness slides: [pitch-structure.md](references/pitch-structure.md).
 
 ### 3. Narrative framework
 
-Pick one backbone and state why — PAS (obvious pain, hackathons), 6-Part Investor Arc (VC), BAB (before/after/bridge), Hero's Journey (founder-story-driven), Pixar (narrative momentum). Definitions, slide mappings, and crypto examples: [storytelling-frameworks.md](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/launch/create-pitch-deck/references/storytelling-frameworks.md).
+Pick one backbone and state why — PAS (obvious pain, hackathons), 6-Part Investor Arc (VC), BAB (before/after/bridge), Hero's Journey (founder-story-driven), Pixar (narrative momentum). Definitions, slide mappings and a chooser: [storytelling-frameworks.md](references/storytelling-frameworks.md).
 
 ### 4. Build slides + speaking notes
 
-For each slide: headline (a claim, not a label), 3–5 supporting points, visual suggestion, and 30–60s speaking notes. Draw on [slide-templates.md](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/launch/create-pitch-deck/references/slide-templates.md) (per-slide-type templates), [deck-design-system.md](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/launch/create-pitch-deck/references/deck-design-system.md) (typography, layout, color), [crypto-pitch-examples.md](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/launch/create-pitch-deck/references/crypto-pitch-examples.md) (real decks that worked) and [pitch-reference-sources.md](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/launch/create-pitch-deck/references/pitch-reference-sources.md) (primary sources).
+For each slide: headline (a claim, not a label), 3–5 supporting points, visual suggestion, and 30–60s speaking notes. Draw on [slide-templates.md](references/slide-templates.md) (per-slide content and markup) and [onchain-metrics.md](references/onchain-metrics.md) (traction numbers a skeptic can check). Every number on a slide needs a source; never invent one.
 
 ### 5. Self-score vs audience rubric
 
-Score the draft against the audience's actual criteria (clarity, credibility, demo strength, ask specificity) and against [crypto-pitch-mistakes.md](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/launch/create-pitch-deck/references/crypto-pitch-mistakes.md) — flag every mistake the deck still commits, fix, re-score. Ignore that file's "good" token example under Mistake 4: paying stakers a share of protocol fees is the classic securities red flag, so route any fee-share or token-return claim to [crypto-legal-skill](https://github.com/solanabr/crypto-legal-skill) instead of putting it in a deck. Don't present a deck you'd score below 8/10.
+Score the draft against the audience's actual criteria (clarity, credibility, demo strength, ask specificity) and against [crypto-pitch-mistakes.md](references/crypto-pitch-mistakes.md) — flag every mistake the deck still commits, fix, re-score. Any token-return, yield or fee-share claim comes off the slide and goes to [crypto-legal-skill](https://github.com/solanabr/crypto-legal-skill) (Mistake 4). Don't present a deck you'd score below 8/10.
 
 ### 6. Objection-prep Q&A
 
@@ -72,4 +71,4 @@ From Q12 + the weakest scored dimension, draft the 8–10 hardest questions this
 - Self-score with the fixes applied
 - Objection Q&A sheet
 
-Need a rendered deck? Build it as HTML — one file, one section per slide, your own CSS. It renders anywhere, diffs in git, and Claude Code can design it directly, which a binary office file gives up. Anthropic's [frontend-design](https://github.com/anthropics/skills/tree/main/frontend-design) skill carries the visual direction if you have it on disk ([upstream-packs.md](references/upstream-packs.md)), and the same route covers any graphic or marketing asset the deck needs.
+Need a rendered deck? Build it as HTML — one self-contained file, one section per slide, with the no-JavaScript shell in [deck-design-system.md](references/deck-design-system.md). It renders anywhere, diffs in git, and Claude Code can design it directly, which a binary office file gives up. Anthropic's [frontend-design](https://github.com/anthropics/skills/tree/8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4/skills/frontend-design) skill carries the visual direction if you have it on disk ([upstream-packs.md](references/upstream-packs.md)), and the same route covers any graphic or marketing asset the deck needs.

@@ -10,8 +10,7 @@ user-invocable: true
 
 Interview → necessity gate → 3 candidates → score → go/no-go. Output is a decision, not a brainstorm.
 
-Reference links below point at upstream repositories and need no install. For local
-checkouts of the datasets, see [upstream-packs.md](references/upstream-packs.md).
+Detail lives in `references/`. The only upstream links are the Superteam ideas dataset and colosseum-copilot; see [upstream-packs.md](references/upstream-packs.md).
 
 ## Context handoff
 
@@ -22,31 +21,31 @@ checkouts of the datasets, see [upstream-packs.md](references/upstream-packs.md)
 
 ### 1. Blunt interview
 
-No flattery. Short, pointed questions, one at a time, until three things are explicit:
+No flattery. Short, pointed questions, one at a time. Hard gate before any idea generation:
 
 - **Edge** — what the founder knows/can do that most can't (domain, distribution, tech)
-- **Constraint** — time, money, team, chain commitments
-- **Wedge** — the niche entry point, not the end-state vision
+- **Constraint** — what they are optimising for now: time, money, team, chain commitments
+- **Crypto touchpoint** — which part of the product genuinely benefits from being onchain
 
-Push back on vague answers. "DeFi for everyone" is not a wedge. Full question bank: [interview-framework.md](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/idea/find-next-crypto-idea/references/interview-framework.md).
+Then pin the **wedge**: the niche entry point, not the end-state vision. "DeFi for everyone" is not a wedge. Probes by starting point: [interview-framework.md](references/interview-framework.md).
 
 ### 2. Crypto-necessity gate
 
-Kill question: **"What gets worse if I remove the blockchain?"** If the answer is vague, aesthetic, or marketing-driven — redirect the idea before scoring it. Pass criteria and redirect patterns: [crypto-necessity-test.md](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/idea/find-next-crypto-idea/references/crypto-necessity-test.md).
+Kill question: **"What gets worse if I remove the blockchain?"** If the answer is vague, aesthetic, or marketing-driven — redirect the idea before scoring it. Pass criteria, redirect patterns and the incumbent check: [crypto-necessity-test.md](references/crypto-necessity-test.md).
 
 ### 3. Exactly 3 candidates
 
-Generate three **diverse** candidates (different mechanisms/markets, not three flavors of one idea). For each:
+Generate three **diverse** candidates (different mechanisms/markets, not three flavors of one idea; diversity rule in [scoring-rubric.md](references/scoring-rubric.md)). For each:
 
 - One-line pitch + target user
 - **Winner case** — what's true in 18 months if it works
 - **Bear case** — the most likely way it dies
 
-Seed from datasets + live landscape (below), then combine with fresh research. Datasets are inspiration, not constraints.
+Seed from the dataset + live landscape (below), then combine with fresh research. Datasets are inspiration, not constraints.
 
 ### 4. Score /15
 
-Each candidate, 0–3 per dimension (full anchors: [scoring-rubric.md](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/idea/find-next-crypto-idea/references/scoring-rubric.md)):
+Each candidate, 0–3 per dimension (full anchors and tie-breaks: [scoring-rubric.md](references/scoring-rubric.md)):
 
 | Dimension | 3 means |
 |-----------|---------|
@@ -58,29 +57,22 @@ Each candidate, 0–3 per dimension (full anchors: [scoring-rubric.md](https://g
 
 ### 5. Validate + go/no-go
 
-Check demand signals against [customer-signal-rubric.md](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/idea/validate-idea/references/customer-signal-rubric.md) — manual workarounds, active forks, bounties, on-chain activity = real; likes and "cool idea" replies = noise. Sprint structure: [validation-framework.md](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/idea/validate-idea/references/validation-framework.md).
+Check demand signals against [customer-signal-rubric.md](references/customer-signal-rubric.md) — manual workarounds, active forks, bounties, on-chain activity = real; likes and "cool idea" replies = noise. The same file has the user-conversation questions: ask about past behaviour, never "would you use it?".
 
 - **≥ 8/15** → go. Write `idea.md`, then scaffold the project — [solanabr/ai-kit](https://github.com/solanabr/ai-kit) ships a `/scaffold` command for this if it is installed.
 - **6–7** → conditional: name the one dimension to de-risk first.
-- **< 6** → strong no-go. **Every no-go gets a pivot suggestion** — use [pivot-or-persist.md](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/idea/validate-idea/references/pivot-or-persist.md).
+- **< 6** → strong no-go. **Every no-go gets a pivot suggestion** — use [pivot-or-persist.md](references/pivot-or-persist.md), which also gives the go/no-go criteria and how to state confidence.
 
 ### 6. Write `.claude/context/idea.md`
 
-Chosen idea, wedge, scores table, demand evidence, bear case, next step.
+Chosen idea, wedge, scores table, demand evidence, bear case, next step. Format: [idea-md.md](references/idea-md.md).
 
-## Idea datasets (inert JSON, about 400 unique entries)
+## Idea dataset
 
-In [solana-new's `skills/data/ideas/`](https://github.com/sendaifun/solana-new/tree/e81c261645035c0e902eaaa518ff58722d188bb7/skills/data/ideas) — clone the pack to grep these locally, see [upstream-packs.md](references/upstream-packs.md):
+[superteam-ideas.json](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/data/ideas/superteam-ideas.json): 240 Solana-native ideas as inert JSON (every entry carries the same `published` date, 2025-10-14, so it doesn't date the idea). Inspiration only.
 
-- [web3-ideas-combined.json](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/data/ideas/web3-ideas-combined.json) — master list ([summary](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/data/ideas/web3-ideas-summary.json))
-- By source: [a16z-big-ideas-2025.json](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/data/ideas/a16z-big-ideas-2025.json), [a16z-state-of-crypto-2025.json](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/data/ideas/a16z-state-of-crypto-2025.json), [yc-requests-for-startups.json](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/data/ideas/yc-requests-for-startups.json), [yc-crypto-companies.json](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/data/ideas/yc-crypto-companies.json), [alliance-ideas.json](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/data/ideas/alliance-ideas.json), [superteam-ideas.json](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/data/ideas/superteam-ideas.json), [rwa-defi-2026-ideas.json](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/data/ideas/rwa-defi-2026-ideas.json), [yash-defi-2024-ideas.json](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/data/ideas/yash-defi-2024-ideas.json)
-
-Idea-source guides (markdown commentary on the same sources): [solana-new's `skills/data/guides/`](https://github.com/sendaifun/solana-new/tree/e81c261645035c0e902eaaa518ff58722d188bb7/skills/data/guides) — plus [source-map.md](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/idea/find-next-crypto-idea/references/source-map.md) and [research-playbook.md](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/idea/find-next-crypto-idea/references/research-playbook.md) for where/how to research live.
+For other idea lists, read the publishers' own pages (a16z crypto, YC's Requests for Startups, Alliance) rather than a scraped copy, and date anything you cite.
 
 ## Live hackathon landscape
 
-[colosseum-copilot](https://github.com/ColosseumOrg/colosseum-copilot/blob/0453ffe26e8d245152619fcc949689a6adaab1c6/skills/colosseum-copilot/SKILL.md) — 5,400+ Colosseum submissions for crowdedness checks, winner patterns, and gap analysis. CLI-backed: sign in once per machine with `npx @colosseum-org/copilot-connect login` (Node 20+). Install routes: [upstream-packs.md](references/upstream-packs.md).
-
-## Output format
-
-Report spec (3 ranked candidates, scores, decision): [output-spec.md](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/idea/find-next-crypto-idea/references/output-spec.md).
+[colosseum-copilot](https://github.com/ColosseumOrg/colosseum-copilot/blob/0453ffe26e8d245152619fcc949689a6adaab1c6/skills/colosseum-copilot/SKILL.md) — 5,400+ Colosseum submissions for crowdedness checks, winner patterns, and gap analysis. CLI-backed: sign in once per machine with `npx @colosseum-org/copilot-connect login` (Node 20+). Install routes: [upstream-packs.md](references/upstream-packs.md). Dated list of past Grand Champions and track winners: [hackathon winners](../hackathon/references/winners.md).
