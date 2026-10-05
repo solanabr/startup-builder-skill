@@ -48,8 +48,8 @@ Updated: 2026-10-05 · by build-status
 | Tests passing | Yes, 42/42 | `anchor test`, 2026-10-04 |
 | Devnet program ID | Esc1...devnet | `.program-id-devnet` |
 | Mainnet program ID | Esc1...main | `.program-id-mainnet` |
-| Mainnet deployed | 2026-09-30, slot 371234567 | `solana program show` |
-| Upgrade authority | Squads vault 7xQ... (3-of-5) | `solana program show` |
+| Mainnet deployed | 2026-09-30, slot 371234567 | `solana program show` (slot), `solana block-time <slot>` (date) |
+| Upgrade authority | Squads vault 7xQ... (3-of-5) | `solana program show` (address); Squads multisig account (threshold) |
 | Verified build | Yes, commit 3f2c1d0 | verify.osec.io status, 2026-10-05 |
 | Audit | Acme Audits, 2026-09-20 | `audits/2026-09-acme.pdf` |
 | Open findings | 0 Critical, 0 High, 1 Medium | `audits/2026-09-acme.pdf` |
@@ -86,7 +86,10 @@ ran 2026-09-10 to 09-17.
 ## Field notes
 
 - **Upgrade authority** is the field investors and integrators read first: a single deployer
-  key, a multisig vault (give the threshold), or none.
+  key, a multisig vault (give the threshold), or none. `solana program show` prints only the
+  address. It can't tell you the address is a Squads vault or give the threshold; read both from
+  the Squads multisig account the vault PDA derives from (the Squads app, or the v4 multisig
+  account).
 - **Verified build** means the verifier's status says verified for this program ID — not that
   the build command was run. Give the commit it verified.
 - **Active user wallets** counts users, not fee payers. When a relayer or the app pays fees,

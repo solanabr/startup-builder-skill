@@ -44,7 +44,8 @@ For each program ID on mainnet (and devnet, labelled as such):
 - Verified build: `https://verify.osec.io/status/<ID>` returns `is_verified`, the repo and the
   commit. "Built with `solana-verify`" is not the same as verified; only the status counts.
 - Upgrade authority is a trust fact, not a detail: deployer key, a Squads vault, or none
-  (immutable). Write which.
+  (immutable). Write which. For a vault, take the threshold from the Squads multisig account,
+  not from `solana program show`, which prints only the address.
 
 ### 3. What works today
 
@@ -72,6 +73,9 @@ before keeping it.
 
 - Deploy, verification, audits: ai-kit's
   [`/deploy`](https://github.com/solanabr/ai-kit/blob/fae10fe6c13590a88817562baa2a81c81a43d134/.claude/commands/deploy.md),
+  the verify-PDA upload and `solana-verify remote submit-job` in its
+  [deployment skill](https://github.com/solanabr/ai-kit/blob/fae10fe6c13590a88817562baa2a81c81a43d134/.claude/skills/deployment.md#mainnet-first-deploy)
+  (`/deploy` only verifies locally; the verify.osec.io status flips after the submit-job),
   [`/build-program`](https://github.com/solanabr/ai-kit/blob/fae10fe6c13590a88817562baa2a81c81a43d134/.claude/commands/build-program.md)
   and [`/audit-solana`](https://github.com/solanabr/ai-kit/blob/fae10fe6c13590a88817562baa2a81c81a43d134/.claude/commands/audit-solana.md).
   This skill records their results; it doesn't redo them.
