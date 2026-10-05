@@ -13,7 +13,7 @@ A SaaS data room is mostly corporate documents. In a crypto data room the first 
 | 3 | **Authorities and keys** | Every authority: upgrade, mint, freeze, Token-2022 extension authorities (fee config, permanent delegate, pause, transfer hook), and admin or config signers. For each: holder type (single key, multisig, governance, revoked), threshold, timelock, and what it can do. | Read from the chain. crypto-legal's `program-authority-auditor` (program) and `token-inspector` (mint) agents read these and say what each signals. |
 | 4 | **Multisig** | Address, signer roles (not names, if signers are pseudonymous), threshold, whether signers are independent people on independent devices | The multisig's own UI or account data |
 | 5 | **Security** | Audits: auditor, scope, audited commit, date, and findings by severity with fix status. Bug bounty terms. Incident history with postmortems. | Link the reports. Match each audited commit to row 2. |
-| 6 | **Onchain metrics** | The [metrics](#metrics) below, each with the query that produces it | Dashboards, plus the definitions in `data-room.md` |
+| 6 | **Onchain metrics** | The [metrics](#metrics) below, each with the query that produces it | Dashboards, plus the definitions in `build.md` and `data-room.md` |
 | 7 | **Revenue onchain** | Fee or treasury account addresses, and revenue by month reconciled to the bank or stablecoin accounts | Inflows to the fee account. Model and number from `pricing.md` if present. |
 | 8 | **Token** (if one exists) | Mint address; supply; allocation table with **the address of every allocation**; vesting contracts and schedules; the unlock calendar for the next 12 months; liquidity position and whether the LP is locked | Onchain addresses and the vesting program's accounts. Every row needs an address. |
 | 9 | **Dependencies** | Oracles, RPC providers, bridges, and the integrations that carry volume, with the share of volume each carries | [counterparty-gate](https://github.com/solsentry/solana-counterparty-gate) vets the operators you depend on |
@@ -24,19 +24,15 @@ A SaaS data room is mostly corporate documents. In a crypto data room the first 
 
 ## Metrics
 
-Define each metric once, in `data-room.md`. The deck, the room and every investor update quote from that one definition. Never change a definition silently: add a new metric and keep the old one.
+Traction metrics already have one definition: the Traction table in `build.md` ([build-md-format.md](../../build-status/references/build-md-format.md)), written by build-status. Quote its rows with their names, windows and definitions as they are (Active user wallets over 7 days, Successful txs, Volume, Fees earned, D30 retention, Waitlist), and don't redefine them here. Active user wallets counts users, not relayer fee payers. If a row is missing, run build-status rather than defining it here. `data-room.md` adds only the rows below, which `build.md` doesn't carry. Never change a definition silently: add a new metric and keep the old one.
 
 | Metric | Why an investor asks | Definition to pin down | Proof |
 |---|---|---|---|
-| **Daily active wallets (raw)** | Usage | Unique signers of your program's transactions per UTC day | A dashboard query, linked |
-| **Daily active wallets (sybil-adjusted)** | Whether the wallets are people | The raw figure minus the clusters you exclude: wallets funded from the same source, wallets active only around incentive or airdrop windows, and wallets below an activity floor you fix in advance (≥ N transactions on ≥ M days) | The same query with the filters, and the filters written down |
-| **Transaction concentration** | Bot or farm detection | The share of transactions, and of volume, from the top 10 wallets | A query |
-| **Transaction count** | Use | Successful transactions invoking your program per day | An explorer program page, or a query |
+| **Active user wallets (sybil-adjusted)** | Whether the wallets are people | `build.md`'s Active user wallets, same window, minus the clusters you exclude: wallets funded from the same source, wallets active only around incentive or airdrop windows, and wallets below an activity floor you fix in advance (≥ N transactions on ≥ M days) | The same query with the filters, and the filters written down |
+| **Transaction concentration** | Bot or farm detection | The share of `build.md`'s Successful txs, and of its Volume, from the top 10 wallets | A query |
 | **TVL** (if you custody deposits) | Economic commitment | DefiLlama's figure for your slug, or your own sum of vault balances | The DefiLlama protocol page or the API `https://api.llama.fi/tvl/{slug}` |
-| **Retention** | Stickiness | D7 and D30 cohorts by first-transaction date, on sybil-adjusted wallets | A cohort chart from onchain data |
-| **Revenue** | Sustainability | Inflows to the fee account, split into protocol revenue and amounts passed through to LPs or suppliers | Fee account address and query |
 | **Composability** | Platform potential | The protocols that call your program through CPI or route volume to you, with each one's share | A list with program IDs |
-| **Grant share of income** | Grant dependence | Grants ÷ (grants + revenue), trailing 6 months | Grant agreements plus the revenue query |
+| **Grant share of income** | Grant dependence | Grants ÷ (grants + `build.md`'s Fees earned), trailing 6 months | Grant agreements plus the fees query |
 
 The last point is a judgment call. When incentives were running, report organic and incentivised figures separately. The investor will see the post-incentive drop on chain anyway.
 
@@ -55,6 +51,7 @@ Last updated: YYYY-MM-DD · Shared with: <fund, date> (append)
 | 1 | Program IDs + upgrade authority | | | | ready / missing / n/a |
 
 ## Metric definitions
+<Only the rows build.md's Traction table doesn't carry.>
 | Metric | Definition | Query / link | Owner | Last run | Value |
 |---|---|---|---|---|---|
 
