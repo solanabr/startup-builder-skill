@@ -29,10 +29,13 @@ Two constraints from that charter shape everything here:
 | [idea-sprint](skills/idea-sprint/SKILL.md) | Deciding *what* to build, or stress-testing an idea before any code. Interview → crypto-necessity gate → three candidates → score /15 → go/no-go. Output is a decision, not a brainstorm. |
 | [pitch-deck](skills/pitch-deck/SKILL.md) | You need slides — demo day, a VC meeting, a grant application, an accelerator form, a hackathon final. Detects the audience, picks a narrative backbone, writes speaking notes, then drills the hostile questions. |
 | [hackathon](skills/hackathon/SKILL.md) | A submission is due. Track choice by crowdedness, a description a judge can skim in 90 seconds, a sub-3-minute demo script, and the grant follow-on when the track doesn't land. |
+| [build-status](skills/build-status/SKILL.md) | Before a deck, submission, grant or investor update. Records program IDs, upgrade authority, verified-build and audit state, what works today, and traction with the query behind each number into `.claude/context/build.md`. |
 
-They chain. `idea-sprint` writes `.claude/context/idea.md`; `pitch-deck` and `hackathon` read
-it and pre-fill the problem, wedge and traction instead of re-interviewing you. Run them in
-that order and the later ones get shorter.
+They chain. `idea-sprint` writes `.claude/context/idea.md` and `build-status` writes
+`.claude/context/build.md`; `pitch-deck` and `hackathon` read both and pre-fill the problem,
+wedge, what works and traction instead of re-interviewing you. Run them in that order and the
+later ones get shorter. `build.md`'s format is a contract other tools can write to as well:
+[build-md-format.md](skills/build-status/references/build-md-format.md).
 
 Rendered decks and any graphic or marketing asset come out as **HTML** — one file, your own
 CSS. It renders anywhere, diffs in git, and the agent can design it directly.

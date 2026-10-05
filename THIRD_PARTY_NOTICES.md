@@ -1,6 +1,7 @@
 # Third-party notices
 
-Parts of `skills/idea-sprint`, `skills/pitch-deck` and `skills/hackathon` are adapted from
+Parts of `skills/idea-sprint`, `skills/pitch-deck`, `skills/hackathon` and `skills/build-status`
+are adapted from
 [sendaifun/solana-new](https://github.com/sendaifun/solana-new) at commit
 `e81c261645035c0e902eaaa518ff58722d188bb7`. Its licence applies to that material:
 

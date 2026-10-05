@@ -14,7 +14,7 @@ Detail lives in `references/`. The remaining upstream links (colosseum-copilot, 
 
 ## Context handoff
 
-At start, read `.claude/context/idea.md` and `.claude/context/build.md` if present — pull the pitch, wedge, and what actually works from them instead of asking again.
+At start, read `.claude/context/idea.md` and `.claude/context/build.md` ([format](../build-status/references/build-md-format.md), written by [build-status](../build-status/SKILL.md)) if present — pull the pitch, wedge, and what actually works (its "What works today" section) from them instead of asking again.
 
 ## Workflow
 
