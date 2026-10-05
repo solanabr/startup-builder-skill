@@ -14,7 +14,7 @@ Detail lives in `references/`. The one optional upstream pack (visual direction 
 
 ## Context handoff
 
-At start, read `.claude/context/idea.md` and `.claude/context/build.md` ([format](../build-status/references/build-md-format.md), written by [build-status](../build-status/SKILL.md)) if present — pre-fill problem, wedge, traction, and stack from them, and Q5 from build.md's What works today section; take traction only from its Traction table, with the source each row cites; only ask what's missing.
+At start, read `.claude/context/idea.md` and `.claude/context/build.md` ([format](../build-status/references/build-md-format.md), written by [build-status](../build-status/SKILL.md)) if present — pre-fill problem, wedge, traction, and stack from them, and Q5 from build.md's What works today section; take traction only from its Traction table, with the source each row cites. Read `.claude/context/positioning.md` ([format](../positioning/references/positioning-md-format.md), written by [positioning](../positioning/SKILL.md)) if present too — use its one-liner, ICP, alternatives and proof points as written for Q1, Q2 and Q8, and its words-to-avoid list when drafting. Only ask what's missing.
 
 ## Workflow
 

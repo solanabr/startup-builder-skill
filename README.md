@@ -30,10 +30,12 @@ Two constraints from that charter shape everything here:
 | [pitch-deck](skills/pitch-deck/SKILL.md) | You need slides — demo day, a VC meeting, a grant application, an accelerator form, a hackathon final. Detects the audience, picks a narrative backbone, writes speaking notes, then drills the hostile questions. |
 | [hackathon](skills/hackathon/SKILL.md) | A submission is due. Track choice by crowdedness, a description a judge can skim in 90 seconds, a sub-3-minute demo script, and the grant follow-on when the track doesn't land. |
 | [build-status](skills/build-status/SKILL.md) | Before a deck, submission, grant or investor update. Records program IDs, upgrade authority, verified-build and audit state, what works today, and traction with the query behind each number into `.claude/context/build.md`. |
+| [positioning](skills/positioning/SKILL.md) | Before the deck, site, docs intro or launch post. Writes the one-liner, ICP with disqualifiers, job to be done, three named alternatives with the dimension you beat each on, sourced proof points and words to avoid into `.claude/context/positioning.md`. |
 
-They chain. `idea-sprint` writes `.claude/context/idea.md` and `build-status` writes
-`.claude/context/build.md`; `pitch-deck` and `hackathon` read both and pre-fill the problem,
-wedge, what works and traction instead of re-interviewing you. Run them in that order and the
+They chain. `idea-sprint` writes `.claude/context/idea.md`, `build-status` writes
+`.claude/context/build.md` and `positioning` writes `.claude/context/positioning.md`;
+`pitch-deck` and `hackathon` read all three and pre-fill the problem, wedge, audience, what works
+and traction instead of re-interviewing you. Run them in that order and the
 later ones get shorter. `build.md`'s format is a contract other tools can write to as well:
 [build-md-format.md](skills/build-status/references/build-md-format.md).
 
