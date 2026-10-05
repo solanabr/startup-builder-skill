@@ -10,8 +10,7 @@ user-invocable: true
 
 Track choice → scannable description → <3-min demo script → checklist. Optimize for a judge who has 90 seconds, not a reader who has 10 minutes.
 
-Reference links below point at upstream repositories and need no install. For local
-checkouts, see [upstream-packs.md](references/upstream-packs.md).
+Detail lives in `references/`. The remaining upstream links (colosseum-copilot, the Superteam ideas dataset) are in [upstream-packs.md](references/upstream-packs.md).
 
 ## Context handoff
 
@@ -19,11 +18,11 @@ At start, read `.claude/context/idea.md` and `.claude/context/build.md` if prese
 
 ## Workflow
 
-### 1. Pick the least-crowded track
+### 1. Check the format, then pick the least-crowded track
 
-Winning a thin track beats placing in a fat one. Per candidate track: estimate entry volume, fit with what's actually built, and judge appetite (sponsor tracks often have the fewest serious entries).
+Colosseum runs its hackathons as startup competitions, and formats change: Frontier 2026 had no tracks at all. Read the current rules first. Where tracks exist, winning a thin track beats placing in a fat one. Per candidate track: estimate entry volume, fit with what's actually built, and judge appetite (sponsor tracks often have the fewest serious entries).
 
-- Winner patterns + track history: [hackathon-winners.md](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/data/colosseum/hackathon-winners.md) — Colosseum grand champions and track winners with what they built, through Cypherpunk 2025. It omits Frontier 2026 and mislabels four Cypherpunk tracks, so confirm a winner's track against Colosseum's announcement before citing it
+- Winner history: [winners.md](references/winners.md) — Grand Champions and track first places from Grizzlython 2023 to Frontier 2026, dated, each row linked to its announcement post
 - Live crowdedness check: [colosseum-copilot](https://github.com/ColosseumOrg/colosseum-copilot/blob/0453ffe26e8d245152619fcc949689a6adaab1c6/skills/colosseum-copilot/SKILL.md) — query 5,400+ past submissions for cluster density and gaps. CLI-backed: sign in once per machine with `npx @colosseum-org/copilot-connect login` (Node 20+).
 
 ### 2. Write a scannable description
@@ -36,27 +35,31 @@ Winning a thin track beats placing in a fat one. Per candidate track: estimate e
 - "What works today" list — demo-able claims only, never roadmap dressed as product
 - Why Solana (one concrete reason: speed, fees, composability with X)
 
-Full structure (200–500 words, paragraph-by-paragraph): [hackathon-submission-guide.md](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/launch/submit-to-hackathon/references/hackathon-submission-guide.md). Score the draft against [judging-criteria.md](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/launch/submit-to-hackathon/references/judging-criteria.md) before submitting.
+Full structure (200–500 words, paragraph-by-paragraph) and the fields Colosseum's portal asks for, including go-to-market and demand validation: [submission-guide.md](references/submission-guide.md). Score the draft against [judging-criteria.md](references/judging-criteria.md) before submitting: Colosseum's seven published factors, which carry no published weights.
 
-### 3. Demo script (<3 minutes)
+### 3. Videos (each ≤ 3 minutes)
+
+Colosseum asks for two: a 2–3 minute **presentation** video (the startup pitch, judged first) and a **product demo** of at most 3 minutes. Scripts for both: [demo-video-script.md](references/demo-video-script.md). The product demo, in outline:
 
 | Time | Beat |
 |------|------|
-| 0:00–0:20 | Problem — one user, one pain, no market-size slides |
-| 0:20–0:40 | What you built, one sentence + UI first appears |
-| 0:40–2:10 | The demo — one happy path, real data, on-chain proof (explorer tx) |
-| 2:10–2:40 | The novel part — the thing competitors don't have |
-| 2:40–3:00 | Traction/team one-liner + the ask |
+| 0:00–0:15 | What you're about to show, one sentence |
+| 0:15–2:00 | One happy path in the real product, real data, on-chain proof (explorer tx) |
+| 2:00–2:40 | One technical highlight and why you built it that way (Solana integration, on-chain logic) |
+| 2:40–3:00 | What works today vs. next; repo and live link on screen |
 
-Shot-by-shot template and recording tips: [demo-video-script.md](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/launch/submit-to-hackathon/references/demo-video-script.md). Rule: if the demo can fail live, record it.
+Rule: if the demo can fail live, record it.
 
 ### 4. Submission checklist
 
-- [ ] Track chosen by crowdedness, not vanity
+- [ ] Track (if the event has tracks) chosen by fit, then crowdedness, not vanity
 - [ ] Tagline passes the "non-crypto friend" test
 - [ ] Description scannable in 90 seconds (bold claims, short paragraphs)
-- [ ] Demo video <3 min, real transaction shown
-- [ ] Repo public, README quickstart actually works from clone
+- [ ] Presentation video 2–3 min (team, problem, evidence, why now)
+- [ ] Demo video ≤ 3 min, real transaction shown
+- [ ] Go-to-market and demand-validation fields filled with sourced evidence
+- [ ] Pre-existing code disclosed; every link opens for a logged-out judge
+- [ ] Repo public (or access granted to judges), README quickstart actually works from clone
 - [ ] Deployed link (devnet OK) + program ID listed
 - [ ] Team and contact info complete
 - [ ] Pitch deck attached if track requires one — use [pitch-deck](../pitch-deck/SKILL.md)
@@ -67,4 +70,5 @@ Losing the track doesn't mean losing the funding. Same artifacts (description, d
 
 - **Superteam Earn** (earn.superteam.fun) — bounties + grants up to ~$10k USDC equivalent, fast cycles, regional Superteams
 - **Solana Foundation grants** — milestone-based, public-good angle; reuse the scannable description with an ecosystem-benefit paragraph
+- **Superteam Agentic Engineering grant** — 200 USDG toward an AI coding subscription, half on approval and half once a live Solana MVP ships ([page](https://superteam.fun/earn/grants/agentic-engineering/); applications showed as paused on 2026-10-05)
 - Grant-shaped ideas dataset: [superteam-ideas.json](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/data/ideas/superteam-ideas.json)

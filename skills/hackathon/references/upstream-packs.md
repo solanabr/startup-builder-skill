@@ -1,26 +1,20 @@
 # Upstream packs this skill draws on
 
-The skill works standalone: every reference link in `SKILL.md` points at the upstream
-repository over https, pinned to the commit the paths were verified against, so nothing
-needs to be installed to follow them.
+The submission guide, judging criteria, video scripts and winners index are in this folder.
+The judging criteria and winners index are written from Colosseum's own posts and FAQ, linked
+inline. The skill needs no upstream pack to run. Two links still point outside the repo, both
+pinned to a commit.
 
-Install a pack locally when you want to grep across it or work offline.
+## Superteam ideas dataset
 
-## solana-new (sendaifun/solana-new)
-
-Carries the submission guide, judging criteria, demo-video script, the Colosseum
-winner history under `skills/data/colosseum/`, and the grant-shaped ideas dataset.
-
-- Upstream: https://github.com/sendaifun/solana-new
-- Pinned commit for the links in `SKILL.md`: `e81c261645035c0e902eaaa518ff58722d188bb7`
-- Standalone: `git clone https://github.com/sendaifun/solana-new`
-- With [solanabr/ai-kit](https://github.com/solanabr/ai-kit) installed: `bash .claude/bin/skills.sh add solana-new`
-  (it lands at `.claude/skills/ext/solana-new/`)
+[superteam-ideas.json](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/data/ideas/superteam-ideas.json):
+240 grant-shaped, Solana-native idea entries as inert JSON, read over https. To grep it
+locally, download that one file; nothing else from its repository is needed.
 
 ## colosseum-copilot (ColosseumOrg/colosseum-copilot)
 
-Queries 5,400+ past Colosseum submissions — used here for the live crowdedness check on
-candidate tracks. Backed by a CLI, so it needs a one-time sign-in per machine regardless
+Queries 5,400+ past Colosseum submissions. This skill uses it for the live crowdedness check
+on candidate tracks. Backed by a CLI, so it needs a one-time sign-in per machine regardless
 of install route:
 
 ```

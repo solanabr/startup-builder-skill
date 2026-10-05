@@ -56,15 +56,17 @@ vendoring the whole repo as a submodule.
 
 ## Upstream dependencies
 
-The three skills reference material in [sendaifun/solana-new](https://github.com/sendaifun/solana-new)
-(interview and scoring frameworks, slide structures, the Colosseum winner history, about 400 unique
-idea entries as inert JSON), [ColosseumOrg/colosseum-copilot](https://github.com/ColosseumOrg/colosseum-copilot)
-(5,400+ past submissions, for crowdedness checks) and Anthropic's
-[frontend-design](https://github.com/anthropics/skills/tree/main/frontend-design).
+The interview, scoring and validation rubrics, the pitch structure, frameworks, templates and
+deck shell, and the hackathon submission guide and video scripts are vendored under each
+skill's `references/`, rewritten from [sendaifun/solana-new](https://github.com/sendaifun/solana-new)
+with attribution. The hackathon judging criteria and winners index are written from
+Colosseum's own FAQ and announcement posts, linked inline.
 
-Every link resolves over https against a pinned upstream commit, so **nothing has to be
-installed** for the skills to work. Install a pack locally only to grep across it or work
-offline — each skill's `references/upstream-packs.md` gives the routes, standalone and via
-`ai-kit`.
+What remains upstream is small and optional: the Superteam ideas dataset (one pinned JSON
+file, 240 entries), [ColosseumOrg/colosseum-copilot](https://github.com/ColosseumOrg/colosseum-copilot)
+(5,400+ past submissions, for crowdedness checks) and Anthropic's
+[frontend-design](https://github.com/anthropics/skills/tree/8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4/skills/frontend-design). Links are
+pinned or point at stable pages, so **nothing has to be installed** for the skills to work.
+Each skill's `references/upstream-packs.md` gives the details.
 
 Text adapted from solana-new keeps its MIT notice in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
