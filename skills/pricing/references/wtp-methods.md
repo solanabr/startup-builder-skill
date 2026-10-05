@@ -26,7 +26,7 @@ Worked example, pulled 2026-10-05. **Re-pull it; don't reuse it.**
 |---|---|---|---|---|---|---|
 | Kamino Lend (`kamino-lend`) | Lending | 4,636,142 | 597,541 | 12.9% | 1,396.9 | 4.0% |
 | Jupiter Perpetual Exchange (`jupiter-perpetual-exchange`) | Derivatives | 7,800,434 | 1,950,110 | 25.0% | 817.7 | 11.6% |
-| Raydium (`raydium`) | DEX | 46,059,714 | 7,708,053 | 16.7% | 1,360.9 | 41.2% |
+| Raydium AMM (`raydium-amm`) | Dexs | 35,029,052 | 5,422,544 | 15.5% | 1,345.7 | 31.7% |
 
 Rules for using the table:
 
