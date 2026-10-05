@@ -90,5 +90,5 @@ criteria into the runbook so nobody argues them live. Any one of these aborts:
 After an abort: send partners the abort message, post the public slip message if a time
 was public, record the cause in the runbook log, and re-enter the gate list at T-24h. If
 the abort follows an onchain step that did land (the mint exists, the pool does not), the
-partial state is public. Treat it as an incident and use the incident-comms skill if
-present.
+partial state is public. Treat it as an incident and use
+[incident-comms](../../incident-comms/SKILL.md).

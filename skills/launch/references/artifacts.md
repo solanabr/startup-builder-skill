@@ -20,7 +20,7 @@ gate L2 (crypto-legal-skill), not edited on the day.
 | Hold message (partners) | text | partner channel | on slip |
 | Slip message (public) | text | X, Discord, Telegram | on slip, only if a time was public |
 | Abort message (partners and public) | text | all of the above | on abort |
-| Status page | HTML, from the incident-comms skill if present | separate host | live by L+20m |
+| Status page | HTML, from [incident-comms](../../incident-comms/references/status-page.html) | separate host | live by L+20m |
 
 Draft the announcement thread and the long-form post with
 [writer-style-skill](https://github.com/solanabr/writer-style-skill/blob/77372715fb5596cd29cc9fbbcaeb859cc9335b39/skills/writer-style/SKILL.md) for voice

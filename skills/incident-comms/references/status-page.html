@@ -1,0 +1,98 @@
+<!doctype html>
+<!--
+  Status page template for the `incident-comms` skill.
+
+  - One self-contained file. No scripts, fonts, images or stylesheets from any other host,
+    and no build step: it renders from a static host, an object bucket or a local file.
+  - Host it somewhere that does not share a failure with the app: a different provider
+    and, ideally, a different registered domain (a subdomain fails with the app's DNS).
+    Deploy it once in peacetime and check you can update it without the app's CI.
+  - To post an update: change the banner, then add an <li> at the top of the incident's
+    timeline. To open an incident: copy the <article class="incident"> block to the top of
+    #history. Times are UTC. Every onchain action gets its transaction link.
+  - Keep the file small; it is fetched by everyone at once when things break.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{PRODUCT}} status</title>
+<meta name="robots" content="noindex">
+<style>
+  :root {
+    --bg: #ffffff; --fg: #15171a; --muted: #5b616b; --line: #e3e5e8; --card: #f7f8fa;
+    --ok: #137a3f; --warn: #a15c00; --bad: #b42318; --info: #3451b2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1114; --fg: #eceef1; --muted: #9aa1ab; --line: #2a2e35; --card: #171a1f;
+      --ok: #4cc38a; --warn: #f0b04a; --bad: #ff7a6b; --info: #8ea6ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.4rem; margin: 0 0 20px; }
+  h2 { font-size: 1.1rem; margin: 36px 0 12px; }
+  a { color: var(--info); }
+  code { font: .85rem ui-monospace, SFMono-Regular, Menlo, monospace; word-break: break-all; }
+  .banner { border-radius: 8px; padding: 16px; color: #fff; font-weight: 600; }
+  .banner.ok { background: var(--ok); } .banner.warn { background: var(--warn); }
+  .banner.bad { background: var(--bad); }
+  .banner p { margin: 4px 0 0; font-weight: 400; }
+  .components { list-style: none; padding: 0; margin: 0; border: 1px solid var(--line); border-radius: 8px; }
+  .components li { display: flex; justify-content: space-between; gap: 12px; padding: 12px 16px; border-top: 1px solid var(--line); }
+  .components li:first-child { border-top: 0; }
+  .s-ok { color: var(--ok); } .s-warn { color: var(--warn); } .s-bad { color: var(--bad); }
+  .incident { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 16px; margin: 0 0 16px; }
+  .incident h3 { margin: 0 0 4px; font-size: 1rem; }
+  .meta { color: var(--muted); font-size: .85rem; margin: 0 0 12px; }
+  .timeline { list-style: none; padding: 0; margin: 0; }
+  .timeline li { padding: 8px 0; border-top: 1px solid var(--line); }
+  .timeline b { display: inline-block; min-width: 7.5em; }
+  .note { color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>{{PRODUCT}} status</h1>
+
+  <!-- Banner: class ok | warn | bad. One sentence on what users see, one on what to do. -->
+  <div class="banner ok" role="status">
+    All systems normal
+    <p>Last checked {{UTC_DATETIME}}.</p>
+  </div>
+
+  <h2>Components</h2>
+  <!-- Status words: Operational / Degraded / Paused / Down / Do not use. Class s-ok | s-warn | s-bad. -->
+  <ul class="components">
+    <li><span>Program <code>{{PROGRAM_ID}}</code></span><span class="s-ok">Operational</span></li>
+    <li><span>Web app ({{DOMAIN}})</span><span class="s-ok">Operational</span></li>
+    <li><span>API and indexer</span><span class="s-ok">Operational</span></li>
+    <li><span>Solana network</span><span><a href="https://status.solana.com">status.solana.com</a></span></li>
+  </ul>
+
+  <p class="note">Your balances live onchain. You can always check them yourself on an
+    explorer, even when this app is down. We will never DM you first.</p>
+
+  <h2>Incident history</h2>
+  <section id="history">
+
+    <!-- Copy this block to the top of #history to open an incident. -->
+    <article class="incident" id="{{INC_ID}}">
+      <h3>{{ONE_LINE_SUMMARY}}</h3>
+      <p class="meta">SEV-{{N}} · {{STATE: Investigating | Identified | Monitoring | Mitigated | Resolved}} ·
+        opened {{UTC_DATETIME}} · known issue <code>{{KNOWN_ISSUE_ID}}</code></p>
+      <ul class="timeline">
+        <!-- Newest first. -->
+        <li><b>{{HH:MM}} UTC</b> {{UPDATE_TEXT}} <a href="{{TX_EXPLORER_URL}}">tx</a></li>
+        <li><b>{{HH:MM}} UTC</b> {{FIRST_UPDATE_TEXT}}</li>
+      </ul>
+      <p class="meta">Postmortem: <a href="{{POSTMORTEM_URL}}">{{POSTMORTEM_TITLE}}</a></p>
+    </article>
+
+  </section>
+</main>
+</body>
+</html>

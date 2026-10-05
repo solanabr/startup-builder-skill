@@ -75,7 +75,7 @@ runbook as each one passes.
   public slip message only if a time was public. See
   [slip-and-abort.md](references/slip-and-abort.md#slip-handling).
 - **On an abort:** run the abort steps there. If part of the onchain state already landed,
-  this is now an incident; use the incident-comms skill if present.
+  this is now an incident; use [incident-comms](../incident-comms/SKILL.md).
 - **At L+24h:** set status `landed`, log what slipped and why, and list the listings still
   pending.
 
