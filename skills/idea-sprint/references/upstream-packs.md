@@ -5,7 +5,7 @@ repository over https, pinned to the commit the paths were verified against, so 
 needs to be installed to follow them.
 
 Install a pack locally when you want to read the bulk JSON datasets directly, grep across
-them, or work offline — reading ~515 idea entries through the GitHub web UI is painful.
+them, or work offline — reading about 400 idea entries through the GitHub web UI is painful.
 
 ## solana-new (sendaifun/solana-new)
 

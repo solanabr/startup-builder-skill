@@ -4,7 +4,7 @@ description: Build a pitch deck for a crypto project. Use when the user says "pi
 user-invocable: true
 ---
 
-<!-- Adapted from sendaifun/solana-new (create-pitch-deck), MIT © 2026 SendAI and Superteam. Telemetry removed. -->
+<!-- Adapted from sendaifun/solana-new (create-pitch-deck), MIT © 2026 SendAI and Superteam; full notice in THIRD_PARTY_NOTICES.md. Telemetry removed. -->
 
 # Pitch Deck
 
@@ -59,7 +59,7 @@ For each slide: headline (a claim, not a label), 3–5 supporting points, visual
 
 ### 5. Self-score vs audience rubric
 
-Score the draft against the audience's actual criteria (clarity, credibility, demo strength, ask specificity) and against [crypto-pitch-mistakes.md](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/launch/create-pitch-deck/references/crypto-pitch-mistakes.md) — flag every mistake the deck still commits, fix, re-score. Don't present a deck you'd score below 8/10.
+Score the draft against the audience's actual criteria (clarity, credibility, demo strength, ask specificity) and against [crypto-pitch-mistakes.md](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/launch/create-pitch-deck/references/crypto-pitch-mistakes.md) — flag every mistake the deck still commits, fix, re-score. Ignore that file's "good" token example under Mistake 4: paying stakers a share of protocol fees is the classic securities red flag, so route any fee-share or token-return claim to [crypto-legal-skill](https://github.com/solanabr/crypto-legal-skill) instead of putting it in a deck. Don't present a deck you'd score below 8/10.
 
 ### 6. Objection-prep Q&A
 
