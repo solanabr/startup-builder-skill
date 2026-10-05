@@ -1,0 +1,68 @@
+# startup-builder-skill
+
+Agent skills for the non-program half of shipping a product on Solana — the things a small
+team hits *around* the code.
+
+## Charter
+
+The all-in-one support skill pack for startups building on Solana. Program work — Anchor
+patterns, CU optimisation, account layout — is covered well by
+[solanabr/ai-kit](https://github.com/solanabr/ai-kit) and the packs it pins. This repo owns
+the startup-operations layer: positioning and pricing, launch, fundraising, go-to-market and
+growth, support and operations, and compliance-adjacent operations (pointing at
+[solanabr/crypto-legal-skill](https://github.com/solanabr/crypto-legal-skill) for the legal
+lane rather than restating it).
+
+Full charter, the gap analysis behind it, and the design constraints: [issue #1](https://github.com/solanabr/startup-builder-skill/issues/1).
+
+Two constraints from that charter shape everything here:
+
+- **Skills stay off the always-on path.** A top-level skill's `description` is listed in
+  every session *and every subagent*, so fan-outs of 100+ subagents multiply that cost. These
+  load on demand, with detail behind links in `references/`.
+- **One `SKILL.md` per skill directory**, routing-only descriptions, progressive disclosure.
+
+## The skills
+
+| Skill | Use it when |
+|-------|-------------|
+| [idea-sprint](skills/idea-sprint/SKILL.md) | Deciding *what* to build, or stress-testing an idea before any code. Interview → crypto-necessity gate → three candidates → score /15 → go/no-go. Output is a decision, not a brainstorm. |
+| [pitch-deck](skills/pitch-deck/SKILL.md) | You need slides — demo day, a VC meeting, a grant application, an accelerator form, a hackathon final. Detects the audience, picks a narrative backbone, writes speaking notes, then drills the hostile questions. |
+| [hackathon](skills/hackathon/SKILL.md) | A submission is due. Track choice by crowdedness, a description a judge can skim in 90 seconds, a sub-3-minute demo script, and the grant follow-on when the track doesn't land. |
+
+They chain. `idea-sprint` writes `.claude/context/idea.md`; `pitch-deck` and `hackathon` read
+it and pre-fill the problem, wedge and traction instead of re-interviewing you. Run them in
+that order and the later ones get shorter.
+
+Rendered decks and any graphic or marketing asset come out as **HTML** — one file, your own
+CSS. It renders anywhere, diffs in git, and the agent can design it directly.
+
+## Install
+
+Each skill is self-contained under `skills/<name>/`. Copy the ones you want into your
+project's skills directory:
+
+```
+git clone https://github.com/solanabr/startup-builder-skill
+cp -r startup-builder-skill/skills/idea-sprint .claude/skills/
+```
+
+Use `.agents/skills/` instead of `.claude/skills/` for Codex, Cursor, Copilot and other
+Agent Skills clients.
+
+The layout is `skills/<name>/SKILL.md` at the repository root, which is what an
+upstream-folder fetch expects — so a kit can pin individual skills from here by name without
+vendoring the whole repo as a submodule.
+
+## Upstream dependencies
+
+The three skills reference material in [sendaifun/solana-new](https://github.com/sendaifun/solana-new)
+(interview and scoring frameworks, slide structures, the Colosseum winner history, ~515 idea
+entries as inert JSON), [ColosseumOrg/colosseum-copilot](https://github.com/ColosseumOrg/colosseum-copilot)
+(5,400+ past submissions, for crowdedness checks) and Anthropic's
+[frontend-design](https://github.com/anthropics/skills/tree/main/frontend-design).
+
+Every link resolves over https against a pinned upstream commit, so **nothing has to be
+installed** for the skills to work. Install a pack locally only to grep across it or work
+offline — each skill's `references/upstream-packs.md` gives the routes, standalone and via
+`ai-kit`.
