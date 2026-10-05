@@ -1,0 +1,102 @@
+<!doctype html>
+<!--
+  Launch post template for the `launch` skill. One self-contained file: no fonts, scripts,
+  images or stylesheets from other hosts, so it renders from any static host or a local file.
+  Fill every {{PLACEHOLDER}}. The address placeholders are filled only after gate G0.
+  The <section id="addresses"> block doubles as the docs address page and the
+  <section id="changelog"> block as the docs changelog entry; copy them out if your docs
+  site has its own format.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{NAME}} is live on Solana mainnet</title>
+<meta name="description" content="{{ONE_LINER}}">
+<style>
+  :root {
+    --bg: #ffffff; --fg: #15171a; --muted: #5b616b; --line: #e3e5e8;
+    --accent: #5b3df5; --code-bg: #f4f5f7; --ok: #137a3f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1114; --fg: #eceef1; --muted: #9aa1ab; --line: #2a2e35;
+      --accent: #9c8bff; --code-bg: #1a1d22; --ok: #4cc38a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 80px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 8px; }
+  h2 { font-size: 1.25rem; margin: 40px 0 12px; }
+  .lede { color: var(--muted); font-size: 1.1rem; margin: 0 0 24px; }
+  .meta { color: var(--muted); font-size: 0.9rem; }
+  a { color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+  th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-weight: 600; color: var(--muted); font-size: 0.8rem; text-transform: uppercase; letter-spacing: .04em; }
+  code {
+    font: 0.85rem/1.4 ui-monospace, SFMono-Regular, Menlo, monospace;
+    background: var(--code-bg); padding: 2px 6px; border-radius: 4px; word-break: break-all;
+  }
+  .callout { border: 1px solid var(--line); border-left: 4px solid var(--ok); padding: 12px 16px; border-radius: 6px; }
+  ul { padding-left: 1.2rem; }
+</style>
+</head>
+<body>
+<main>
+  <p class="meta">{{DATE_UTC}}</p>
+  <h1>{{NAME}} is live on Solana mainnet</h1>
+  <p class="lede">{{ONE_LINER: what it does, for whom, in one sentence}}</p>
+
+  <section id="addresses">
+    <h2>Addresses</h2>
+    <p>These are the only official addresses. Anything else using our name is not us.</p>
+    <table>
+      <tr><th>What</th><th>Address</th><th>Explorer</th></tr>
+      <tr><td>Program</td><td><code>{{PROGRAM_ID}}</code></td><td><a href="{{EXPLORER_URL_PROGRAM}}">view</a></td></tr>
+      <tr><td>Token mint</td><td><code>{{MINT}}</code></td><td><a href="{{EXPLORER_URL_MINT}}">view</a></td></tr>
+      <tr><td>Upgrade authority</td><td><code>{{MULTISIG_VAULT}}</code></td><td><a href="{{EXPLORER_URL_AUTHORITY}}">view</a></td></tr>
+    </table>
+    <p class="meta">Verified build: commit <code>{{COMMIT}}</code>, executable hash <code>{{HASH}}</code>.
+      Audit: <a href="{{AUDIT_URL}}">{{AUDITOR}}, {{AUDIT_DATE}}</a>.</p>
+  </section>
+
+  <section>
+    <h2>What works today</h2>
+    <ul>
+      <li>{{SHIPPED_CAPABILITY_1}}</li>
+      <li>{{SHIPPED_CAPABILITY_2}}</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Try it</h2>
+    <p>{{HOW_TO_TRY: the first action, with the link. No signup wall if you can avoid one.}}</p>
+  </section>
+
+  <section id="changelog">
+    <h2>Changelog</h2>
+    <p><strong>{{VERSION}}</strong> · {{DATE_UTC}} · mainnet</p>
+    <ul>
+      <li>Deployed program <code>{{PROGRAM_ID}}</code> from commit <code>{{COMMIT}}</code>.</li>
+      <li>{{USER_VISIBLE_CHANGE}}</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>What's next</h2>
+    <p>{{ONE_PARAGRAPH. No dates you have not committed to.}}</p>
+  </section>
+
+  <div class="callout">
+    We will never DM you first, ask for your seed phrase, or ask you to sign a transaction
+    to "verify" a wallet. Support: <a href="{{SUPPORT_URL}}">{{SUPPORT_LABEL}}</a>.
+    Status: <a href="{{STATUS_URL}}">{{STATUS_URL}}</a>.
+  </div>
+</main>
+</body>
+</html>
