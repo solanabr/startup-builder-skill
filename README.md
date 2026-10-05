@@ -31,13 +31,16 @@ Two constraints from that charter shape everything here:
 | [hackathon](skills/hackathon/SKILL.md) | A submission is due. Track choice by crowdedness, a description a judge can skim in 90 seconds, a sub-3-minute demo script, and the grant follow-on when the track doesn't land. |
 | [build-status](skills/build-status/SKILL.md) | Before a deck, submission, grant or investor update. Records program IDs, upgrade authority, verified-build and audit state, what works today, and traction with the query behind each number into `.claude/context/build.md`. |
 | [positioning](skills/positioning/SKILL.md) | Before the deck, site, docs intro or launch post. Writes the one-liner, ICP with disqualifiers, job to be done, three named alternatives with the dimension you beat each on, sourced proof points and words to avoid into `.claude/context/positioning.md`. |
+| [pricing](skills/pricing/SKILL.md) | Deciding what an onchain product charges: fee surface, who pays, the floor-cost math (fees, rent, RPC, oracles), comparables pulled from public fee data, and the test that would prove the number wrong. Writes `.claude/context/pricing.md`. |
 
 They chain. `idea-sprint` writes `.claude/context/idea.md`, `build-status` writes
 `.claude/context/build.md` and `positioning` writes `.claude/context/positioning.md`;
 `pitch-deck` and `hackathon` read all three and pre-fill the problem, wedge, audience, what works
 and traction instead of re-interviewing you. Run them in that order and the
 later ones get shorter. `build.md`'s format is a contract other tools can write to as well:
-[build-md-format.md](skills/build-status/references/build-md-format.md).
+[build-md-format.md](skills/build-status/references/build-md-format.md). `pricing` writes
+`.claude/context/pricing.md` the same way, so the business model in a deck comes from one
+decided number.
 
 Rendered decks and any graphic or marketing asset come out as **HTML** — one file, your own
 CSS. It renders anywhere, diffs in git, and the agent can design it directly.
@@ -74,4 +77,4 @@ file, 240 entries), [ColosseumOrg/colosseum-copilot](https://github.com/Colosseu
 pinned or point at stable pages, so **nothing has to be installed** for the skills to work.
 Each skill's `references/upstream-packs.md` gives the details.
 
-Text adapted from solana-new keeps its MIT notice in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+Text adapted from solana-new and [beingsmit/technical-product-gtm](https://github.com/beingsmit/technical-product-gtm) keeps its MIT notice in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
