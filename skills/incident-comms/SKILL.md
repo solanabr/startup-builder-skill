@@ -34,7 +34,8 @@ Writes `.claude/context/incidents.md` in the format at the end of
    channels, deadlines and two names per role.
 2. Adapt the templates in [updates.md](references/updates.md) to the product: real
    action names, the vault and program accounts users can check, the support link. Get the
-   SEV-1 versions approved once by counsel, and record who approved them and when.
+   SEV-1 versions, and any wording about user losses, approved once by counsel, and record
+   who approved them and when.
 3. Build the status page from [status-page.html](references/status-page.html) and deploy it
    on a host and domain that do not fail with the app. Confirm someone other than the app's
    CI can update it.
@@ -66,7 +67,8 @@ Writes `.claude/context/incidents.md` in the format at the end of
 
 - Write the user-facing account from [postmortem.html](references/postmortem.html): what
   users lost, what is being done about it, what changes. It links the auditor's technical
-  report and does not replace it. For a SEV-1, counsel sees it before it is published.
+  report and does not replace it. For a SEV-1, or any postmortem that mentions user losses,
+  counsel sees it before it is published.
 - Add the postmortem link to the status page entry and the known-issue entry, and set both
   to resolved.
 - If preparation failed (a late first update, an unreachable signer, a status page that went

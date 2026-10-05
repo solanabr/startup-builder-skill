@@ -17,8 +17,8 @@ to be first, true and short, so that the half-right theory on X is not the only 
 
 > **Investigating: {{SYMPTOM}}**
 > Some {{ACTION, e.g. "withdrawals"}} are failing or taking longer than usual since
-> {{UTC TIME}}. Your funds onchain are unaffected; this is about transactions landing.
-> If a transaction failed, nothing moved and you can retry. Next update by {{UTC TIME}}.
+> {{UTC TIME}}. We have no evidence funds are affected and are checking. A failed
+> transaction doesn't move your funds, only the network fee. Next update by {{UTC TIME}}.
 
 **SEV-2**
 
@@ -31,13 +31,16 @@ to be first, true and short, so that the half-right theory on X is not the only 
 **SEV-1**
 
 > **Security incident: please don't interact with {{PRODUCT}}**
-> We are investigating {{ONE FACT, e.g. "unexpected withdrawals from the {{POOL}} vault"}}
-> since {{UTC TIME}}. Until we post an update here:
+> We are investigating a security incident affecting {{PRODUCT}} since {{UTC TIME}}.
+> Until we post an update here:
 > - Don't sign transactions on {{DOMAIN}}.
 > - Don't trust anyone offering help in DMs. We will never DM you first.
 > - {{ONLY IF VERIFIED: "If you have an open position you can withdraw from {{SAFE PATH}}."}}
 >
 > Next update by {{UTC TIME}}.
+
+Name the affected pool, vault or component only once it is paused or empty. Naming it
+earlier tells copycats which one to hit.
 
 For a compromised frontend or DNS, the first line is "Don't use {{DOMAIN}}" and nothing
 else may delay it. Users are signing the attacker's transactions while you draft.
@@ -61,9 +64,12 @@ Users will find them anyway; linking them first shows you are not hiding them.
 > **Resolved: {{SYMPTOM}}**
 > {{ACTION}} works again as of {{UTC TIME}}. {{WHAT CHANGED, e.g. "We deployed a fix
 > (tx {{SIG}}, verified build {{COMMIT}})"}}.
-> Impact: {{WHO WAS AFFECTED, HOW, AND FOR HOW LONG}}. {{IF ANY USER LOST FUNDS: what
-> happens next for them, and when they will hear more}}.
+> Impact: {{WHO WAS AFFECTED, HOW, AND FOR HOW LONG}}. {{IF ANY USER LOST FUNDS: only
+> when they will hear more, in wording counsel has approved}}.
 > A postmortem follows {{WHEN}}.
+
+Any update that mentions user losses goes to counsel before it is posted, at any severity:
+a SEV-2 broken upgrade that strands funds needs the same review as an exploit.
 
 Do not write "resolved" for a SEV-1 while the root cause is unknown or the attacker still
 holds funds. Use "Mitigated" and keep the incident open.
@@ -71,7 +77,8 @@ holds funds. Use "Mitigated" and keep the incident open.
 ## Words to keep out of every update
 
 - "Funds are safe" before the chain says so (see [severity.md](severity.md)).
-- "Hack", "exploit", "attacker" before it is confirmed; and once it is, do not soften it.
+- "Hack", "exploit", "attacker" before it is confirmed. Whether to use them publicly once
+  it is confirmed is counsel's call; once counsel agrees, do not soften them.
 - Blame on a named third party (an RPC provider, an oracle, an auditor) before they have
   confirmed. Link their status page instead.
 - Any promise of compensation, reimbursement or token action. That is a decision with legal
