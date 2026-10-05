@@ -14,7 +14,7 @@ builds them.
 
 | Surface | What it means | What it requires | Route | Source |
 |---|---|---|---|---|
-| **Jupiter token verification (VRFD)** | Verified status across Jupiter and the wallets and screeners that read it. Levels: verified, unverified, banned. | A "holistic" review of liquidity, Metaplex metadata compliance and other signals. No numeric threshold is published. Standard submission is free; Express costs 1000 JUP and needs an API key. Known projects can DM `@jup_vrfd` from the project's X account. | [verified.jup.ag](https://verified.jup.ag) | [docs](https://developers.jup.ag/docs/tokens/verification.md) |
+| **Jupiter token verification (VRFD)** | Verified status across Jupiter and the wallets and screeners that read it. Levels: verified, unverified, banned. | A holistic review of market cap, organic score, token holders, ticker uniqueness, Smart Followers on X and onchain liquidity; no numeric threshold is published. Most rejections are a duplicate of another token, low trading activity or insufficient social proof, and tags are pruned later for low activity. Expect "unverified" on launch day, and check ticker uniqueness when you pick the ticker. Standard submission is free; Express costs 1000 JUP, needs an API key and guarantees a review in 24-48h, not a pass. Known projects can DM `@jup_vrfd` from the project's X account. | [verified.jup.ag](https://verified.jup.ag) | [VRFD FAQ](https://verified.jup.ag/faq), [Express API](https://developers.jup.ag/docs/tokens/verification.md) |
 | **Jupiter organic score** | A 0-100 score of non-bot activity, exposed in the Tokens API. | Nothing to apply for; it is derived from onchain activity. | none | [docs](https://developers.jup.ag/docs/tokens/index.md) |
 | Jupiter token lists (V1 GitHub list, Catdet list) | Historical, superseded by VRFD. Do not open PRs against them. | | | [docs, history section](https://developers.jup.ag/docs/tokens/index.md) |
 | **Jupiter routing: pools on an integrated DEX** | A new pool on a DEX Jupiter already integrates is routed automatically. | A grace period set by token age, then the market must pass one of two tests: buying $500 and selling back on the same market loses under 30%, or the price per token for a $1,000 buy is within 20% of a $500 buy. Bonding-curve tokens that do not graduate before the grace period ends are removed. | automatic | [market listing](https://developers.jup.ag/docs/swap/routing/amm/market-listing.md) |
@@ -65,7 +65,6 @@ its `hub-platforms` repo is archived and points to `jup-ag/platform-list`.
 | **DefiLlama TVL** | A protocol page with TVL. | An SDK adapter in a new `projects/<name>/` folder, PR with maintainer edits allowed. TVL must come from onchain data; API-based adapters are no longer accepted for new projects. No new npm dependencies. The PR template asks for audit links, treasury addresses, one category, oracle details, methodology and CoinGecko/CMC ids. Appears about 24h after merge. No minimum TVL or audit stated. | [DefiLlama-Adapters](https://github.com/DefiLlama/DefiLlama-Adapters) | [submit a project](https://docs.llama.fi/list-your-project/submit-a-project.md) |
 | **DefiLlama fees, revenue, volume** | Dimension dashboards. | A `dimension-adapters` PR returning `dailyFees`, `dailyRevenue` and so on, with a `methodology`; unknown dimensions left undefined, not zero. | [dimension-adapters](https://github.com/DefiLlama/dimension-adapters) | [other dashboards](https://docs.llama.fi/list-your-project/other-dashboards.md) |
 | Jupiter Portfolio | Positions shown in Jupiter Portfolio. | See the platform list row in section 1. | | |
-| Step Finance | | **Unverified**: its site and docs could not be reached. Do not plan on it. | | |
 
 ## 5. Superteam
 
@@ -75,7 +74,8 @@ its `hub-platforms` repo is archived and points to `jup-ag/platform-list`.
 | **Sponsor a bounty or project on Earn** | Your task in front of Superteam's builders. | "Any Solana project can choose to sponsor a bounty or project through Superteam Earn, permissionlessly." | [earn.superteam.fun](https://earn.superteam.fun) | [Earn FAQ](https://docs.superteam.fun/the-superteam-handbook/community/faqs/superteam-earn-faq) |
 | **Chapter-run grants** | "Solana Foundation <Country> Grants", up to $10k USDG each, run by the local chapter. | Read each listing: the UK one requires residence in the country, KYC on Earn, and weighs "prior proof of work and trust in the community" highest. Paid in tranches against progress. | apply on [Earn grants](https://earn.superteam.fun/grants/) | Earn grant listings (live API, 2026-10-05) |
 | Member perks | Your product offered as a perk to members. | Whether startups can submit a perk, and how: **unverified**. | | [member perks](https://superteam.fun/member-perks) |
-| Instagrants, a Superteam accelerator or demo day | | **Unverified**: not shown on current official pages. | | |
+| Instagrants | Still shown as a tile on the superteam.fun homepage, with no link of its own. | The live application form is the chapter grants on Earn (row above). | [Earn grants](https://earn.superteam.fun/grants/) | [superteam.fun](https://superteam.fun) |
+| A Superteam accelerator or demo day | | **Unverified**: not shown on current official pages. | | |
 
 ## 6. Solana Foundation and Colosseum
 
