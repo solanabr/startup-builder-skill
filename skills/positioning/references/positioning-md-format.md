@@ -53,7 +53,7 @@ side has to send first and hope.
 
 - Verified build of the escrow program at commit 3f2c1d0 — verify.osec.io status, 2026-10-05
 - 3,180 successful settlements in 7 days — build.md Traction (Dune query 1234567)
-- Upgrade authority held by a 3-of-5 Squads vault — `solana program show`
+- Upgrade authority held by a 3-of-5 Squads vault — `solana program show` (address), Squads multisig account (threshold)
 
 ## Words to avoid
 

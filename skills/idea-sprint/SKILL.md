@@ -14,7 +14,7 @@ Detail lives in `references/`. The only upstream links are the Superteam ideas d
 
 ## Context handoff
 
-- At start: read `.claude/context/idea.md` and `.claude/context/build.md` ([format](../build-status/references/build-md-format.md), written by [build-status](../build-status/SKILL.md)) if present — resume from prior state instead of re-interviewing. On a re-run, also read `.claude/context/positioning.md` ([format](../positioning/references/positioning-md-format.md), written by [positioning](../positioning/SKILL.md)) if present: its ICP and alternatives are evidence for the Distribution and Market pull scores, and a no-go or pivot means it needs redoing — say so.
+- At start: read `.claude/context/idea.md` and `.claude/context/build.md` ([format](../build-status/references/build-md-format.md), written by [build-status](../build-status/SKILL.md)) if present — resume from prior state instead of re-interviewing. On a re-run, also read `.claude/context/positioning.md` ([format](../positioning/references/positioning-md-format.md), written by [positioning](../positioning/SKILL.md)) if present: its ICP and alternatives are inputs to the Distribution and Market pull scores, not evidence (score market pull from the [customer-signal rubric](references/customer-signal-rubric.md)), and a no-go or pivot means it needs redoing — say so.
 - On completion: write/update `.claude/context/idea.md` with the chosen idea, scores, validation evidence, and open risks. Downstream skills (pitch-deck, hackathon) read it.
 
 ## Workflow
