@@ -50,7 +50,9 @@ work or own the relationship, not from a generic BD inbox.
 ## Once they say yes
 
 Write a one-page charter both sides sign before any announcement. If either side will not
-put it on paper, there is no partnership yet.
+put it on paper, there is no partnership yet. A signed charter is a contract: route it
+through [crypto-legal-skill](https://github.com/solanabr/crypto-legal-skill) and counsel
+before anyone signs.
 
 - Three shared goals, each with a number.
 - What each side gives and gets, and whether both would still do it if the other walked.
