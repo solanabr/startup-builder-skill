@@ -33,13 +33,14 @@ the risk it removes for this ICP, and attach the onchain proof:
 
 | Property | Risk it removes | Proof |
 |----------|-----------------|-------|
-| Non-custodial | We can't lose or freeze your funds | Program logic and the account model, audited |
+| Non-custodial | We can't lose or freeze your funds, as far as the upgrade authority allows | Program logic and the account model, audited, plus the upgrade-authority row below: whoever holds that authority can change the program |
 | Verified build | The deployed code is the code you reviewed | Verifier status for the program ID, with the commit |
-| Upgrade authority in a multisig, or none | One stolen key can't change the rules | `solana program show`: authority and threshold |
-| No pause or freeze authority | We can't block your exit | Mint or account authorities set to none |
+| Upgrade authority in a multisig, or none | One stolen key can't change the rules | `solana program show` for the authority address; the Squads multisig account for the threshold |
+| No pause or freeze authority | We can't block your exit | All of: the mint's freeze authority is none; no Token-2022 PermanentDelegate or Pausable extension on the mint, or its authority set to none; no admin pause or freeze instruction in the program |
 
-Claim only what is true today. If `build.md` shows a single-key upgrade authority, don't
-position on immutability; say what the plan is and when.
+Claim only what is true today, and only when every condition in the proof column holds. If
+`build.md` shows a single-key upgrade authority, don't position on immutability or claim
+non-custody without that caveat; say what the plan is and when.
 
 ## Disqualifiers worth writing down
 
