@@ -45,7 +45,7 @@ The trap: "10,000 wallets connected" that turn out to be 50 people, with metrics
 
 | Question | The honest answer must cover |
 |---|---|
-| How many of your wallets are people? | Raw and sybil-adjusted daily active wallets, with the filter written down (see the data-room metrics) |
+| How many of your wallets are people? | `build.md`'s Active user wallets and the sybil-adjusted figure, with the filter written down (see the data-room metrics) |
 | What share of activity comes from your top 10 wallets? | The concentration figure, and who those wallets are, if known (a market maker, your own keeper) |
 | What happened when incentives stopped? | The before and after series. If you haven't stopped them yet, say what you expect and why. |
 | How much volume is incentivised? | Organic and incentivised figures, separately |
