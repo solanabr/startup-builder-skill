@@ -1,6 +1,6 @@
 # Third-party notices
 
-Parts of `skills/idea-sprint`, `skills/pitch-deck`, `skills/hackathon`, `skills/build-status`, `skills/positioning` and `skills/pricing` are adapted from
+Parts of `skills/idea-sprint`, `skills/pitch-deck`, `skills/hackathon`, `skills/build-status`, `skills/positioning`, `skills/pricing` and `skills/fundraising` are adapted from
 [sendaifun/solana-new](https://github.com/sendaifun/solana-new) at commit
 `e81c261645035c0e902eaaa518ff58722d188bb7`. Its licence applies to that material:
 
@@ -35,7 +35,7 @@ this repo links to them and never copies them.
 
 ## beingsmit/technical-product-gtm
 
-Parts of `skills/pricing` are adapted from
+Parts of `skills/pricing` and `skills/fundraising` are adapted from
 [beingsmit/technical-product-gtm](https://github.com/beingsmit/technical-product-gtm) at commit
 `ef1aa7dd8564b4d824021cf152468ece278e1513`. The same text is mirrored, unchanged apart from
 frontmatter, in [github/awesome-copilot](https://github.com/github/awesome-copilot)'s
