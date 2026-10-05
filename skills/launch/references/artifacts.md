@@ -34,7 +34,7 @@ Only these may be filled on the day. Anything else changing means the copy goes 
 through review.
 
 - `{{PROGRAM_ID}}`, `{{MINT}}`, `{{POOL}}`: from the runbook after G0
-- `{{EXPLORER_URL}}`: the explorer page for that address
+- `{{EXPLORER_URL_PROGRAM}}`, `{{EXPLORER_URL_MINT}}`, `{{EXPLORER_URL_AUTHORITY}}`: the explorer page for the program, the mint and the upgrade-authority vault
 - `{{FIRST_TX}}`: the G2 signature, if you show it
 - `{{ADDRESS_PAGE}}`: the docs URL for the address page
 

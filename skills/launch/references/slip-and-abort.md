@@ -16,6 +16,8 @@ taken to "save time" while a gate is still open.
 | Publishing a program ID, mint address or pool address | Screenshots and copies outlive a deleted post. Impersonation tokens with your name and ticker can appear soon after a ticker is public, so publish the ticker and the mint address in the same message, after G0, and never one without the other. |
 | Creating the mint | Decimals are fixed. Supply minted is onchain. Token-2022 extensions are chosen at creation. |
 | Revoking mint or freeze authority, or setting upgrade authority to none | One-way by design. Do it as its own step after launch, not inside the launch transaction batch. |
+| Transferring an authority to a mistyped address | `solana program set-upgrade-authority` to a Squads vault needs `--skip-new-upgrade-authority-signer-check`, and `spl-token authorize` doesn't check the new authority either, so nothing catches a typo. Check the address against the vault before sending. |
+| `solana program close` | It returns the rent, and the program ID can never be deployed to again. |
 | Adding the first liquidity | The initial price is set in that transaction and is tradable immediately. Pulling liquidity later reads as a rug whatever the reason. |
 | Opening an airdrop claim | Claims finalize as they happen. |
 | Publishing the audit report | It names the commit and the findings. |
@@ -38,7 +40,7 @@ the window. A launch stalls when the only person with the X password is asleep.
 | Asset | Primary | Backup | How they confirm they are online |
 |---|---|---|---|
 | Deployer key / buffer authority | | | |
-| Multisig signers (count vs threshold) | | | |
+| Multisig signers (count vs threshold; threshold online until G1) | | | |
 | Mint / freeze authority | | | |
 | Frontend and docs deploy | | | |
 | DNS and status page host | | | |
