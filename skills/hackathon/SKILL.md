@@ -4,7 +4,7 @@ description: Prepare a winning hackathon submission. Use when the user says "hac
 user-invocable: true
 ---
 
-<!-- Adapted from sendaifun/solana-new (submit-to-hackathon, apply-grant), MIT © 2026 SendAI and Superteam. Telemetry removed. -->
+<!-- Adapted from sendaifun/solana-new (submit-to-hackathon, apply-grant), MIT © 2026 SendAI and Superteam; full notice in THIRD_PARTY_NOTICES.md. Telemetry removed. -->
 
 # Hackathon Submission
 
@@ -23,7 +23,7 @@ At start, read `.claude/context/idea.md` and `.claude/context/build.md` if prese
 
 Winning a thin track beats placing in a fat one. Per candidate track: estimate entry volume, fit with what's actually built, and judge appetite (sponsor tracks often have the fewest serious entries).
 
-- Winner patterns + track history: [hackathon-winners.md](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/data/colosseum/hackathon-winners.md) — every Colosseum grand champion and track winner, with what they built
+- Winner patterns + track history: [hackathon-winners.md](https://github.com/sendaifun/solana-new/blob/e81c261645035c0e902eaaa518ff58722d188bb7/skills/data/colosseum/hackathon-winners.md) — Colosseum grand champions and track winners with what they built, through Cypherpunk 2025. It omits Frontier 2026 and mislabels four Cypherpunk tracks, so confirm a winner's track against Colosseum's announcement before citing it
 - Live crowdedness check: [colosseum-copilot](https://github.com/ColosseumOrg/colosseum-copilot/blob/0453ffe26e8d245152619fcc949689a6adaab1c6/skills/colosseum-copilot/SKILL.md) — query 5,400+ past submissions for cluster density and gaps. CLI-backed: sign in once per machine with `npx @colosseum-org/copilot-connect login` (Node 20+).
 
 ### 2. Write a scannable description

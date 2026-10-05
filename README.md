@@ -57,8 +57,8 @@ vendoring the whole repo as a submodule.
 ## Upstream dependencies
 
 The three skills reference material in [sendaifun/solana-new](https://github.com/sendaifun/solana-new)
-(interview and scoring frameworks, slide structures, the Colosseum winner history, ~515 idea
-entries as inert JSON), [ColosseumOrg/colosseum-copilot](https://github.com/ColosseumOrg/colosseum-copilot)
+(interview and scoring frameworks, slide structures, the Colosseum winner history, about 400 unique
+idea entries as inert JSON), [ColosseumOrg/colosseum-copilot](https://github.com/ColosseumOrg/colosseum-copilot)
 (5,400+ past submissions, for crowdedness checks) and Anthropic's
 [frontend-design](https://github.com/anthropics/skills/tree/main/frontend-design).
 
@@ -66,3 +66,5 @@ Every link resolves over https against a pinned upstream commit, so **nothing ha
 installed** for the skills to work. Install a pack locally only to grep across it or work
 offline — each skill's `references/upstream-packs.md` gives the routes, standalone and via
 `ai-kit`.
+
+Text adapted from solana-new keeps its MIT notice in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

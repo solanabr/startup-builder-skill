@@ -4,7 +4,7 @@ description: Find and validate what to build in crypto. Use when the user asks "
 user-invocable: true
 ---
 
-<!-- Adapted from sendaifun/solana-new (find-next-crypto-idea, validate-idea), MIT © 2026 SendAI and Superteam. Telemetry removed. -->
+<!-- Adapted from sendaifun/solana-new (find-next-crypto-idea, validate-idea), MIT © 2026 SendAI and Superteam; full notice in THIRD_PARTY_NOTICES.md. Telemetry removed. -->
 
 # Idea Sprint
 
@@ -68,7 +68,7 @@ Check demand signals against [customer-signal-rubric.md](https://github.com/send
 
 Chosen idea, wedge, scores table, demand evidence, bear case, next step.
 
-## Idea datasets (inert JSON, ~515 entries)
+## Idea datasets (inert JSON, about 400 unique entries)
 
 In [solana-new's `skills/data/ideas/`](https://github.com/sendaifun/solana-new/tree/e81c261645035c0e902eaaa518ff58722d188bb7/skills/data/ideas) — clone the pack to grep these locally, see [upstream-packs.md](references/upstream-packs.md):
 
