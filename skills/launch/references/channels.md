@@ -37,7 +37,7 @@ acquisition.
 ## The Solana amplification layer
 
 These are the surfaces that move a Solana launch. For each one's listing requirements see
-the ecosystem-bd skill if present; here is only what matters on launch day.
+[ecosystem-bd's surface map](../../ecosystem-bd/references/surfaces.md); here is only what matters on launch day.
 
 **Aggregators and wallets come before amplification converts.** A swap that routes
 nowhere, or a token a wallet marks unverified, turns attention into support tickets. Most

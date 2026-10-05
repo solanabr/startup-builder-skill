@@ -1,6 +1,6 @@
 # Third-party notices
 
-Parts of `skills/idea-sprint`, `skills/pitch-deck`, `skills/hackathon`, `skills/build-status`, `skills/positioning`, `skills/pricing`, `skills/fundraising` and `skills/launch` are adapted from
+Parts of `skills/idea-sprint`, `skills/pitch-deck`, `skills/hackathon`, `skills/build-status`, `skills/positioning`, `skills/pricing`, `skills/fundraising`, `skills/launch` and `skills/ecosystem-bd` are adapted from
 [sendaifun/solana-new](https://github.com/sendaifun/solana-new) at commit
 `e81c261645035c0e902eaaa518ff58722d188bb7`. Its licence applies to that material:
 
@@ -35,7 +35,7 @@ this repo links to them and never copies them.
 
 ## beingsmit/technical-product-gtm
 
-Parts of `skills/pricing`, `skills/fundraising` and `skills/launch` are adapted from
+Parts of `skills/pricing`, `skills/fundraising`, `skills/launch` and `skills/ecosystem-bd` are adapted from
 [beingsmit/technical-product-gtm](https://github.com/beingsmit/technical-product-gtm) at commit
 `ef1aa7dd8564b4d824021cf152468ece278e1513`. The same text is mirrored, unchanged apart from
 frontmatter, in [github/awesome-copilot](https://github.com/github/awesome-copilot)'s
@@ -68,7 +68,7 @@ SOFTWARE.
 
 ## jonathimer/devmarketing-skills
 
-Parts of `skills/launch` are adapted from
+Parts of `skills/launch` and `skills/ecosystem-bd` are adapted from
 [jonathimer/devmarketing-skills](https://github.com/jonathimer/devmarketing-skills) at commit
 `500b44b53220292879223a807ce0d349aafe2537`. Its licence applies to that material:
 
