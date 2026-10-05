@@ -40,7 +40,7 @@ A token-gated tier needs its own check before it goes further: run the [5x test]
 
 ### 3. Compute the floor
 
-Build the per-unit cost from [floor-costs.md](references/floor-costs.md): signatures and priority fees per action, rent you front and whether you get it back, RPC and indexer spend per user action, oracle updates. Re-query rent and fees on the day; the numbers there are dated and rent is mid-way through a scheduled reduction. A price below the floor at the expected volume is a subsidy. Name who funds it and until when.
+Build the per-unit cost from [floor-costs.md](references/floor-costs.md): signatures and priority fees per action, rent you front and whether you get it back, RPC and indexer spend per user action, oracle updates. Re-query rent and fees on the day; the numbers there are dated, and rent has been cut twice with further cuts proposed but not scheduled. A price below the floor at the expected volume is a subsidy. Name who funds it and until when.
 
 ### 4. Pull comparables
 

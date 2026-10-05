@@ -48,7 +48,7 @@ Read live from mainnet on 2026-10-05: the Rent sysvar gave `lamportsPerByte = 50
 
 A Token-2022 account with extensions is larger, so compute it from its length with the formula.
 
-**Rent is moving.** 5080 is the second step of [SIMD-0437](https://github.com/solana-foundation/solana-improvement-documents/blob/4b643ca8746742183a469681765e694b385bb315/proposals/0437-incremental-rent-reduction.md)'s schedule: 6960 → 6333 → **5080** → 2575 → 1322 → 696. Each later step has its own feature gate and advances only after a risk analysis. So any rent figure in a pricing model is a point on a falling line, including the commonly quoted 0.00203928 SOL for a token account, which is the pre-reduction 6960 value. Re-query `getMinimumBalanceForRentExemption(len)`, or read `SysvarRent111111111111111111111111111111111`, every time.
+**Rent is moving.** 5080 is the second step of [SIMD-0437](https://github.com/solana-foundation/solana-improvement-documents/blob/4b643ca8746742183a469681765e694b385bb315/proposals/0437-incremental-rent-reduction.md)'s proposed sequence: 6960 → 6333 → **5080** → 2575 → 1322 → 696. SIMD-0437 is still `status: Idea`, and the later steps have no feature keys, so they are not scheduled; each would need its own feature gate and a risk analysis. So any rent figure in a pricing model is a point on a falling line, including the commonly quoted 0.00203928 SOL for a token account, which is the pre-reduction 6960 value. Re-query `getMinimumBalanceForRentExemption(len)`, or read `SysvarRent111111111111111111111111111111111`, every time.
 
 **What rent means for price:**
 
@@ -66,6 +66,7 @@ A Token-2022 account with extensions is larger, so compute it from its length wi
 
 - **Pull oracles** (Pyth's Solana receiver is the common one): the transaction that needs a fresh price posts the update. The poster pays the fees and the rent for the price-update account, and gets the rent back by closing that account. Pyth's [Solana integration docs](https://docs.pyth.network/price-feeds/core/use-real-time-data/pull-integration/solana) note that posting and verifying an update currently takes more than one transaction, so each fresh price costs several signatures, not one.
 - Whoever posts the update is a payer ≠ user decision. If your keeper posts it, that is your floor. If the user's transaction posts it, that is their cost and part of your price.
+- Pyth's Hermes, where pull updates are fetched, has required an API key since 2026-08-26 ([Pyth docs](https://docs.pyth.network/price-feeds/core/upgrade/preparing)). Count that access in the oracle floor at its current terms.
 - Low-latency or premium data tiers are subscriptions. Price them from the provider's current terms.
 
 ## What to write in `pricing.md`
