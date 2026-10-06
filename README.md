@@ -37,26 +37,37 @@ Two constraints from that charter shape everything here:
 | [incident-comms](skills/incident-comms/SKILL.md) | Something is broken and users are asking. Severity set by onchain state, the three pre-written updates, an exploit track routed to `crypto-legal-skill`, a static HTML status page that stays up when the app is down, a user-facing postmortem, and a known-issue entry `community-moderation` can dedupe against. |
 | [ecosystem-bd](skills/ecosystem-bd/SKILL.md) | You want Jupiter, the wallets, the explorers, DefiLlama or a Superteam chapter to list, route or surface you. A dated map of what each surface requires, the readiness gaps to close in `ai-kit` first, diligence in both directions (inbound via `counterparty-gate`), the partner ask and the charter. |
 
-They chain. `idea-sprint` writes `.claude/context/idea.md`, `build-status` writes
-`.claude/context/build.md` and `positioning` writes `.claude/context/positioning.md`;
-`pitch-deck` and `hackathon` read all three and pre-fill the problem, wedge, audience, what works
-and traction instead of re-interviewing you. Run them in that order and the
-later ones get shorter. `build.md`'s format is a contract other tools can write to as well:
-[build-md-format.md](skills/build-status/references/build-md-format.md). `pricing` writes
-`.claude/context/pricing.md` the same way, so the business model in a deck comes from one
-decided number.
+They chain through files in the project's `.claude/context/`. Each skill writes one file, in a
+format its own `references/` defines, and reads the others when they exist:
+
+| File | Written by | Read by |
+|------|------------|---------|
+| `idea.md` | `idea-sprint` | `build-status`, `positioning`, `pricing`, `pitch-deck`, `hackathon`, `fundraising`, `launch`, `ecosystem-bd` |
+| `build.md` | `build-status` | `idea-sprint`, `positioning`, `pricing`, `pitch-deck`, `hackathon`, `fundraising` |
+| `positioning.md` | `positioning` | `idea-sprint`, `pricing`, `pitch-deck`, `hackathon`, `fundraising`, `launch`, `incident-comms` |
+| `pricing.md` | `pricing` | `pitch-deck`, `fundraising` |
+| `data-room.md` | `fundraising` | — |
+| `launch.md` | `launch` | `incident-comms`, `ecosystem-bd` |
+| `incidents.md` | `incident-comms` | — |
+| `partners.md` | `ecosystem-bd` | — |
+
+Run the producers first and the later skills get shorter: they pre-fill instead of
+re-interviewing you, and a deck, a data room and a launch post all quote the same numbers.
+`build.md`'s format is a contract other tools can write to as well:
+[build-md-format.md](skills/build-status/references/build-md-format.md).
 
 Rendered decks and any graphic or marketing asset come out as **HTML** — one file, your own
 CSS. It renders anywhere, diffs in git, and the agent can design it directly.
 
 ## Install
 
-Each skill is self-contained under `skills/<name>/`. Copy the ones you want into your
-project's skills directory:
+Copy the skills into your project's skills directory. Copy the whole set: the skills link to
+each other's format files (`pitch-deck` to `build-status`'s and `pricing`'s, for example), so a
+skill copied on its own keeps working but has dead links where it hands off.
 
 ```
 git clone https://github.com/solanabr/startup-builder-skill
-cp -r startup-builder-skill/skills/idea-sprint .claude/skills/
+cp -r startup-builder-skill/skills/* .claude/skills/
 ```
 
 Use `.agents/skills/` instead of `.claude/skills/` for Codex, Cursor, Copilot and other
