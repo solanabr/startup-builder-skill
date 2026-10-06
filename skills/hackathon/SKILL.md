@@ -8,7 +8,7 @@ user-invocable: true
 
 # Hackathon Submission
 
-Track choice → scannable description → <3-min demo script → checklist. Optimize for a judge who has 90 seconds, not a reader who has 10 minutes.
+Track choice → scannable description → two scripts (2–3-min pitch, ≤3-min demo) → checklist. Optimize for a judge who has 90 seconds, not a reader who has 10 minutes.
 
 Detail lives in `references/`. The remaining upstream links (colosseum-copilot, the Superteam ideas dataset) are in [upstream-packs.md](references/upstream-packs.md).
 

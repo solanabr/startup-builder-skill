@@ -57,7 +57,8 @@ Writes `.claude/context/partners.md` in the format at the end of
 - No surface in the map is won by a pitch alone. If readiness fails, the next step is
   engineering, and the skill says so.
 - No invented thresholds. Where an operator publishes none (Jupiter verification,
-  DexScreener, Solflare), say that, and do not supply a number.
+  DexScreener, Solflare beyond its 24h minimum age), say that, and do not supply a
+  number.
 - Revenue shares, token allocations to partners, exclusivity and anything contractual or
   regulatory go to [crypto-legal-skill](https://github.com/solanabr/crypto-legal-skill).
   Say so and stop.

@@ -2,7 +2,7 @@
 
 # Demo and pitch video scripts
 
-Colosseum asks for two videos ([submission-guide.md](submission-guide.md)): a 2–3 minute **presentation** and a product **demo** of at most 3 minutes. Judges stop at the limit. Organisers that want one video get the demo script with the pitch's first 20 seconds in front.
+Colosseum asks for two videos ([submission-guide.md](submission-guide.md)): a 2–3 minute **presentation** and a product **demo** of at most 3 minutes. Colosseum lists exceeding the 3-minute limit as a common mistake ([workshop recap](https://blog.colosseum.com/perfecting-your-hackathon-submission/)), so cut to fit. Organisers that want one video get the demo script with the pitch's first 20 seconds in front.
 
 ## Presentation video (2–3 min): a startup pitch, not a demo
 

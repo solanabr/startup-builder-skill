@@ -4,7 +4,12 @@
 
 The go/no-go after scoring and validation.
 
-## Go: at least three of five
+**Which rule decides:** the /15 score in [SKILL.md](../SKILL.md) (≥ 8 go, 6–7 conditional,
+< 6 no-go). The only exception is the no-go list below: any one of those stops the idea
+whatever it scored. The five go checks are not a second vote; use them as evidence when
+you score.
+
+## Go checks: evidence for the score
 
 1. Demand score ≥ 2 on the [customer-signal rubric](customer-signal-rubric.md)
 2. Feasibility is "straightforward" or "hard but solvable"; no open research problem

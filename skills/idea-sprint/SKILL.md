@@ -61,7 +61,9 @@ Check demand signals against [customer-signal-rubric.md](references/customer-sig
 
 - **≥ 8/15** → go. Write `idea.md`, then scaffold the project — [solanabr/ai-kit](https://github.com/solanabr/ai-kit) ships a `/scaffold` command for this if it is installed.
 - **6–7** → conditional: name the one dimension to de-risk first.
-- **< 6** → strong no-go. **Every no-go gets a pivot suggestion** — use [pivot-or-persist.md](references/pivot-or-persist.md), which also gives the go/no-go criteria and how to state confidence.
+- **< 6** → strong no-go. **Every no-go gets a pivot suggestion** — use [pivot-or-persist.md](references/pivot-or-persist.md), which also gives how to state confidence.
+
+This score is the go/no-go rule. The one override is a hard no-go from [pivot-or-persist.md](references/pivot-or-persist.md) (demand 0, a well-funded team already shipped it, unsolved core tech, ornamental crypto), which stops the idea at any score.
 
 ### 6. Write `.claude/context/idea.md`
 
