@@ -18,7 +18,7 @@ Grand Champions and first place per track, using each post's own track names. Gr
 
 - **Grand Champion prizes fell** from $50,000 (through Breakout) to $30,000 (Cypherpunk, Frontier), and Frontier dropped tracks for a flat Top 25. Track choice no longer exists as a lever at every Colosseum hackathon; check the current format before planning around one.
 - **Grand Champions are not all infrastructure.** The list includes a hardware wallet, a stablecoin exchange and a chatbot. Don't pitch "infra wins" as a rule.
-- **Every winner shipped a working product** inside the hackathon window; Colosseum judges only work done between the start and end dates ([FAQ](https://colosseum.com/hackathon)).
+- **Only work done during the window is judged.** Colosseum judges only work completed between the start and end dates, and earlier code has to be disclosed in the submission ([FAQ](https://colosseum.com/hackathon)).
 - Submission counts grew from 813 to 2,857, so a track's crowdedness has to be checked live, not inferred from older events. Use [colosseum-copilot](https://github.com/ColosseumOrg/colosseum-copilot/blob/0453ffe26e8d245152619fcc949689a6adaab1c6/skills/colosseum-copilot/SKILL.md) for that.
 
 Superteam runs its own regional and sponsor-track events; their past winners are listed by Superteam, not here.

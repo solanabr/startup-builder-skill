@@ -50,7 +50,7 @@ Colosseum runs its hackathons as startup competitions and reviews the pitch vide
 
 - Format: a 10–15 minute interview, deck as backup.
 - Backbone: Before-After-Bridge: what you shipped, what users said, what changed.
-- Colosseum's accelerator takes 10–15 teams from its hackathon winners and weighs founder potential and adaptability over the submission itself ([workshop recap](https://blog.colosseum.com/perfecting-your-hackathon-submission/), 8 May 2025).
+- Colosseum's accelerator draws its teams from hackathon winners and weighs founder potential and adaptability over the submission itself ([workshop recap](https://blog.colosseum.com/perfecting-your-hackathon-submission/), 8 May 2025). The recap said 10–15 teams; Cohort V, drawn from Frontier, had 21 ([Colosseum Codex](https://blog.colosseum.com/cohort-v-demo-day-solana-microscope-alpenglow-migration/), Sep 2026).
 - Show the last two weeks of shipping, not next year's plan. Adapt to pushback live.
 
 | Dimension | Strong | Weak |
