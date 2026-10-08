@@ -28,6 +28,7 @@ Two constraints from that charter shape everything here:
 |-------|-------------|
 | [idea-sprint](skills/idea-sprint/SKILL.md) | Deciding *what* to build, or stress-testing an idea before any code. Interview → crypto-necessity gate → three candidates → score /15 → go/no-go. Output is a decision, not a brainstorm. |
 | [pitch-deck](skills/pitch-deck/SKILL.md) | You need slides — demo day, a VC meeting, a grant application, an accelerator form, a hackathon final. Detects the audience, picks a narrative backbone, writes speaking notes, then drills the hostile questions. |
+| [pitch-review](skills/pitch-review/SKILL.md) | The deck, script or pitch video is about to go out. An answer key written first, an anonymized copy, three readers with no context (VC, buyer, judge), a rank against decks that raised, and the objections that repeat. Writes `.claude/context/review.md`. |
 | [hackathon](skills/hackathon/SKILL.md) | A submission is due. Track choice by crowdedness, a description a judge can skim in 90 seconds, a sub-3-minute demo script, and the grant follow-on when the track doesn't land. |
 | [build-status](skills/build-status/SKILL.md) | Before a deck, submission, grant or investor update. Records program IDs, upgrade authority, verified-build and audit state, what works today, and traction with the query behind each number into `.claude/context/build.md`. |
 | [positioning](skills/positioning/SKILL.md) | Before the deck, site, docs intro or launch post. Writes the one-liner, ICP with disqualifiers, job to be done, three named alternatives with the dimension you beat each on, sourced proof points and words to avoid into `.claude/context/positioning.md`. |
@@ -42,11 +43,12 @@ format its own `references/` defines, and reads the others when they exist:
 
 | File | Written by | Read by |
 |------|------------|---------|
-| `idea.md` | `idea-sprint` | `build-status`, `positioning`, `pricing`, `pitch-deck`, `hackathon`, `fundraising`, `launch`, `ecosystem-bd` |
-| `build.md` | `build-status` | `idea-sprint`, `positioning`, `pricing`, `pitch-deck`, `hackathon`, `fundraising` |
-| `positioning.md` | `positioning` | `idea-sprint`, `pricing`, `pitch-deck`, `hackathon`, `fundraising`, `launch`, `incident-comms` |
-| `pricing.md` | `pricing` | `pitch-deck`, `fundraising` |
+| `idea.md` | `idea-sprint` | `build-status`, `positioning`, `pricing`, `pitch-deck`, `pitch-review`, `hackathon`, `fundraising`, `launch`, `ecosystem-bd` |
+| `build.md` | `build-status` | `idea-sprint`, `positioning`, `pricing`, `pitch-deck`, `pitch-review`, `hackathon`, `fundraising` |
+| `positioning.md` | `positioning` | `idea-sprint`, `pricing`, `pitch-deck`, `pitch-review`, `hackathon`, `fundraising`, `launch`, `incident-comms` |
+| `pricing.md` | `pricing` | `pitch-deck`, `pitch-review`, `fundraising` |
 | `data-room.md` | `fundraising` | — |
+| `review.md` | `pitch-review` | — |
 | `launch.md` | `launch` | `incident-comms`, `ecosystem-bd` |
 | `incidents.md` | `incident-comms` | — |
 | `partners.md` | `ecosystem-bd` | — |

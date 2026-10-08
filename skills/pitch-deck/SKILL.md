@@ -60,6 +60,8 @@ For each slide: headline (a claim, not a label), 3–5 supporting points, visual
 
 Score the draft against the audience's actual criteria (clarity, credibility, demo strength, ask specificity) and against [crypto-pitch-mistakes.md](references/crypto-pitch-mistakes.md) — flag every mistake the deck still commits, fix, re-score. Any token-return, yield or fee-share claim comes off the slide and goes to [crypto-legal-skill](https://github.com/solanabr/crypto-legal-skill) (Mistake 4). Don't present a deck you'd score below 8/10.
 
+That score is the author's, and the author can't see what a stranger misses. Before the deck goes out, run [pitch-review](../pitch-review/SKILL.md): blind readers, an answer key written first, and a rank against decks that raised.
+
 ### 6. Objection-prep Q&A
 
 From Q12 + the weakest scored dimension, draft the 8–10 hardest questions this audience will ask, each with a tight 30-second answer. Hostile-question drilling beats slide polish.
@@ -70,5 +72,6 @@ From Q12 + the weakest scored dimension, draft the 8–10 hardest questions this
 - Framework choice + one-line rationale
 - Self-score with the fixes applied
 - Objection Q&A sheet
+- Before it goes out: [pitch-review](../pitch-review/SKILL.md), which writes `.claude/context/review.md`
 
 Need a rendered deck? Build it as HTML — one self-contained file, one section per slide, with the no-JavaScript shell in [deck-design-system.md](references/deck-design-system.md). It renders anywhere, diffs in git, and Claude Code can design it directly, which a binary office file gives up. Anthropic's [frontend-design](https://github.com/anthropics/skills/tree/8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4/skills/frontend-design) skill carries the visual direction if you have it on disk ([upstream-packs.md](references/upstream-packs.md)), and the same route covers any graphic or marketing asset the deck needs.
