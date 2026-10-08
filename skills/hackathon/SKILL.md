@@ -50,6 +50,8 @@ Colosseum asks for two: a 2–3 minute **presentation** video (the startup pitch
 
 Rule: if the demo can fail live, record it.
 
+Before scripting the presentation video, read [what-separates-winners.md](references/what-separates-winners.md): traction with a number and a founder credential separated 43 accelerated winners from 47 matched controls, while the product on screen and an explorer transaction didn't; the script checklist is [pitch-rhetoric.md](references/pitch-rhetoric.md).
+
 ### 4. Submission checklist
 
 - [ ] Track (if the event has tracks) chosen by fit, then crowdedness, not vanity
