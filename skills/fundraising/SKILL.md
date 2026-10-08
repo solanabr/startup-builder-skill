@@ -20,6 +20,7 @@ This is the complement to [pitch-deck](../pitch-deck/SKILL.md), not a second dec
   - `.claude/context/build.md`: program IDs, deploy status, traction. Format: [build-md-format.md](../build-status/references/build-md-format.md).
   - `.claude/context/positioning.md`: the ICP and the alternatives
   - `.claude/context/pricing.md`: the business model and the floor-cost math. Format: [pricing-format.md](../pricing/references/pricing-format.md).
+  - `.claude/context/market.md`: the market numbers and the entry wedge, each with its source, for the market questions in diligence. Format: [market-md-format.md](../market-sizing/references/market-md-format.md).
 - On completion, write `.claude/context/data-room.md` in the format in [data-room.md](references/data-room.md#claudecontextdata-roommd-format) and commit it. It defines only the investor metrics `build.md` doesn't carry. Traction keeps `build.md`'s names and definitions ([format](../build-status/references/build-md-format.md)), which is also where pitch-deck reads traction, so the deck, the data room and the updates quote the same numbers.
 
 ## Workflow
