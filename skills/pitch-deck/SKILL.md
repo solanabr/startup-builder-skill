@@ -60,7 +60,7 @@ For each slide: headline (a claim, not a label), 3–5 supporting points, visual
 
 Score the draft against the audience's actual criteria (clarity, credibility, demo strength, ask specificity) and against [crypto-pitch-mistakes.md](references/crypto-pitch-mistakes.md) — flag every mistake the deck still commits, fix, re-score. Any token-return, yield or fee-share claim comes off the slide and goes to [crypto-legal-skill](https://github.com/solanabr/crypto-legal-skill) (Mistake 4). Don't present a deck you'd score below 8/10.
 
-That score is the author's, and the author can't see what a stranger misses. Before the deck goes out, run [pitch-review](../pitch-review/SKILL.md): blind readers, an answer key written first, and a rank against decks that raised.
+The author can't see what a stranger misses. Before the deck goes out, run [pitch-review](../pitch-review/SKILL.md): blind readers, an answer key written first, and a rank against decks that raised.
 
 ### 6. Objection-prep Q&A
 
