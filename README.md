@@ -32,6 +32,7 @@ Two constraints from that charter shape everything here:
 | [build-status](skills/build-status/SKILL.md) | Before a deck, submission, grant or investor update. Records program IDs, upgrade authority, verified-build and audit state, what works today, and traction with the query behind each number into `.claude/context/build.md`. |
 | [positioning](skills/positioning/SKILL.md) | Before the deck, site, docs intro or launch post. Writes the one-liner, ICP with disqualifiers, job to be done, three named alternatives with the dimension you beat each on, sourced proof points and words to avoid into `.claude/context/positioning.md`. |
 | [pricing](skills/pricing/SKILL.md) | Deciding what an onchain product charges: fee surface, who pays, the floor-cost math (fees, rent, RPC, oracles), comparables pulled from public fee data, and the test that would prove the number wrong. Writes `.claude/context/pricing.md`. |
+| [market-sizing](skills/market-sizing/SKILL.md) | Before the market slide, or when choosing where to enter. Ranks entry wedges by problem quality × how much each builds the vision, sizes the first one bottom-up with a source on every number, checks it against a named top-down figure, and keeps money already spent apart from money at risk. Writes `.claude/context/market.md`. |
 | [fundraising](skills/fundraising/SKILL.md) | After the deck lands: a crypto data room index (program IDs, authorities, audits vs deployed commit, onchain metrics with their queries), a diligence question bank with honest answers, monthly investor updates from the same metrics, and token-vs-equity framing routed to crypto-legal-skill. Writes `.claude/context/data-room.md`. |
 | [launch](skills/launch/SKILL.md) | Mainnet goes live on a date and the announcement has to wait for a transaction. Writes a runbook gated on the onchain event: legal gates via `crypto-legal-skill`, slip and abort rules, channel order, the Superteam and partner layer, and pre-staged copy including the "it slipped" message. Also runs as `/launch`. |
 | [incident-comms](skills/incident-comms/SKILL.md) | Something is broken and users are asking. Severity set by onchain state, the three pre-written updates, an exploit track routed to `crypto-legal-skill`, a static HTML status page that stays up when the app is down, a user-facing postmortem, and a known-issue entry `community-moderation` can dedupe against. |
@@ -42,10 +43,11 @@ format its own `references/` defines, and reads the others when they exist:
 
 | File | Written by | Read by |
 |------|------------|---------|
-| `idea.md` | `idea-sprint` | `build-status`, `positioning`, `pricing`, `pitch-deck`, `hackathon`, `fundraising`, `launch`, `ecosystem-bd` |
-| `build.md` | `build-status` | `idea-sprint`, `positioning`, `pricing`, `pitch-deck`, `hackathon`, `fundraising` |
-| `positioning.md` | `positioning` | `idea-sprint`, `pricing`, `pitch-deck`, `hackathon`, `fundraising`, `launch`, `incident-comms` |
-| `pricing.md` | `pricing` | `pitch-deck`, `fundraising` |
+| `idea.md` | `idea-sprint` | `build-status`, `positioning`, `pricing`, `market-sizing`, `pitch-deck`, `hackathon`, `fundraising`, `launch`, `ecosystem-bd` |
+| `build.md` | `build-status` | `idea-sprint`, `positioning`, `pricing`, `market-sizing`, `pitch-deck`, `hackathon`, `fundraising` |
+| `positioning.md` | `positioning` | `idea-sprint`, `pricing`, `market-sizing`, `pitch-deck`, `hackathon`, `fundraising`, `launch`, `incident-comms` |
+| `pricing.md` | `pricing` | `market-sizing`, `pitch-deck`, `fundraising` |
+| `market.md` | `market-sizing` | `pitch-deck`, `fundraising` |
 | `data-room.md` | `fundraising` | — |
 | `launch.md` | `launch` | `incident-comms`, `ecosystem-bd` |
 | `incidents.md` | `incident-comms` | — |
