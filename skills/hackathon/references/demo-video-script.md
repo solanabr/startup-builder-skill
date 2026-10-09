@@ -10,11 +10,13 @@ Colosseum asks for two videos ([submission-guide.md](submission-guide.md)): a 2�
 |---|---|
 | 0:00–0:20 | The problem: one user, one pain, today's workaround. No "Hi, I'm…" opener |
 | 0:20–0:45 | Who you are and why this team: the founder–market fit in one or two facts |
-| 0:45–1:30 | The product in one sentence, then one screen of it working |
+| 0:45–1:30 | The product in one sentence and what it changes for the user; leave the walkthrough to the demo video |
 | 1:30–2:15 | Evidence: user conversations, waitlist, onchain usage, with sources |
 | 2:15–3:00 | Why now, the go-to-market wedge, and that you intend to keep building |
 
 A voiceover on slides is fine. Colosseum says a clear narrative beats production polish.
+
+What separated Colosseum winners from projects that won nothing in this video was traction and a team credential; for the product on screen and an explorer transaction the study detected no difference ([what-separates-winners.md](what-separates-winners.md)). Spend the seconds on the evidence and the team, and use [pitch-rhetoric.md](pitch-rhetoric.md) as the line-level checklist.
 
 ## Product demo video (≤ 3 min): the build
 
