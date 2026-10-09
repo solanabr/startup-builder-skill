@@ -12,6 +12,8 @@ Interview → detect audience → pick narrative → build slides with speaking 
 
 Detail lives in `references/`. The one optional upstream pack (visual direction for the rendered deck) is in [upstream-packs.md](references/upstream-packs.md).
 
+Real decks to compare against and a words-per-slide ruler, all sourced, are in [library.md](references/library.md). The ruler's limits come from where TechCrunch's reviewer flags too much text in 78 decks that raised, not from what predicts raising. Where the library and this workflow differ, the workflow wins.
+
 ## Context handoff
 
 At start, read `.claude/context/idea.md` and `.claude/context/build.md` ([format](../build-status/references/build-md-format.md), written by [build-status](../build-status/SKILL.md)) if present — pre-fill problem, wedge, traction, and stack from them, and Q5 from build.md's What works today section; take traction only from its Traction table, with the source each row cites. Read `.claude/context/positioning.md` ([format](../positioning/references/positioning-md-format.md), written by [positioning](../positioning/SKILL.md)) if present too — use its Plain one-liner for Q1 and its Primary one-liner on the title slide, and its ICP, alternatives and proof points as written for Q2 and Q8, and its words-to-avoid list when drafting. Read `.claude/context/pricing.md` ([format](../pricing/references/pricing-format.md), written by [pricing](../pricing/SKILL.md)) if present too — take Q9 and the business-model slide from its Model and The number sections as written. Only ask what's missing.
