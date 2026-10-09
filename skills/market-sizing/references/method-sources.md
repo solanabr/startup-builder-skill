@@ -23,13 +23,16 @@ was not opened (paywalled), so treat the band as Aulet's 2012 guidance.
 
 ## What that asks of a seed market slide [inferred]
 
-- Two numbers of different levels that don't compete: the beachhead (Aulet, US$20M to 100M a
-  year, counted account by account) and the vision (Ralston, above US$1B, with the most
-  persuasive evidence). Aulet's "raises flags" is about the beachhead; Ralston's US$1B is
-  about the market addressed.
-- Bottom-up is the base (a16z, Aulet). Top-down complements it and usually comes out larger.
+- One bottom-up number, built from the customer profile and willingness to pay (a16z, Aulet).
+  That is also what pitch-deck's [Market row](../../pitch-deck/references/slide-templates.md)
+  asks: the multiplication on the slide, each factor sourced.
+- Two bands calibrate it without competing: the beachhead (Aulet, US$20M to 100M a year,
+  counted account by account) and the vision (Ralston, above US$1B, with the most persuasive
+  evidence). Aulet's "raises flags" is about the beachhead; Ralston's US$1B is about the
+  market addressed.
+- Top-down is a check, and usually comes out larger (a16z). It stays in `market.md`.
 - Expansion from a material improvement (Gurley) enters as a mechanism, not an inflated number.
-- One slide, not three (Kamps). Customer evidence outweighs the formula.
+- One slide, not three (Kamps). Customer evidence is a valid answer in place of a formula.
 - Why now is a separate slide (Sequoia).
 
 ## How filed decks size the market

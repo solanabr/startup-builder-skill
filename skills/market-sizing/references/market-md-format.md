@@ -2,15 +2,15 @@
 
 The one place a project's market numbers and entry wedge live, each number with its source.
 Producer: [market-sizing](../SKILL.md). Readers: [pitch-deck](../../pitch-deck/SKILL.md) (the
-market slide), [fundraising](../../fundraising/SKILL.md) (diligence on market size), and any
-tool that needs a market number instead of asking for one.
+market slide), [fundraising](../../fundraising/SKILL.md) (the market questions in diligence), and
+any tool that needs a market number instead of asking for one.
 
 ## Rules
 
 1. **Read before writing, and merge.** On a re-size, re-open every source before keeping its
    number. A number not re-opened keeps its old read date, so the reader can see it is stale.
-2. **Readers copy, they don't rewrite.** A deck quotes Slide numbers as written. If a reader
-   needs a different number, change it here first.
+2. **Readers copy, they don't rewrite.** A deck takes the Market slide section as written. If
+   a reader needs a different number, change it here first.
 3. **Every number is one line** in the [number-with-source](number-with-source.md) format. No
    source, no number. A field with no evidence says `unknown`.
 4. **G, A and D are never added together,** and Context is never summed.
@@ -82,11 +82,15 @@ Cards: one per ranked wedge, in the [wedge-card](wedge-card.md) format.
 ### Context (not summed)
 - OTC volume, TVL of the treasuries: stocks and flows, not spend
 
-## Slide numbers
-| Level | Number | What it measures | Line |
-|---|---|---|---|
-| Entry | 840 deals a year × [price] | Beachhead, bottom-up | Sizing › Beachhead |
-| Scale | ... | ... | Sizing › Money by type › A |
+## Market slide
+Laid out as pitch-deck's Market row and metrics-slide markup ask: one bottom-up number as the
+headline, one card per factor with its source. Sized on idea.md's wedge.
+- Headline: (est.) 840 deals a year × [price], DAO treasury token swaps, bottom-up
+| Card | Value | Source (goes on the card) |
+|---|---|---|
+| Accounts | 140 DAO treasuries | <query and filter> |
+| Units per account | 6 deals a year | <source> |
+| Price | [price] | pricing.md |
 
 ## Accelerates X
 - Skeleton, chosen reading of X, result in person-days, and what is not public (see accelerates-x.md).
@@ -96,8 +100,9 @@ Cards: one per ranked wedge, in the [wedge-card](wedge-card.md) format.
 
 ## Open decisions
 - Price: founder, via pricing.
-- Slide numbers: recommend Entry + Scale; no TAM, because the top-down cut has firms 10x apart.
+- Slide number: recommend the beachhead. No top-down figure for this cut (firms 10x apart),
+  which only matters inside this file: the slide never carries one.
 
 ## Changelog
-- 2026-10-08: first sizing; wedge 1 ranked above idea.md's wedge (OTC desks) on Q×A.
+- 2026-10-08: first sizing; idea.md's wedge ranked first on Q×A.
 ```

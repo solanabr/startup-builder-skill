@@ -7,8 +7,8 @@ user-invocable: true
 # Market sizing
 
 Rank where to enter → count the units it covers → price them → check against a named
-top-down figure → write `.claude/context/market.md`. Output is a few numbers you can defend
-line by line and a ranked list of entry wedges, not a TAM bubble chart.
+top-down figure → write `.claude/context/market.md`. Output is one bottom-up number you can
+defend factor by factor and a ranked list of entry wedges, not a TAM bubble chart.
 
 The two flows feed each other. The wedge flow says where to enter; the sizing flow says what
 entering there is worth and how far it goes. Asked for both, run wedges first, then size the
@@ -35,7 +35,8 @@ Traps: [traps.md](references/traps.md). Read it before adding anything up.
   [market-md-format.md](references/market-md-format.md). [pitch-deck](../pitch-deck/SKILL.md)
   takes the market slide from it and [fundraising](../fundraising/SKILL.md) the market answers
   in diligence, so the deck and the data room quote the same numbers.
-- If the top-ranked wedge differs from the one in `idea.md`, say so. `idea-sprint` owns that file.
+- The slide is sized on `idea.md`'s wedge, the one the deck pitches. If the top-ranked wedge
+  differs, say so under Open decisions; `idea-sprint` owns that file.
 
 ## Rules for both flows
 
@@ -49,8 +50,6 @@ Traps: [traps.md](references/traps.md). Read it before adding anything up.
   format, with its labels. Take the date from the system clock.
 - **Mark inference.** `[inferred]` for a reading; `(est.)` for a calculation, written out on
   the same line.
-- **The source lives in `market.md`, not on the slide.** The slide carries the number; a
-  third-party ceiling also carries the firm's name.
 - **A page for other people holds principles and the result.** Search logs, corrections and
   process stay in the research notes.
 
@@ -61,7 +60,8 @@ Traps: [traps.md](references/traps.md). Read it before adding anything up.
    The spread between them is the business.
 2. **Bottom-up first.** Accounts × units per account × price. The beachhead is Aulet's: the
    annual revenue at 100% share of the first market.
-3. **Top-down only checks.** A named firm, its latest edition, the same geography and year.
+3. **Top-down only checks,** inside `market.md` and never on the slide. A named firm, its
+   latest edition, the same geography and year.
    It must meet the bottom-up within an order of magnitude. If firms are 10x apart on the
    same cut, there is no top-down for that cut.
 4. **Three kinds of money, never added together** ([money-types.md](references/money-types.md)):
@@ -79,14 +79,12 @@ Traps: [traps.md](references/traps.md). Read it before adding anything up.
 8. **Declare what is weak:** how many sources make most of the sum, the spread of data years,
    the token or FX price and its date, cuts with no number, and the billing unit (per task or
    per unit can change the order of magnitude).
-9. **Propose the slide numbers:** at most two or three, of different levels, each linked to a
-   `market.md` line. For example entry (the bottom-up of the first wedge) and scale (the A sum,
-   named for what it measures). The slide leads with the bottom-up number, as pitch-deck's
-   [Market row](../pitch-deck/references/slide-templates.md) asks. A top-down figure appears
-   only as a named ceiling (Aurora's shape), never as the market you claim. One market slide,
-   not three; why now is its own slide.
+9. **Propose the slide** the way pitch-deck's [Market row](../pitch-deck/references/slide-templates.md)
+   asks: one bottom-up number, the multiplication with each factor sourced, and the source on
+   each card. The top-down check and the money sums stay in `market.md`. One market slide, not
+   three; why now is its own slide.
 
-The price and the slide numbers are the founder's call. Propose with a recommendation.
+The price and the slide number are the founder's call. Propose with a recommendation.
 
 ## Flow B: wedges
 
@@ -151,5 +149,5 @@ A large market with the most persuasive evidence it is real (YC). Why now on its
 
 - `.claude/context/market.md`, committed (format: [market-md-format.md](references/market-md-format.md))
 - A one-paragraph summary for the founder: the top wedge and why, the beachhead with its
-  calculation, the proposed slide numbers, and the open decisions
+  calculation, the proposed slide number, and the open decisions
 - On request, the wedge result page as one self-contained HTML file
