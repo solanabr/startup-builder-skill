@@ -49,7 +49,7 @@ Each reader names the one objection that would make them pass. Angels reject on 
 
 ## P5. Paired comparison
 
-The anonymized deck, shuffled among four real decks that raised, ranked by two fresh judges: [paired-set.md](paired-set.md). Report the position; it replaces the author's score.
+The deck, shuffled among four real decks that raised and anonymized the same way as them, ranked by two fresh judges: [paired-set.md](paired-set.md). Report the position as a weak signal. It doesn't replace the author's score on its own: the recall against the key (P3) does.
 
 ## P6. Real people, before it circulates
 
@@ -57,4 +57,4 @@ Three to five people outside the team read it through a link that records time p
 
 ## Limits
 
-Three readers per round and one paired set: a one-place difference in rank, or one reader's opinion, is noise. Language-model readers stand in for strangers; P6 is the check that they read like people.
+Three readers and two judges per round, one paired set: a one-place difference in rank, or one reader's opinion, is noise. Language-model readers stand in for strangers; P6 is the check that they read like people.

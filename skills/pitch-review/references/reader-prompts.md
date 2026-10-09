@@ -1,6 +1,6 @@
 # Reader prompts
 
-Three prompts for the reader in [blind-reader.md](blind-reader.md): the reader (P2 to P4), the paired judge (P5) and the answer-key checker. Fill the `{PLACEHOLDERS}` and send nothing else. The filled prompt carries the fake name only: no real name, no path containing one, no extra context. `{UNIT}` is "slide" for a deck and "block" for a script.
+Three prompts for the reader in [blind-reader.md](blind-reader.md): the reader (P2 to P4), the paired judge (P5) and the answer-key checker. Fill the `{PLACEHOLDERS}` and send nothing else. The filled prompt carries the fake name only: no real name of your company or people, no path containing one, no extra context. The paired judge's leak check adds the four reference companies' names. `{UNIT}` is "slide" for a deck and "block" for a script.
 
 ## 1. Reader: recall, objection, sticking points
 
@@ -34,19 +34,19 @@ Answer only with JSON:
 
 ## 2. Paired judge (P5)
 
-Two fresh judges: VC and event judge. The folder holds one subfolder per deck, `deck-A` to `deck-E`, shuffled, each in the same format. The key from letter to deck stays outside that folder. The set is in [paired-set.md](paired-set.md).
+Two fresh judges: VC and event judge. The folder holds one subfolder per deck, `deck-A` to `deck-E`, shuffled, all five treated the same way. The key from letter to deck stays outside that folder. The set is in [paired-set.md](paired-set.md). `{NAMES}` is your fake name and the four reference companies' real names, in a shuffled order that says nothing about the letters.
 
 ```
 {PERSONA}
 
-Leak check as above, for each of these names: {FAKE_NAME}.
+Leak check as above, for each of these names: {NAMES}.
 
 Open the subfolders of {FOLDER} (deck-A, deck-B, ...) in letter order. Read each once, without going back. Do not open any other file and do not search the web.
 
-Then, without reopening: rank the five from 1 to 5 on "would take the meeting" (judge: "advances"), on clarity and on story. For each deck, the sentence that weighed most and one sentence on why.
+Then, without reopening: rank the five from 1 to 5 on "would take the meeting" (judge: "advances"), on clarity and on story. For each deck, the sentence that weighed most, one sentence on why, and the company you think it is, or "don't know".
 
 Answer only with JSON:
-{"leak_check": {"knows": "...", "context": "..."}, "rank_meeting": ["deck-?", "..."], "rank_clarity": ["..."], "rank_story": ["..."], "per_deck": {"deck-A": {"sentence": "...", "why": "..."}}}
+{"leak_check": {"knows": "...", "context": "..."}, "rank_meeting": ["deck-?", "..."], "rank_clarity": ["..."], "rank_story": ["..."], "per_deck": {"deck-A": {"sentence": "...", "why": "...", "recognized": "..."}}}
 ```
 
 ## 3. Answer-key checker

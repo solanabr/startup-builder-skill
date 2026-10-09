@@ -21,7 +21,7 @@ Why it exists: the author can't judge whether a deck is clear. Better-informed p
 1. Whoever wrote the material doesn't review it and doesn't check the key. The writing session prepares and delegates.
 2. The answer key is written before any reader runs, dated, with the fake name. It is what catches a regression between versions.
 3. Blind needs both an anonymized copy and a reader with no context. Either one alone fails.
-4. A position among decks that raised replaces the author's score.
+4. The readers' recall, checked against the key by someone else, replaces the author's score. The rank among decks that raised is a weak signal next to it, not a replacement.
 
 ## Workflow (each step is a gate)
 
@@ -43,8 +43,8 @@ One fresh blind reader per persona, in parallel, with [reader-prompts.md](refere
 ### 6. Check against the key
 A fresh blind reader, never the author, marks the answers with [reader-prompts.md](references/reader-prompts.md) §3. Gate: each target question right for at least 2 of 3; at least 90% of the per-slide sentences match the intent.
 
-### 7. P5: rank against decks that raised (decks only; report only)
-The anonymized deck, shuffled among four real decks that raised, ranked 1 to 5 by two fresh judges: [paired-set.md](references/paired-set.md).
+### 7. P5: rank against decks that raised (decks only; a weak signal)
+The deck, shuffled among four real decks that raised and anonymized the same way as them, ranked 1 to 5 by two fresh judges: [paired-set.md](references/paired-set.md). Report the position; it doesn't replace step 6.
 
 ### 8. P6: real people, before it circulates
 Three to five people outside the team, through a link with per-page analytics ([funnel.md](references/funnel.md) §P6).
@@ -75,7 +75,7 @@ Detail, prompt lines and sources in [personas.md](references/personas.md). Write
 - An objection from two or more readers becomes a fix or a ready answer, framed around growth, not defence ([personas.md](references/personas.md) § How to answer).
 - Every finding keeps the reader's literal sentence and the slide. Fixes are proposals; the founder decides.
 - Live feedback (a call, a panel, a demo): each item is logged as absorbed, declined with a reason, or pending the founder.
-- Three readers per round: a one-place move in the ranking is noise. Compare versions on the fixed key, not the verdict; a good verdict can hide a question falling to 0 of 3.
+- Three readers and two judges per round: a one-place move in the ranking is noise. Compare versions on the fixed key, not the verdict; a good verdict can hide a question falling to 0 of 3.
 
 ## Boundaries
 

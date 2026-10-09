@@ -47,7 +47,7 @@ Target: <questions> right for at least 2 of 3 readers (video: 2 people). The res
 - Against the last round: <question that rose or fell, and the likely cause>.
 - Fatal objections: <objection>, <n>/3 (<who>): "<literal>" → fix | ready answer | taste (1 reader).
 - Sticking points (2+ readers): slide NN, <n>/3: "<literal>".
-- Paired (P5): VC meeting <k> of 5, clarity <k>, story <k>; judge ... Set: <link to the set used>.
+- Paired (P5, a weak signal): VC meeting <k> of 5, clarity <k>, story <k>; judge ... Decks a judge recognized: <letter: company>, or none. Set: <link to the set used>.
 - Fixes proposed (the founder decides; at most 2 fix rounds): 1. <fix> (<n> readers; slide NN). Ready answers: <objection → answer>.
 - Founder's decision: <what was accepted, declined or deferred>.
 - Limits: <what wasn't blind, what didn't run>.
