@@ -2,7 +2,7 @@
 
 # Audience guide and self-scoring rubrics
 
-Pick the audience first; it decides the slide set ([pitch-structure.md](pitch-structure.md)), the backbone ([storytelling-frameworks.md](storytelling-frameworks.md)) and the rubric. Score each dimension 1–10 (8–10 strong, 5–7 moderate, 1–4 weak). Present nothing that scores below 8 overall.
+Pick the audience first; it decides the slide set ([pitch-structure.md](pitch-structure.md)) and the rubric. Each section's "Backbone" line names a framework that often fits that audience: vocabulary for the spine, not a step ([storytelling-frameworks.md](storytelling-frameworks.md)), and the spine test in [SKILL.md](../SKILL.md#3-narrative-spine) step 3 applies whichever you use. Score each dimension 1–10 (8–10 strong, 5–7 moderate, 1–4 weak) to find the weak spots. The score is the author's view of the deck, so it doesn't decide when the deck is ready: the reader check in [SKILL.md](../SKILL.md#5-reader-check-not-a-self-score) step 5 does.
 
 ## Hackathon judges
 

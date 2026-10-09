@@ -1,19 +1,21 @@
-<!-- Adapted from sendaifun/solana-new@e81c261, skills/launch/create-pitch-deck/references/storytelling-frameworks.md. MIT © 2026 SendAI and Superteam; notice in THIRD_PARTY_NOTICES.md. Rewritten; examples are illustrative, not data. -->
+<!-- Adapted from sendaifun/solana-new@e81c261, skills/launch/create-pitch-deck/references/storytelling-frameworks.md. MIT © 2026 SendAI and Superteam; notice in THIRD_PARTY_NOTICES.md. Rewritten; examples are illustrative, not data. The spine test section is new, with its sources linked inline. -->
 
 # Storytelling frameworks
 
-Pick one backbone for the deck and say why. The framework is the story; [pitch-structure.md](pitch-structure.md) is the container. All numbers below are placeholders to show the shape.
+Vocabulary for naming a deck's spine, not a required step: borrow a framework if it describes what your titles already do. Every deck has to pass [the spine test](#the-spine-test) at the end of this file, whichever framework it uses; [pitch-structure.md](pitch-structure.md) is the container. All numbers below are placeholders to show the shape.
 
-## Choosing
+## Which name fits
 
-1. The strongest asset is a working demo → **Before-After-Bridge**
-2. Raising from VCs → **6-part investor arc**
-3. The pain is obvious and visceral → **PAS**
-4. You have a real user story → **Hero's journey**
-5. The product is technically hard to grasp → **Pixar**
-6. None of the above, or a non-technical marketing audience → **AIDA**
+None is required. If your titles already do one of these, the name helps you talk about the spine:
 
-Layering is fine: PAS for the first three slides, then the investor arc for the body.
+- A working demo carries the deck → **Before-After-Bridge**
+- A raise from VCs → the **6-part investor arc**
+- An obvious, visceral pain → **PAS**
+- A real user story → **Hero's journey**
+- A product that is technically hard to grasp → **Pixar**
+- A non-technical marketing audience → **AIDA**
+
+Mixing is fine: PAS for the first three slides, then the investor arc for the body.
 
 ## PAS: problem, agitate, solve
 
@@ -29,7 +31,7 @@ Slides 1–2 problem and agitation, 3–4 solution and why crypto, 5 the demo th
 
 ## 6-part investor arc
 
-The strongest backbone for a raise. Investors fund inevitabilities, so you ride a shift rather than claim to create one.
+A common shape for a raise. Investors fund inevitabilities, so you ride a shift rather than claim to create one.
 
 | Part | Content |
 |---|---|
@@ -69,3 +71,27 @@ Infrastructure and other products whose "how" is hard to explain.
 ## AIDA
 
 Attention (one slide), interest (about five), desire (about three), action (one). Weaker tension than the others; better for launches and non-technical audiences than for a raise.
+
+## The spine test
+
+Write only the slide titles, each a claim, and read them aloud in order. Sources read 2026-10-08.
+
+**"But" or "therefore" between every pair.** Where only "and then" fits, a cause is missing.
+
+- Trey Parker and Matt Stone on story beats: "What should happen between every beat that you've written down is either the word therefore or but" ([NYU class, video](https://www.youtube.com/watch?v=vGUNqq3jVLg), automatic captions).
+- Reid Hoffman on LinkedIn's Series B, putting the thesis in each title (he calls it "helpful (but not mandatory)"): "If an investor sequenced through the titles, they'd be able to get a sense of the flow of the argument" ([archived copy](https://web.archive.org/web/20260609212616/https://www.reidhoffman.org/linkedin-pitch-to-greylock/) of [reidhoffman.org](https://www.reidhoffman.org/linkedin-pitch-to-greylock/), live page unverified).
+- James Currier (NFX): slide titles "are the core structure of your story" ([23 rules](https://www.nfx.com/post/23-rules-storytelling-fundraising)). Aaron Harris (YC): "There has to be a continuous line from one thing to another" ([podcast](https://www.ycombinator.com/blog/aaron-harris-on-fundraising-and-meeting-with-investors)).
+
+**An explicit bridge from wedge to vision.** Either can come first; the crossing has to be said.
+
+- Harris, same podcast: founders who jump from today to "a $300 billion company" make "a huge mistake because the investor doesn't have reason to believe you can make that transition".
+- Coinbase's 2012 seed deck goes from "Coinbase: A Hosted Bitcoin Wallet" (slide 7) to "Coinbase: A New Payment Network" (slide 11), with its traction slides (9–10) in between ([PDF, third-party copy](https://media.genppt.com/pitch-decks/coinbase/coinbase-pitch-deck-2012.pdf)). Wedge first.
+- Matterport's 2021 SPAC deck: "Take your building online with Matterport…" (slide 8), then "Tomorrow our data will increase the value of every building" (slide 9) ([SEC filing](https://www.sec.gov/Archives/edgar/data/1819394/000119312521031520/d42860dex992.htm)). Vision first, then the bridge.
+- Aurora's 2021 SPAC deck: trucking as the "tip of the spear" into adjacent verticals ([SEC filing](https://www.sec.gov/Archives/edgar/data/1828108/000119312521215991/d326572dex992.htm)). Hoffman sums up LinkedIn's: "a great recruiting business with an option for more".
+- Each one says why it starts small: a first product, a first market, a first vertical. The SPAC decks are late-stage; the bridge transfers, the stage doesn't.
+
+**The close returns to the cover.** Coinbase's last slide repeats its first, "Your hosted bitcoin wallet". The alternative from Geoff Ralston (YC): "list explicitly the 3 or 4 vertebrae you would like them to retain" ([Demo Day guide](https://www.ycombinator.com/blog/guide-to-demo-day-pitches/)).
+
+**Tense follows the state of the proof.** Present tense for what works or is measured, future for the roadmap and the vision. Matterport's bridge does it in two titles: "Take your building online" now, "Tomorrow our data will…" next. Harris: "make it really big but believable. And progress is the best way to argue that what you're saying is believable."
+
+These decks don't share an order or a framework. They share titles that read as an argument, a stated bridge and a reason to start small.
