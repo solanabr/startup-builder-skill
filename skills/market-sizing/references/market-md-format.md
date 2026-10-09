@@ -34,7 +34,8 @@ Updated: 2026-10-08 · by market-sizing · Status: draft | founder-reviewed
 ## What the market is
 - Spend replaced: what desks and DAO treasuries pay today to settle an off-exchange deal
   safely (an escrow agent's fee, or the loss when the other side doesn't send).
-- Price ceiling: an escrow agent's fee per deal (C line 1) · Floor: pricing.md Floor cost
+- Price ceiling: an escrow agent's fee per deal (C line 1), the cost of the alternative as in
+  pricing's wtp-methods §3 · Floor: pricing.md Floor cost
 - Price used: [price]
 
 ## Vision

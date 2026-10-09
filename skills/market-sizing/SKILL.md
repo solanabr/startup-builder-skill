@@ -24,13 +24,15 @@ Traps: [traps.md](references/traps.md). Read it before adding anything up.
   - `.claude/context/idea.md` ([format](../idea-sprint/references/idea-md.md)): the founder's
     wedge, which enters the ranking as a candidate, not as the answer, and the demand evidence.
   - `.claude/context/positioning.md` ([format](../positioning/references/positioning-md-format.md)):
-    the buyer, the user, the disqualifiers and the alternatives. What the alternative costs the
-    buyer is the price ceiling.
+    the buyer, the user, the disqualifiers and the alternatives.
   - `.claude/context/pricing.md` ([format](../pricing/references/pricing-format.md)): the price
     and the floor cost. With no price yet, sizing carries `[price]` and stays a unit count.
   - `.claude/context/build.md` ([format](../build-status/references/build-md-format.md)): What
     works today sets each wedge's distance D; the Traction table is the customer evidence that
     Kamps calls a valid alternative to a formula.
+- What the alternative costs the buyer is the price ceiling. No context file stores it: work
+  it out with pricing's [cost of the bad alternative](../pricing/references/wtp-methods.md#3-the-cost-of-the-bad-alternative),
+  or ask.
 - On completion, write `.claude/context/market.md` in the format in
   [market-md-format.md](references/market-md-format.md). [pitch-deck](../pitch-deck/SKILL.md)
   takes the market slide from it and [fundraising](../fundraising/SKILL.md) the market answers
@@ -112,7 +114,7 @@ The price and the slide number are the founder's call. Propose with a recommenda
    decides among the top few.
 
 Not ranking criteria: the number of problems (one large problem outweighs a thousand small
-ones), neutrality, and a buyer counted from a regulatory authorisation.
+ones), and a buyer counted from a regulatory authorisation.
 
 ## Onchain buyers
 

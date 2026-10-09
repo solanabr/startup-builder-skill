@@ -9,7 +9,7 @@ the rest stay in the front reports.
 - **Blind spot:** what the customer's current setup can't see or do today, and why.
 - **Grows with:** what makes the gap cost more as the customer grows (loss avoided, operation unblocked), read from how they operate.
 - **Builds:** which part of the vision solving this leaves ready for the next customer.
-- **Can it work?** yes / no (reason: the physics, the chain or the data).
+- **Can it work?** yes / no (if no: why it is technically infeasible).
 - **Evidence:** an incident, a rule, money lost or something built in-house, with URL and label.
 - **Who pays:** a named buyer (company, role or type of account), and how they decide (a person, a DAO proposal, a grant).
 - **Path:** entry today → proof on the customer's own data → expansion.

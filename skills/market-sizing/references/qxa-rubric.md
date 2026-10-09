@@ -1,7 +1,7 @@
 # Q×A rubric for ranking wedges
 
 Each candidate gets Q and A, 1 to 5. Rank by Q×A. D only breaks ties. Reject only where the
-wedge cannot work, and write why.
+wedge is technically infeasible, and write why.
 
 ## Before scoring: the vision in three lines
 
@@ -53,8 +53,8 @@ candidates with the same Q×A and never rejects one.
 ## Rules
 
 - A count of problems is not a weight: one large problem outweighs a thousand small ones.
-- Neutrality is not a criterion.
-- A buyer counted from an authorisation is not a buyer ([traps](traps.md#buyers-that-dont-exist)).
-- Reject only where it cannot work: the physics, the chain or the data doesn't allow it.
-  Write the reason.
-- A desk score is `[inferred]`. A conversation with a buyer decides among the top few.
+- A buyer counted from an authorisation is not a buyer: regulatory permission to operate is
+  not a programme that buys anything ([traps](traps.md#buyers-that-dont-exist)).
+- Reject only where it is technically infeasible: the chain, the data or the hardware can't
+  do it today. Write the reason. A low score is not a rejection, because a desk score is
+  `[inferred]` and only a conversation with a buyer decides among the top few.

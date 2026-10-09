@@ -41,7 +41,8 @@ Read this before adding anything up. Each trap is one a skeptical investor check
 ## Buyers that don't exist
 
 - **A buyer counted from an authorisation.** A licence, waiver or approval is not a purchasing
-  programme.
+  programme: it says who may operate, not who will buy. Count the holder once a budget for
+  the purchase shows up.
 - **A proposed rule.** It doesn't create mandatory purchases. Read the text and look for the
   clause that would. Where a purchase exists only because a rule compels it, say so.
 - **Wallets as accounts.** One person runs many wallets, and one bot runs thousands. Count
