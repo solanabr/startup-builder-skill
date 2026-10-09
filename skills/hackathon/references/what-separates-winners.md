@@ -1,4 +1,4 @@
-<!-- Written from a study of Colosseum pitch videos by this file's contributor (Sep–Oct 2026). Codebook, coded values per project, code and every number below: <study-repo-url>. Aggregates only: no transcript is reproduced. Quotes are under 25 words, taken from automatic transcripts of the public pitch videos, each linked to the project's Colosseum page, read 2026-10-08. -->
+<!-- Written from a study of Colosseum pitch videos by this file's contributor (Sep–Oct 2026). Codebook, coded values per project, code and every number below: https://github.com/lucatrevisanii/colosseum-pitch-study. Aggregates only: no transcript is reproduced. Quotes are under 25 words, taken from automatic transcripts of the public pitch videos, each linked to the project's Colosseum page, read 2026-10-08. -->
 
 # What separated winners in Colosseum pitch videos
 
@@ -10,7 +10,7 @@ Read this before scripting the presentation video ([demo-video-script.md](demo-v
 2. **Controls:** one project per accelerated company, drawn at random from the same hackathon and category, with no prize, honourable mention or accelerator place; 60 were drawn and 47 could be coded.
 3. **Coding:** a closed codebook, fixed before any transcript was read, applied by a language model to each video's transcript and up to 12 frames, blind to group.
 4. **Tests:** two-sided Fisher exact per variable, 22 tests. "Robust" means it survives a Holm correction across all 22, added after the original analysis.
-5. **Data:** the codebook, the coded values per project, the code and the results are in the [study repository](<study-repo-url>).
+5. **Data:** the codebook, the coded values per project, the code and the results are in the [study repository](https://github.com/lucatrevisanii/colosseum-pitch-study).
 
 ## What separated, robustly
 
