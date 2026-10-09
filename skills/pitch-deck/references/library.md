@@ -21,19 +21,22 @@ source, and quotes stay under 25 words. Counts, statistics and gradings are ours
 
 | File | What it holds | Read it when |
 |---|---|---|
+| [library-accelerator-pitches.md](library-accelerator-pitches.md) | 28 public pitches from YC, a16z speedrun, Techstars, Alliance, Colosseum's accelerator and Entrepreneur First: program, batch, stage, round with source, link, one line on what each teaches | You want to see how a demo-day, application or launch pitch of your format opens, proves and asks |
 | [library-investor-studies.md](library-investor-studies.md) | 30 studies of investor decisions: citation, design, n, finding, our strength grading, where they contradict common advice, what nothing measures | Before treating a pitch rule as fact, or when choosing what to lead with |
 | [library-investor-advice.md](library-investor-advice.md) | 60 prescriptions from YC, Paul Graham, NFX, First Round, a16z, a16z crypto, speedrun, Techstars, Colosseum and others, as short quotes with source, topic and conflicts | Writing the one-liner, the cold email, the first meeting, Q&A answers, or running the raise |
 | [library-teardown-ruler.md](library-teardown-ruler.md) | Words per slide, slides per deck, claim titles and deck types measured on 78 decks that raised; text thresholds taken from where the reviewer complains, which do not predict raising; and the method to reapply them | Sizing the text on each slide; deciding between a deck that is read and one that is presented |
 | [library-teardown-catalog.md](library-teardown-catalog.md) | All 100 TechCrunch pitch deck teardowns: stage, sector, round, link, our counts, next funding event | Finding a real deck of your stage and sector to compare side by side |
+| [library-crypto-pitches.md](library-crypto-pitches.md) | 29 crypto infrastructure and DePIN pitches: how loudly each uses the chain, quotes, rounds, outcomes, and the token question investors ask | Deciding how much chain and token goes in the pitch; preparing the token answer |
 
 ## Where it plugs into the workflow
 
 - **Slides:** the [ruler](library-teardown-ruler.md) for text.
 - **Checking the draft:** put it side by side with two or three real decks of the same stage from
-  the [catalog](library-teardown-catalog.md), and check each rule you lean on against
+  the [catalog](library-teardown-catalog.md) or the
+  [accelerator pitches](library-accelerator-pitches.md), and check each rule you lean on against
   [library-investor-studies.md](library-investor-studies.md).
-- **Objections:** the Q&A prescriptions (E17 to E20) in
-  [library-investor-advice.md](library-investor-advice.md).
+- **Objections:** the token question in [library-crypto-pitches.md](library-crypto-pitches.md),
+  and the Q&A prescriptions (E17 to E20) in [library-investor-advice.md](library-investor-advice.md).
 
 ## Caveats that apply to every file
 
