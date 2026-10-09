@@ -32,7 +32,7 @@ One sentence per slide: what it has to leave in the reader's head. Then the seve
 Every number traced to a source; word count per slide against the bar for a reading or a stage deck. Commands and bars in [funnel.md](references/funnel.md). Gate: no number without a source.
 
 ### 3. Anonymize
-Swap map, then strip comments, images and (for a reading deck) the notes, render one PDF page per slide with headless Chrome, and run the leak check: [anonymize.md](references/anonymize.md). Gate: the leak check prints "clean", the path check prints nothing, and every page was looked at for logos, faces and QR codes.
+Write a swap map and a forbidden list, then one command swaps the names, strips comments, images and (for a reading deck) the notes, renders one PDF page per slide with headless Chrome into a new folder outside your home, and runs the leak check: [anonymize.md](references/anonymize.md). Gate: the command ends with `clean`, and every page was looked at for logos, faces and QR codes.
 
 ### 4. Probe the reader's context, once per new session
 An ordinary subagent inherits the user's instructions, the git snapshot and the working directory, so it may know whose deck it is. Use the agent definition in [blind-reader.md](references/blind-reader.md) (copy it; this pack doesn't install it) and run its probe. Gate: "none" for instructions and memory, "nothing" about the company. Known residual: the folder path and the account email still give the user's name.
