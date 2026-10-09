@@ -11,17 +11,18 @@ Per the subagent docs ([Claude Code, Create custom subagents § What loads at st
 - **Environment details** appended to its system prompt, including the working directory. `/home/jane/acme-pay` names the project.
 - **Your skills**, when its tools include `Skill`: the docs say it can discover and invoke them, and a user's own skill descriptions often name the company.
 
-Opening a second session doesn't help: it inherits the same files. The reader then fills the gaps in the deck from what it already knows, and the clarity score comes out higher than a stranger would give. This is the curse of knowledge: better-informed people can't ignore what they know even when they try ([Camerer, Loewenstein and Weber 1989](https://doi.org/10.1086/261651)).
+Opening a second session doesn't help: it inherits the same files. The reader then fills the gaps in the deck from what it already knows, and the clarity score comes out higher than a stranger would give. This is the curse of knowledge: better-informed agents can't ignore what they know "even when it is in their interest to do so" ([Camerer, Loewenstein and Weber 1989](https://doi.org/10.1086/261651)).
 
 ## The fix
 
 A custom agent, started from a neutral directory, that leaves out what it can:
 
 - `omitClaudeMd: true` launches it without the user, project and local `CLAUDE.md` files; managed policy files still load. It needs v2.1.271 or later and is ignored when the agent runs as the main session through `--agent`, so run it as a subagent ([frontmatter fields](https://code.claude.com/docs/en/sub-agents), read 2026-10-08).
-- `tools: Read, Glob` and nothing else. Without `Skill` the skill list doesn't reach it; without shell, web or write tools it can only read the folder you name.
-- Start the reviewing session from a neutral directory outside the project repo (the folder from [anonymize.md](anonymize.md) works), or set `CLAUDE_CODE_DISABLE_GIT_INSTRUCTIONS=1` for that session, so the git snapshot is left out ([settings reference, `includeGitInstructions`](https://code.claude.com/docs/en/settings-reference), read 2026-10-08). This one comes from the docs; our own probe ran outside a repo and didn't exercise it.
+- `tools: Read, Glob` and nothing else. Without `Skill` the skill list doesn't reach it. Without shell, web or write tools it is told to read only the folder you name, but `Read` and `Glob` accept any path, so the instruction is all that keeps it there unless the session blocks the rest (next point).
+- Run the reading rounds from a session opened in the readers' folder from [anonymize.md](anonymize.md), with `permissions.blockReadsOutsideWorkingDirectories` on. That setting makes `Read`, `Grep`, `Glob` and `LSP` refuse paths outside the working directories in every permission mode; Claude Code's own files under `~/.claude/` (skills, agents, `CLAUDE.md`) stay readable. It needs Claude Code v2.1.257 or later ([settings reference](https://code.claude.com/docs/en/settings-reference), read 2026-10-08). For example, `cd /tmp/review-r1 && claude --settings '{"permissions":{"blockReadsOutsideWorkingDirectories":true}}'`. That session can't read the project, so carry the readers' JSON back to the project session that writes `review.md`.
+- The readers' folder is outside the project repo, so the git snapshot is left out too. From any other folder inside a repo, set `CLAUDE_CODE_DISABLE_GIT_INSTRUCTIONS=1` for that session ([settings reference, `includeGitInstructions`](https://code.claude.com/docs/en/settings-reference), read 2026-10-08); this one comes from the docs and our probe, run outside a repo, didn't exercise it.
 
-The definition below is a reference to copy, not something this pack installs. Put it in `.claude/agents/blind-pitch-reader.md` (this project) or `~/.claude/agents/blind-pitch-reader.md` (every project), or pass the same fields as JSON with `--agents` for one session, which writes nothing to disk. If the `agents` directory didn't exist when the session started, restart once so it is picked up.
+The definition below is a reference to copy, not something this pack installs. Put it in `~/.claude/agents/blind-pitch-reader.md`, or pass the same fields as JSON with `--agents` for one session, which writes nothing to disk. A project's `.claude/agents/` isn't seen from a session opened in the readers' folder. If the `agents` directory didn't exist when the session started, restart once so it is picked up.
 
 ```markdown
 ---
@@ -54,10 +55,8 @@ Answer only with JSON: {"instructions": "...", "memory": "...", "knows": "...", 
 
 Pass: "none" for (1) twice, "nothing" for (2), and no project name in (3). The user's own name in the path or the email is the known residual below, and doesn't fail the probe on its own.
 
-What we saw on 2026-10-08 (v2.1.295, unpublished): a control subagent without `omitClaudeMd` quoted the first line of the user's instructions file and of the auto-memory index. The agent above quoted neither and knew nothing about the company. The docs say auto memory doesn't reach a non-fork subagent; our control got it anyway. Run the probe on your version rather than trusting either.
+What we saw on 2026-10-08 (v2.1.295): a control subagent without `omitClaudeMd` quoted the first line of the user's instructions file and of the auto-memory index. The agent above quoted neither and knew nothing about the company. The docs say auto memory doesn't reach a non-fork subagent; our control got it anyway. Run the probe on your version rather than trusting either.
 
 ## Known residual
 
-Two things still reach the reader: the working-directory path and the account email. Both give the user's name. That is harmless when the name means nothing to the reader. It isn't when the founder is publicly tied to the company: run the reader from another OS account or a clean session. The reader prompt's leak check asks about both, so each round records what got through.
-
-The publisher page behind the Camerer DOI link refuses scripted requests (403); the DOI and its abstract were confirmed through OpenAlex's record on 2026-10-08.
+Two things can still reach the reader: the account email, and the working-directory path when the session starts inside your home folder. Both give the user's name; starting in the readers' folder outside your home removes the path. The name is harmless when it means nothing to the reader. It isn't when the founder is publicly tied to the company: run the reader from another OS account or a clean session. The reader prompt's leak check asks about both, so each round records what got through.
