@@ -58,22 +58,24 @@ Traps: [traps.md](references/traps.md). Read it before adding anything up.
 1. **Name what the market is:** the spend the product replaces, not an industry category.
    Ceiling = what the alternative costs the buyer; floor = the marginal cost from `pricing.md`.
    The spread between them is the business.
-2. **Bottom-up first.** Accounts × units per account × price. The beachhead is Aulet's: the
-   annual revenue at 100% share of the first market.
+2. **Bottom-up first.** Accounts × units per account per year × price, every factor per account
+   per year (a monthly count is converted on its own line, never with a loose × 12). With a
+   price in bps, the unit is the volume per account per year and the price is the bps. The
+   beachhead is Aulet's: the annual revenue at 100% share of the first market.
 3. **Top-down only checks,** inside `market.md` and never on the slide. A named firm, its
    latest edition, the same geography and year.
    It must meet the bottom-up within an order of magnitude. If firms are 10x apart on the
    same cut, there is no top-down for that cut.
 4. **Three kinds of money, never added together** ([money-types.md](references/money-types.md)):
-   - **G**, what the buyer already spends on the job the product would do;
-   - **A**, what the buyer spends on the activity the product touches or checks;
-   - **D**, money at stake (loss, exploit, fraud). D goes on the problem slide, not the market
-     slide, split into direct D and broad D.
+   - **C**, current spend on the check or work the product would do;
+   - **S**, spend on the activity the product touches or checks;
+   - **R**, money at risk (loss, exploit, fraud). R goes on the problem slide, not the market
+     slide, split into direct R and broad R.
    - The whole industry, TVL, volume and market cap go under Context, outside every sum.
 5. **Bands.** Beachhead US$20M to 100M a year (Aulet); the vision above US$1B with the most
    persuasive evidence (YC). Outside the band, run the reverse calculation (what revenue per
    account would land in it) and label it calibration, never a price.
-6. **SOM** = reachable accounts × units × price. Never a percentage of TAM.
+6. **SOM** = reachable accounts × units per account per year × price. Never a percentage of TAM.
 7. **Expansion** from a material improvement (Gurley) is a mechanism with no number, unless an
    elasticity has been measured.
 8. **Declare what is weak:** how many sources make most of the sum, the spread of data years,
@@ -121,7 +123,7 @@ On Solana the account count is often public. Read it instead of estimating it:
 - **Users:** transacting wallets, deduplicated, never connected wallets
   ([traction checks](../build-status/references/traction-sources.md)). State the count in
   humans or teams ([crypto ICP](../positioning/references/crypto-icp.md)).
-- **DAOs and foundations:** they buy through a proposal or a grant, so their G is in past
+- **DAOs and foundations:** they buy through a proposal or a grant, so their C is in past
   proposals, grants and bounties.
 - **Token amounts:** converted at a dated price, with the token named.
 

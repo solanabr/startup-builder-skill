@@ -28,14 +28,15 @@ Read this before adding anything up. Each trap is one a skeptical investor check
 - **A stock is not an annual flow.** TVL, a treasury balance, stablecoin supply, market cap
   and credit outstanding are balances. None of them is anyone's yearly spend.
 - **Volume is not spend.** Value moved through a protocol is Context. What the buyer pays to
-  move it (fees, spreads, vendor invoices) can be G or A.
-- **A one-off event is not recurring.** One large exploit is D for the problem slide, not a
+  move it (fees, spreads, vendor invoices) can be C or S. With a price in bps, the volume per
+  account per year is the unit the bps applies to, never the market itself.
+- **A one-off event is not recurring.** One large exploit is R for the problem slide, not a
   market.
 - **Spend that has ended.** A programme, grant round or incentive campaign that is over.
 - **A price with no count.** A unit price without the number of units.
 - **Anything labelled `secondary`.**
 - **The whole industry.** Context only.
-- **G, A and D with each other.** The same dollar never appears under two types.
+- **C, S and R with each other.** The same dollar never appears under two types.
 
 ## Buyers that don't exist
 
@@ -58,6 +59,8 @@ Read this before adding anything up. Each trap is one a skeptical investor check
 - **TAM/SAM/SOM bubbles** with no calculation behind them.
 - **"Global"** with no geography.
 - **Bottom-up and top-down** that don't meet in order of magnitude.
+- **Periods mixed.** Every factor is per account per year. A monthly count times a yearly
+  price, or a loose × 12, makes the result 12x off.
 - **The billing unit switched mid-calculation.** Per task and per unit can differ by orders of
   magnitude. State the unit and why.
 - **A concentrated sum with no warning.** Say how many sources make most of the sum, and the
