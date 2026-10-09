@@ -61,8 +61,9 @@ Read this before adding anything up. Each trap is one a skeptical investor check
 - **TAM/SAM/SOM bubbles** with no calculation behind them.
 - **"Global"** with no geography.
 - **Bottom-up and top-down** that don't meet in order of magnitude.
-- **Periods mixed.** Every factor is per account per year. A monthly count times a yearly
-  price, or a loose × 12, makes the result 12x off.
+- **Periods mixed.** Every factor is per account per year. A loose × 12 on a count that is
+  already yearly makes the result 12x too large; a monthly count left unconverted, 12x too
+  small. Convert on the count's own line, with its source.
 - **The billing unit switched mid-calculation.** Per task and per unit can differ by orders of
   magnitude. State the unit and why.
 - **A concentrated sum with no warning.** Say how many sources make most of the sum, and the

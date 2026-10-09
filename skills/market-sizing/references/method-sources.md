@@ -27,7 +27,7 @@ band is unverified. Cite it as Aulet's 2012 draft.
 - One bottom-up number, built from the customer profile and willingness to pay (a16z, Aulet).
   That is also what pitch-deck's [Market row](../../pitch-deck/references/slide-templates.md)
   asks: the multiplication on the slide, each factor sourced.
-- Two bands calibrate it without competing: the beachhead (Aulet, US$20M to 100M a year,
+- Two bands calibrate it without competing: the beachhead (Aulet's 2012 draft, US$20M to 100M a year,
   counted account by account) and the vision (Ralston, above US$1B, with the most persuasive
   evidence). Aulet's "raises flags" is about the beachhead; Ralston's US$1B is about the
   market addressed.

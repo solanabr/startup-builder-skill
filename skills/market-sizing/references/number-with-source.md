@@ -37,11 +37,12 @@ A counted onchain buyer base, pulled 2026-10-08. **Re-pull it; don't reuse it.**
 ```
 
 What it shows: the account count for a product sold to protocols is readable from public
-data, with two filters. Keep `protocolType = "protocol"`: the response also carries a row for
+data, in two steps. Keep `protocolType = "protocol"`: the response also carries a row for
 the chain itself (`"chain"`, Solana's own fees). Group by `parentProtocol`, counting a listing
 with no parent as its own team (106 listings, 85 teams; 53 of the listings have no parent).
 The per-chain endpoint already returns each protocol's Solana slice, not its all-chain total:
-deBridge shows US$113,789 here against US$540,641 in `/summary/fees/debridge` the same day.
+deBridge's 30-day fees are US$113,789 here against US$540,641 in `/summary/fees/debridge`
+the same day.
 The threshold is a filter you choose and state; it is not evidence that those teams will buy.
 
 A unit-based serviceable market from a filed deck:
