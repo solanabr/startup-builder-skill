@@ -47,8 +47,9 @@ Read this before adding anything up. Each trap is one a skeptical investor check
 - **Wallets as accounts.** One person runs many wallets, and one bot runs thousands. Count
   transacting wallets and deduplicate them ([traction checks](../../build-status/references/traction-sources.md#inflation-checks-run-before-writing-a-number));
   state accounts in humans or teams ([crypto ICP](../../positioning/references/crypto-icp.md)).
-- **Listings as teams.** One team can run several listed protocols. Group by parent before
-  counting (example in [number-with-source.md](number-with-source.md)).
+- **Listings as teams.** One team can run several listed protocols, and a fee overview can
+  list the chain itself. Keep protocols only and group by parent before counting (example in
+  [number-with-source.md](number-with-source.md#examples)).
 - **Incentive-inflated activity.** Fees and users during an airdrop, points or quest campaign
   are not demand. Check the window, and apply pricing's
   [comparable red flags](../../pricing/references/wtp-methods.md#1-fee-comparables-from-defillama).

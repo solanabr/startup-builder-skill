@@ -118,8 +118,8 @@ ones), neutrality, and a buyer counted from a regulatory authorisation.
 
 On Solana the account count is often public. Read it instead of estimating it:
 
-- **Protocols:** DefiLlama's Solana fee overview lists every protocol it tracks there. Group
-  listings by parent before counting teams; a worked count is in
+- **Protocols:** DefiLlama's Solana fee overview lists every protocol it tracks there. Keep
+  protocols only and group listings by parent before counting teams; a worked count is in
   [number-with-source.md](references/number-with-source.md#examples).
 - **Users:** transacting wallets, deduplicated, never connected wallets
   ([traction checks](../build-status/references/traction-sources.md)). State the count in
