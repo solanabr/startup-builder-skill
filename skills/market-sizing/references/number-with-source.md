@@ -45,7 +45,7 @@ evidence that those teams will buy.
 A unit-based serviceable market from a filed deck:
 
 ```
-50B vehicle miles per year · serviceable market for autonomous trucking, by the start of 2028 · US · 2024 deck · observed, projection · https://www.sec.gov/Archives/edgar/data/1828108/000182810824000062/analystinvestorday2024pd.htm · "50B VMT serviceable addressable market" · none
+50B vehicle miles traveled · serviceable market for autonomous trucking by the start of 2028; the source states no period · US · 2024 deck · observed, projection · https://www.sec.gov/Archives/edgar/data/1828108/000182810824000062/analystinvestorday2024pd.htm · "50B VMT serviceable addressable market" · none
 ```
 
 ## Research note header

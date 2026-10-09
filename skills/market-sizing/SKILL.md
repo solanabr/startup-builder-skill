@@ -30,7 +30,7 @@ Traps: [traps.md](references/traps.md). Read it before adding anything up.
     and the floor cost. With no price yet, sizing carries `[price]` and stays a unit count.
   - `.claude/context/build.md` ([format](../build-status/references/build-md-format.md)): What
     works today sets each wedge's distance D; the Traction table is the customer evidence that
-    Kamps puts above any formula.
+    Kamps calls a valid alternative to a formula.
 - On completion, write `.claude/context/market.md` in the format in
   [market-md-format.md](references/market-md-format.md). [pitch-deck](../pitch-deck/SKILL.md)
   takes the market slide from it and [fundraising](../fundraising/SKILL.md) the market answers
@@ -72,7 +72,8 @@ Traps: [traps.md](references/traps.md). Read it before adding anything up.
    - **R**, money at risk (loss, exploit, fraud). R goes on the problem slide, not the market
      slide, split into direct R and broad R.
    - The whole industry, TVL, volume and market cap go under Context, outside every sum.
-5. **Bands.** Beachhead US$20M to 100M a year (Aulet); the vision above US$1B with the most
+5. **Bands.** Beachhead US$20M to 100M a year (Aulet's 2012 course draft, marked preliminary;
+   whether the current book keeps it is unverified); the vision above US$1B with the most
    persuasive evidence (YC). Outside the band, run the reverse calculation (what revenue per
    account would land in it) and label it calibration, never a price.
 6. **SOM** = reachable accounts × units per account per year × price. Never a percentage of TAM.
