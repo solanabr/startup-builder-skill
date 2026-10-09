@@ -95,3 +95,12 @@ Don't answer these from this skill. The honest answer is the status of the quest
 > "We ran <question> through crypto-legal-skill on <date>. Counsel is <engaged / not yet engaged>. Here is the open-items list."
 
 Classification of a live token is a hard stop to counsel in crypto-legal-skill itself. Don't self-classify in a diligence call.
+
+## I. Market
+
+Answer from `.claude/context/market.md` ([format](../../market-sizing/references/market-md-format.md)) if it exists, so the data room quotes the same number as the deck's market slide.
+
+| Question | The honest answer must cover |
+|---|---|
+| How did you size the market? | The bottom-up number in `market.md`'s Market slide section: accounts × units per account per year × price, each factor with its source line, and the top-down check (the firm, or "no top-down for this cut"). TVL, volume or market cap is not an answer: none of them is anyone's yearly spend. |
+| Why this entry market, and who buys first? | The wedge from `idea.md`, its rank and card in `market.md`'s Wedges section (the evidence: an incident, a rule, money spent), the named buyer and how they decide. Say which scores are desk scores and which buyers you have spoken to. |
