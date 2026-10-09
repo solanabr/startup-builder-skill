@@ -4,16 +4,18 @@
 
 Vocabulary for naming a deck's spine, not a required step: borrow a framework if it describes what your titles already do. Every deck has to pass [the spine test](#the-spine-test) at the end of this file, whichever framework it uses; [pitch-structure.md](pitch-structure.md) is the container. All numbers below are placeholders to show the shape.
 
-## Choosing
+## Which name fits
 
-1. The strongest asset is a working demo → **Before-After-Bridge**
-2. Raising from VCs → **6-part investor arc**
-3. The pain is obvious and visceral → **PAS**
-4. You have a real user story → **Hero's journey**
-5. The product is technically hard to grasp → **Pixar**
-6. None of the above, or a non-technical marketing audience → **AIDA**
+None is required. If your titles already do one of these, the name helps you talk about the spine:
 
-Layering is fine: PAS for the first three slides, then the investor arc for the body.
+- A working demo carries the deck → **Before-After-Bridge**
+- A raise from VCs → the **6-part investor arc**
+- An obvious, visceral pain → **PAS**
+- A real user story → **Hero's journey**
+- A product that is technically hard to grasp → **Pixar**
+- A non-technical marketing audience → **AIDA**
+
+Mixing is fine: PAS for the first three slides, then the investor arc for the body.
 
 ## PAS: problem, agitate, solve
 
@@ -29,7 +31,7 @@ Slides 1–2 problem and agitation, 3–4 solution and why crypto, 5 the demo th
 
 ## 6-part investor arc
 
-The strongest backbone for a raise. Investors fund inevitabilities, so you ride a shift rather than claim to create one.
+A common shape for a raise. Investors fund inevitabilities, so you ride a shift rather than claim to create one.
 
 | Part | Content |
 |---|---|
@@ -72,12 +74,12 @@ Attention (one slide), interest (about five), desire (about three), action (one)
 
 ## The spine test
 
-Write only the slide titles, each a claim, and read them aloud in order. Sources opened 2026-10-08.
+Write only the slide titles, each a claim, and read them aloud in order. Sources read 2026-10-08.
 
 **"But" or "therefore" between every pair.** Where only "and then" fits, a cause is missing.
 
-- Trey Parker and Matt Stone on story beats: "What should happen between every beat that you've written down is either the word therefore or but" ([NYU class, video](https://www.youtube.com/watch?v=vGUNqq3jVLg); quoted from its automatic captions).
-- Reid Hoffman on LinkedIn's Series B, putting the thesis in each title (he calls it "helpful (but not mandatory)"): "If an investor sequenced through the titles, they'd be able to get a sense of the flow of the argument" ([reidhoffman.org](https://www.reidhoffman.org/linkedin-pitch-to-greylock/), which refuses automated requests; read through the [archived copy](https://web.archive.org/web/20260609212616/https://www.reidhoffman.org/linkedin-pitch-to-greylock/)).
+- Trey Parker and Matt Stone on story beats: "What should happen between every beat that you've written down is either the word therefore or but" ([NYU class, video](https://www.youtube.com/watch?v=vGUNqq3jVLg), automatic captions).
+- Reid Hoffman on LinkedIn's Series B, putting the thesis in each title (he calls it "helpful (but not mandatory)"): "If an investor sequenced through the titles, they'd be able to get a sense of the flow of the argument" ([archived copy](https://web.archive.org/web/20260609212616/https://www.reidhoffman.org/linkedin-pitch-to-greylock/) of [reidhoffman.org](https://www.reidhoffman.org/linkedin-pitch-to-greylock/), live page unverified).
 - James Currier (NFX): slide titles "are the core structure of your story" ([23 rules](https://www.nfx.com/post/23-rules-storytelling-fundraising)). Aaron Harris (YC): "There has to be a continuous line from one thing to another" ([podcast](https://www.ycombinator.com/blog/aaron-harris-on-fundraising-and-meeting-with-investors)).
 
 **An explicit bridge from wedge to vision.** Either can come first; the crossing has to be said.

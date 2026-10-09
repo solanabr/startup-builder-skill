@@ -63,16 +63,17 @@ The frameworks in [storytelling-frameworks.md](references/storytelling-framework
 
 ### 4. Build slides + speaking notes
 
-For each slide: headline (a claim, not a label), 3–5 supporting points, visual suggestion, and 30–60s speaking notes. Draw on [slide-templates.md](references/slide-templates.md) (per-slide content and markup) and [onchain-metrics.md](references/onchain-metrics.md) (traction numbers a skeptic can check). Every number on a slide needs a source; never invent one. For a hackathon or Demo Day pitch, what separated Colosseum winners from matched controls is in [what-separates-winners.md](../hackathon/references/what-separates-winners.md), and the line-level checklist in [pitch-rhetoric.md](../hackathon/references/pitch-rhetoric.md).
+For each slide: headline (a claim, not a label), 3–5 supporting points, visual suggestion, and 30–60s speaking notes. Draw on [slide-templates.md](references/slide-templates.md) (per-slide content and markup) and [onchain-metrics.md](references/onchain-metrics.md) (traction numbers a skeptic can check). Every number on a slide needs a source; never invent one. For a hackathon or Demo Day pitch, what separated Colosseum winners from projects that won nothing is in [what-separates-winners.md](../hackathon/references/what-separates-winners.md), and the line-level checklist in [pitch-rhetoric.md](../hackathon/references/pitch-rhetoric.md).
 
 ### 5. Reader check, not a self-score
 
 The author can't test the deck: they already know what every slide meant. Test what a reader takes away instead.
 
 1. Before anyone reads it, write and date an answer key: the one sentence the deck should leave for (a) what it does and for whom, (b) who pays, (c) why now, (d) why this team, (e) the proof, (f) why it's hard to copy, (g) the vision.
-2. Two or three people who didn't write the deck, from the Q10 audience if possible, read it once at their own pace without going back, then answer (a)–(g) from memory.
-3. Someone other than the author compares the answers with the key. A question passes when at least two readers get it right. A failed question points at the slide that should have carried it: fix that slide. At most two rounds of fixes; anything still failing goes back to the founder as a decision.
-4. Keep the key across versions, so a cut that drops the line carrying an answer shows up as that question failing.
+2. Write the reader sheet: read the deck once, at your own pace, without going back; then answer (a)–(g) from memory as open questions. The step stops here until readers answer: hand the founder the key and the sheet, and don't fill in answers for them.
+3. Readers are people who haven't seen the deck or heard the pitch: two or three, from the Q10 audience if possible. A fresh session that has never seen the project, given only the deck and the sheet, is a cheap first pass to catch the obvious misses before spending people's time (the `pitch-review` skill runs that pass, if your pack has it). It doesn't replace the people.
+4. When the answers come back, someone other than the author compares them with the key. A question passes when at least two readers get it right. A failed question points at the slide that should have carried it: fix that slide. At most two rounds of fixes; anything still failing goes back to the founder as a decision.
+5. Keep the key across versions, so a cut that drops the line carrying an answer shows up as that question failing.
 
 Why: Currier (NFX) puts the bar at retelling, "Your listener needs to be able to retell your story" ([23 rules](https://www.nfx.com/post/23-rules-storytelling-fundraising)), and Ralston notes listeners keep "at most" 3 or 4 points, so test which ones survive. The seven questions follow Colosseum's judging factors ([judging-criteria.md](../hackathon/references/judging-criteria.md)) and Ralston's own list ("Why hasn't this been done before? Why is it hard to do what we are doing?"). The audience rubrics in [investor-audience-guide.md](references/investor-audience-guide.md) are still where to look for weak spots; they are not the gate.
 
@@ -82,13 +83,13 @@ The author can't see what a stranger misses. Before the deck goes out, run [pitc
 
 ### 6. Objection-prep Q&A
 
-From Q12 + the questions readers missed in step 5, draft the 8–10 hardest questions this audience will ask, each with a tight 30-second answer. Hostile-question drilling beats slide polish.
+From Q12 + any questions readers missed in step 5, draft the 8–10 hardest questions this audience will ask, each with a tight 30-second answer. Hostile-question drilling beats slide polish.
 
 ## Output
 
 - Deck outline (markdown, one section per slide: headline / points / visual / speaking notes)
 - The spine: titles in order, with the bridge and the close marked
-- Answer key, readers' answers and the fixes applied
+- Answer key and reader sheet; once readers have answered, the comparison with the key and the fixes applied
 - Objection Q&A sheet
 - Before it goes out: [pitch-review](../pitch-review/SKILL.md), which writes `.claude/context/review.md`
 
