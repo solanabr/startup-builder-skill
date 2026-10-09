@@ -27,10 +27,17 @@ source, and quotes stay under 25 words. Counts, statistics and gradings are ours
 | [library-teardown-ruler.md](library-teardown-ruler.md) | Words per slide, slides per deck, claim titles and deck types measured on 78 decks that raised; text thresholds taken from where the reviewer complains, which do not predict raising; and the method to reapply them | Sizing the text on each slide; deciding between a deck that is read and one that is presented |
 | [library-teardown-catalog.md](library-teardown-catalog.md) | All 100 TechCrunch pitch deck teardowns: stage, sector, round, link, our counts, next funding event | Finding a real deck of your stage and sector to compare side by side |
 | [library-crypto-pitches.md](library-crypto-pitches.md) | 29 crypto infrastructure and DePIN pitches: how loudly each uses the chain, quotes, rounds, outcomes, and the token question investors ask | Deciding how much chain and token goes in the pitch; preparing the token answer |
+| [library-hard-tech-explainers.md](library-hard-tech-explainers.md) | Thirteen patterns for explaining hard technology, from SEC-filed decks, pitches on stage, and YC, Graham and Sequoia, including the kinds of proof that stand in for revenue | Writing the one-liner or the "how it works" slide for technical products |
+| [library-deck-arcs.md](library-deck-arcs.md) | Storytelling frameworks in their authors' words, seven real decks that bridge a small entry to a big vision, titles as the thread, openings and closes, and where the sources disagree | Writing the sequence of slide titles after picking a backbone |
+| [library-flow-slide.md](library-flow-slide.md) | Ten rules and three layouts for the slide that shows how the technology works, real examples that read, and counter-examples with the reviewer's critique | Drawing a platform, architecture or "how it works" slide, especially one with onchain and offchain parts |
 
 ## Where it plugs into the workflow
 
-- **Slides:** the [ruler](library-teardown-ruler.md) for text.
+- **Narrative:** [library-deck-arcs.md](library-deck-arcs.md), on top of
+  [storytelling-frameworks.md](storytelling-frameworks.md), when you write the sequence of titles.
+- **Slides:** the [ruler](library-teardown-ruler.md) for text;
+  [library-flow-slide.md](library-flow-slide.md) and
+  [library-hard-tech-explainers.md](library-hard-tech-explainers.md) for the technology slide.
 - **Checking the draft:** put it side by side with two or three real decks of the same stage from
   the [catalog](library-teardown-catalog.md) or the
   [accelerator pitches](library-accelerator-pitches.md), and check each rule you lean on against
