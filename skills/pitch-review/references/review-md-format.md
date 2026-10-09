@@ -35,7 +35,7 @@ Material: deck (reading | stage) | script | video, version <n> · Fake name: <na
 (f) Why it is hard to copy. Right: <the mechanism>. Wrong: "don't know", "the tech" or "the team" alone.
 (g) Long-term vision. Right: <where the company ends up>. Wrong: <the wedge only>.
 
-Target: <questions> right for at least 2 of 3 readers (video: 2 people). The rest are recorded to compare versions.
+Target: <questions> marked right for at least 2 of 3 readers (video: 2 people); a partial doesn't count. The rest are recorded to compare versions.
 
 ## Rounds
 

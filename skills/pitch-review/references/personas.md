@@ -2,7 +2,7 @@
 
 Three readers, three jobs. Each arrives with a question the deck has to answer; if it doesn't, that question becomes the round's fatal objection. Write a ready answer for each one (trigger plus a 30-second answer, in [pitch-deck](../../pitch-deck/SKILL.md)'s objection prep) before the round, not after it.
 
-Angels reject on a single fatal flaw in the first pass, not on a weighted sum of strengths ([Maxwell, Jeffrey and Lévesque 2011](https://doi.org/10.1016/j.jbusvent.2009.09.002), 150 entrepreneur-investor interactions; summary read 2026-10-08 at [CEMI](https://cemi.com.au/__static/d131b455b58151434ebbe127488e80d3/06011-maxwell-jeffrey-levesque-2011%282%29.pdf?dl=1)). That is why each reader names one objection, not a list. The eight causes of rejection they found are a checklist for all three personas: adoption, product status, protectability, customer engagement, route to market, market potential, relevant experience, financial model.
+Angels reject on a single fatal flaw in the first pass, not on a weighted sum of strengths ([Maxwell, Jeffrey and Lévesque 2011](https://doi.org/10.1016/j.jbusvent.2009.09.002); summary read 2026-10-08 at [CEMI](https://cemi.com.au/__static/d131b455b58151434ebbe127488e80d3/06011-maxwell-jeffrey-levesque-2011%282%29.pdf?dl=1)). The setting was the Canadian TV show Dragons' Den: five angel investors and the 150 entrepreneurs who pitched them over one season, coded from the unedited recordings ([Deutsch and Lévesque in The Globe and Mail, 2014](https://schulich.yorku.ca/wp-content/uploads/2018/04/Running-ballistics-on-the-Dragons-eight-silver-bullets-The-Globe-and-Mail.pdf), read 2026-10-08). That a VC, a buyer or a judge reading a deck by link screens the same way is our inference. It is why each reader names one objection, not a list. The eight causes of rejection they found are a checklist for all three personas: adoption, product status, protectability, customer engagement, route to market, market potential, relevant experience, financial model.
 
 ## VC
 
@@ -38,6 +38,4 @@ For Colosseum, the official criteria are in hackathon's [judging-criteria.md](..
 
 - Objection from 2 or more readers: fix the material or prepare a ready answer.
 - Answer in growth terms, not defensive ones. Investors ask men more promotion questions and women more prevention questions; each extra prevention question cut the money raised, and in the experiment, answering a prevention question with a promotion answer raised more ([Kanze, Huang, Conley and Higgins 2018](https://doi.org/10.5465/amj.2016.1215)).
-- Don't invent a defensive edge or a first user to fill a gap the readers found. A slot the founder fills later beats a claim that breaks in diligence.
-
-The publisher pages behind the DOI links for Bernstein, Bapna and Kanze refuse scripted requests (403); each DOI and its abstract were confirmed through OpenAlex's record on 2026-10-08. The Maxwell DOI link returned 200 on 2026-10-08.
+- Don't invent a defensive edge or a first user to fill a gap the readers found. Leave the gap open in the fix list for the founder to fill: a missing claim beats one that breaks in diligence.

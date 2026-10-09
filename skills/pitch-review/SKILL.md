@@ -26,7 +26,7 @@ Why it exists: the author can't judge whether a deck is clear. Better-informed p
 ## Workflow (each step is a gate)
 
 ### 1. Intent and answer key (author)
-One sentence per slide: what it has to leave in the reader's head. Then the seven questions, each with what counts as right and wrong, and the target: (a) what the company does, (b) who pays and for what, (c) why now, (d) why this team, (e) what proof exists, (f) why it is hard to copy, (g) the long-term vision. They cover the same ground as Sequoia's [business plan outline](https://www.sequoiacap.com/article/writing-a-business-plan/) (read 2026-10-08). Template in [review-md-format.md](references/review-md-format.md). Gate: the key is dated before any reader runs, and every open `[ ]` slot in the deck is filled, since a slot makes the deck read as a draft.
+One sentence per slide: what it has to leave in the reader's head. Then the seven questions, each with what counts as right and wrong, and the target: (a) what the company does, (b) who pays and for what, (c) why now, (d) why this team, (e) what proof exists, (f) why it is hard to copy, (g) the long-term vision. They are adapted from Sequoia's [business plan outline](https://www.sequoiacap.com/article/writing-a-business-plan/) (read 2026-10-08). Template in [review-md-format.md](references/review-md-format.md). Gate: the key is dated before any reader runs, and no `{{...}}` placeholder from pitch-deck's [slide templates](../pitch-deck/references/slide-templates.md) is left (`grep -c '{{' deck.html` prints 0), since a leftover placeholder makes the deck read as a draft.
 
 ### 2. P0 and P1: facts and density
 Every number traced to a source; word count per slide against the bar for a reading or a stage deck. Commands and bars in [funnel.md](references/funnel.md). Gate: no number without a source.
@@ -41,7 +41,7 @@ An ordinary subagent inherits the user's instructions, the git snapshot and the 
 One fresh blind reader per persona, in parallel, with [reader-prompts.md](references/reader-prompts.md) §1 and nothing else. Each answers the leak check first, reads once without going back, writes one sentence per slide, the seven answers, a verdict with the sentence that decided it, the one objection that would make them pass, and where they got stuck. A reader who recognized the company counts as a design read, not a clarity read; where it disagrees with the blind readers, the blind readers win.
 
 ### 6. Check against the key
-A fresh blind reader, never the author, marks the answers with [reader-prompts.md](references/reader-prompts.md) §3. Gate: each target question right for at least 2 of 3; at least 90% of the per-slide sentences match the intent.
+A fresh blind reader, never the author, marks the answers with [reader-prompts.md](references/reader-prompts.md) §3. Gate: each target question marked right for at least 2 of 3 (a partial doesn't count); at least 90% of the per-slide sentences match the intent.
 
 ### 7. P5: rank against decks that raised (decks only; a weak signal)
 The deck, shuffled among four real decks that raised and anonymized the same way as them, ranked 1 to 5 by two fresh judges: [paired-set.md](references/paired-set.md). Report the position; it doesn't replace step 6.
@@ -86,5 +86,3 @@ Detail, prompt lines and sources in [personas.md](references/personas.md). Write
 
 - `.claude/context/review.md`, committed ([review-md-format.md](references/review-md-format.md))
 - The fix list for the founder, each fix with its reader count and slide
-
-The Camerer DOI's publisher page refuses scripted requests (403); the DOI and abstract were confirmed through OpenAlex on 2026-10-08. The Cooper DOI returned 200 on 2026-10-08.

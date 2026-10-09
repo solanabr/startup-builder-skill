@@ -9,7 +9,7 @@ Every number in the material traces to a source: a row in `.claude/context/build
 List every number in the deck, notes included, and tick each one against its source:
 
 ```sh
-perl -0ne 's/<(style|script)\b.*?<\/\1>//gis; s/<[^>]+>/ /g; print "$&\n" while /[\$€£]?\d[\d.,]*(?:\s?(?:%|[kKMB]\b))?/g' deck.html | sort -u
+perl -CSD -Mutf8 -0ne 's/<(style|script)\b.*?<\/\1>//gis; s/<[^>]+>/ /g; print "$&\n" while /[\$€£]?\d[\d.,]*(?:\s?(?:%|[kKMB]\b))?/g' deck.html | sort -u
 ```
 
 Pass: no number without a source, no present-tense claim without a measurement.
@@ -22,13 +22,9 @@ Words per slide, notes and inline SVG excluded:
 perl -0ne 'while (/<section\b.*?<\/section>/gs) { ($s = $&) =~ s/<(aside|style|script|svg)\b.*?<\/\1>//gs; $s =~ s/<[^>]+>/ /g; $n = () = $s =~ /\S+/g; printf "slide %02d: %d words\n", ++$i, $n }' deck.html
 ```
 
-Bars, from our count of the 78 complete pre-seed to Series A decks in TechCrunch's [Pitch Deck Teardown](https://techcrunch.com/tag/pitch-deck-teardown/) series (April 2022 to June 2024, 1,170 content slides; read 2026-10-08):
+Bars: the ruler in pitch-deck's [library-teardown-ruler.md](../../pitch-deck/references/library-teardown-ruler.md) (reading deck, presented deck, claim headlines). Measured on TechCrunch's Pitch Deck Teardown series, it marks where the teardown's author starts criticizing a deck for its text: a reviewer's threshold, not a predictor of raising.
 
-- **Reading deck** (sent before the call): median of at most 50 words per content slide, none above 80. The 58 decks the teardown author didn't criticize for text sit at a median of 48; the 20 he did, at 70.
-- **Stage deck** (with a speaker): median of at most 30, maximum 40. Weak base: the series has almost no stage decks.
-- **Headlines**: a claim (a verb or a number), not a label, on at least 80% of slides. Only 24% to 38% of the series' headlines do this, and nothing shows it helps a deck raise; it is here because it helps the reader.
-
-Pass: all three. Cutting words is not enough: in the same series, clarity critiques appear in 57 of 98 decks and too-much-text critiques in 19, which is why P2 and P3 follow.
+Pass: the deck sits inside the ruler's line for its kind, and its headlines state claims. Cutting words is not enough: the same series criticizes clarity far more often than the amount of text, which is why P2 and P3 follow.
 
 ## P2. Five-second test, per slide
 
@@ -41,11 +37,11 @@ A reader sees one slide once and writes one sentence: what it says. A second rea
 - One pass, no going back. Then, without the material, the seven questions of the answer key: (a) what the company does, (b) who pays and for what, (c) why now, (d) why this team, (e) what proof exists, (f) why it is hard to copy, (g) the long-term vision.
 - The key is written before the round and checked by a fresh reader, never the author.
 
-Pass: each question in the target answered right by at least 2 of 3.
+Pass: each question in the target marked right for at least 2 of 3 readers; a partial doesn't count.
 
 ## P4. Fatal flaw
 
-Each reader names the one objection that would make them pass. Angels reject on a single fatal flaw before weighing anything else ([Maxwell, Jeffrey and Lévesque 2011](https://doi.org/10.1016/j.jbusvent.2009.09.002)). An objection named by 2 or more readers becomes a fix or a ready answer. A factual error counts from one reader.
+Each reader names the one objection that would make them pass. Five angel investors on the Canadian TV show Dragons' Den, deciding on 150 pitches over a season, rejected on a single fatal flaw before weighing anything else ([Maxwell, Jeffrey and Lévesque 2011](https://doi.org/10.1016/j.jbusvent.2009.09.002); setting from [Deutsch and Lévesque in The Globe and Mail, 2014](https://schulich.yorku.ca/wp-content/uploads/2018/04/Running-ballistics-on-the-Dragons-eight-silver-bullets-The-Globe-and-Mail.pdf), read 2026-10-08). That a VC, a buyer or a judge reading a deck by link does the same is our inference. An objection named by 2 or more readers becomes a fix or a ready answer. A factual error counts from one reader.
 
 ## P5. Paired comparison
 
@@ -53,7 +49,7 @@ The deck, shuffled among four real decks that raised and anonymized the same way
 
 ## P6. Real people, before it circulates
 
-Three to five people outside the team read it through a link that records time per page, such as [Papermark](https://www.papermark.com/) (read 2026-10-08) or DocSend (its site refuses scripted requests: unverified). Record time per slide, where they stop, and ask the seven questions by message. Save the analytics before uploading a new version.
+Three to five people outside the team read it through a link that records time per page, such as [Papermark](https://www.papermark.com/) (read 2026-10-08) or DocSend (unverified). Record time per slide, where they stop, and ask the seven questions by message. Save the analytics before uploading a new version.
 
 ## Limits
 

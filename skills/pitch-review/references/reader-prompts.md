@@ -54,7 +54,7 @@ Answer only with JSON:
 A fresh reader who didn't write the material. It gets the answer key (written with the fake name, so the checker stays blind too) and the readers' JSON, nothing else.
 
 ```
-You get an answer key and the answers of {N} readers. For each reader and each question from (a) to (g), mark "right", "partial" or "wrong" and copy the literal part of the answer that decided it. For each {UNIT}, compare the reader's sentence with the intended sentence: same meaning, yes or no. Don't rewrite the key and don't give an opinion on the material.
+You get an answer key and the answers of {N} readers. For each reader and each question from (a) to (g), mark "right", "partial" or "wrong" and copy the literal part of the answer that decided it. The score counts "right" only. For each {UNIT}, compare the reader's sentence with the intended sentence: same meaning, yes or no. Don't rewrite the key and don't give an opinion on the material.
 
 Answer only with JSON:
 {"recall": {"a": [{"reader": "vc", "mark": "right", "quote": "..."}], "b": [], "c": [], "d": [], "e": [], "f": [], "g": []}, "five_second": [{"unit": "01", "vc": true, "buyer": false, "judge": true}], "score": {"a": "2/3", "b": "0/3"}}
