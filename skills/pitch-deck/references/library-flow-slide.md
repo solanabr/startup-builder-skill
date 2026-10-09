@@ -24,7 +24,7 @@ passes between them, (c) what is private and what is public, and (d) which path 
    content), CargoBill ("Make Payment", "Request Payment"). Abstract roles ("Producer",
    "Consumer") and component boxes with no "who" fail the lens.
 3. **Mark what is yours and what is a partner's.** CargoBill has an ownership legend (blue =
-   provided by CargoBill); NextNav writes "Partner" on the partner's boxes. The two sharpest
+   provided by CargoBill). The two sharpest
    reviewer critiques of technology diagrams in the teardown corpus are exactly this (StudentFinance
    and ANYbotics, below).
 4. **Draw the trust boundary as a container; only what crosses the border becomes an arrow.**
@@ -41,7 +41,7 @@ passes between them, (c) what is private and what is public, and (d) which path 
    reviewer objected to a slide that reads bottom-up.
 8. **Plain words in the boxes; jargon goes to the speaker notes.** The Simba Chain reviewer was
    lost by one acronym inside a step; Netmaker puts plain numbered steps beside its technical
-   diagram. NextNav's multilateration labels and BlockMesh's PM and PE acronyms need a legend.
+   diagram. BlockMesh's PM and PE acronyms need a legend.
 9. **Pair the diagram with three or four numbered sentences, or put the steps first and the
    diagram after.** Netmaker (diagram plus four steps; the reviewer liked it as an introduction),
    Urani (a steps slide, then the diagram). Kevin Hale prefers a list of steps to a diagram:
@@ -84,7 +84,6 @@ passes between them, (c) what is private and what is public, and (d) which path 
 | Urani, steps then diagram (seen) | Colosseum Renaissance hackathon pitch, about 0:56 and 1:24 in the [video](https://www.loom.com/share/84014b7877ab42e6929c0f381cbb8cd1) | Four numbered sentences with a bracket for the cycle time, then a top-to-bottom diagram whose labelled arrow marks the off-chain boundary; the drawing confirms what the text said | - |
 | Netmaker, slide 7 (seen) | [TechCrunch seed teardown](https://techcrunch.com/2023/06/16/sample-seed-pitch-deck-netmaker/) | A technical diagram beside four plain numbered steps; the reviewer called it a good base-level introduction | The reviewer wanted real setup screens to judge how hard it is |
 | Terra One, slide 7 (seen) | [TechCrunch seed teardown](https://techcrunch.com/2024/05/24/sample-seed-pitch-deck-terra-one/) | Two sentences on what the company does and a hub of concrete, named counterparties; praised for no technical mumbo-jumbo | Stops there: who uses it, how it makes money, what comes next |
-| NextNav, architecture (seen) | Investor presentation, slide 10, [PDF, third-party copy on Seeking Alpha](https://static.seekingalpha.com/uploads/sa_presentations/581/124581/original.pdf) | "Partner" on the partner's boxes; the object being located sits in the centre and the signals converge on it | Technical labels left untranslated; the bullets do not talk to the drawing |
 | Matterport, slide 17 (seen) | [SEC Exhibit 99.2](https://www.sec.gov/Archives/edgar/data/1819394/000119312521031520/d42860dex992.htm) | A 2x2 grid of capabilities with real photos reads fast as an inventory | Says nothing about who does what or what passes between the boxes |
 
 ## Counter-examples, with the reviewer's critique
