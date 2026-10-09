@@ -12,6 +12,8 @@ Index the data room → define the metrics once → prepare the diligence answer
 
 This is the complement to [pitch-deck](../pitch-deck/SKILL.md), not a second deck skill. The deck gets the meeting; this skill covers what follows it: "send us the data room", the diligence call, the monthly update, and "how do the token and the equity relate?"
 
+For running the raise itself (intros, the first meeting, parallel or serial, follow-up), what investors prescribe and where they disagree, with sources: [library-investor-advice.md](../pitch-deck/references/library-investor-advice.md).
+
 ## Context handoff
 
 - At start, read whichever of these exist and only ask what they don't answer:
