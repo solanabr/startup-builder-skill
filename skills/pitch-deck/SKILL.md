@@ -67,19 +67,17 @@ For each slide: headline (a claim, not a label), 3–5 supporting points, visual
 
 ### 5. Reader check, not a self-score
 
-The author can't test the deck: they already know what every slide meant. Test what a reader takes away instead.
+The author can't test the deck: they already know what every slide meant. Test what a reader takes away instead. [pitch-review](../pitch-review/SKILL.md) runs this check end to end, with the same seven questions, an anonymized copy and a rank against decks that raised, and writes `.claude/context/review.md`. The steps below are the check by hand, and what pitch-review automates.
 
 1. Before anyone reads it, write and date an answer key: the one sentence the deck should leave for (a) what it does and for whom, (b) who pays, (c) why now, (d) why this team, (e) the proof, (f) why it's hard to copy, (g) the vision.
 2. Write the reader sheet: read the deck once, at your own pace, without going back; then answer (a)–(g) from memory as open questions. The step stops here until readers answer: hand the founder the key and the sheet, and don't fill in answers for them.
-3. Readers are people who haven't seen the deck or heard the pitch: two or three, from the Q10 audience if possible. A fresh session that has never seen the project, given only the deck and the sheet, is a cheap first pass to catch the obvious misses before spending people's time (the `pitch-review` skill runs that pass, if your pack has it). It doesn't replace the people.
+3. Readers are people who haven't seen the deck or heard the pitch: two or three, from the Q10 audience if possible. A fresh session that has never seen the project, given only the deck and the sheet, is a cheap first pass to catch the obvious misses before spending people's time. It doesn't replace the people.
 4. When the answers come back, someone other than the author compares them with the key. A question passes when at least two readers get it right. A failed question points at the slide that should have carried it: fix that slide. At most two rounds of fixes; anything still failing goes back to the founder as a decision.
 5. Keep the key across versions, so a cut that drops the line carrying an answer shows up as that question failing.
 
 Why: Currier (NFX) puts the bar at retelling, "Your listener needs to be able to retell your story" ([23 rules](https://www.nfx.com/post/23-rules-storytelling-fundraising)), and Ralston notes listeners keep "at most" 3 or 4 points, so test which ones survive. The seven questions follow Colosseum's judging factors ([judging-criteria.md](../hackathon/references/judging-criteria.md)) and Ralston's own list ("Why hasn't this been done before? Why is it hard to do what we are doing?"). The audience rubrics in [investor-audience-guide.md](references/investor-audience-guide.md) are still where to look for weak spots; they are not the gate.
 
 Also check the draft against [crypto-pitch-mistakes.md](references/crypto-pitch-mistakes.md) — flag every mistake the deck still commits and fix it. Any token-return, yield or fee-share claim comes off the slide and goes to [crypto-legal-skill](https://github.com/solanabr/crypto-legal-skill) (Mistake 4).
-
-The author can't see what a stranger misses. Before the deck goes out, run [pitch-review](../pitch-review/SKILL.md): blind readers, an answer key written first, and a rank against decks that raised.
 
 ### 6. Objection-prep Q&A
 

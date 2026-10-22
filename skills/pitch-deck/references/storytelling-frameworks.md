@@ -74,7 +74,7 @@ Attention (one slide), interest (about five), desire (about three), action (one)
 
 ## The spine test
 
-Write only the slide titles, each a claim, and read them aloud in order. Sources read 2026-10-08.
+Write only the slide titles, each a claim, and read them aloud in order. Sources read 2026-10-08. This section keeps what the test needs; the frameworks in their authors' words, seven real decks with their slide-by-slide arcs, and where the sources contradict each other are in [library-deck-arcs.md](library-deck-arcs.md).
 
 **"But" or "therefore" between every pair.** Where only "and then" fits, a cause is missing.
 
@@ -85,9 +85,7 @@ Write only the slide titles, each a claim, and read them aloud in order. Sources
 **An explicit bridge from wedge to vision.** Either can come first; the crossing has to be said.
 
 - Harris, same podcast: founders who jump from today to "a $300 billion company" make "a huge mistake because the investor doesn't have reason to believe you can make that transition".
-- Coinbase's 2012 seed deck goes from "Coinbase: A Hosted Bitcoin Wallet" (slide 7) to "Coinbase: A New Payment Network" (slide 11), with its traction slides (9–10) in between ([PDF, third-party copy](https://media.genppt.com/pitch-decks/coinbase/coinbase-pitch-deck-2012.pdf)). Wedge first.
-- Matterport's 2021 SPAC deck: "Take your building online with Matterport…" (slide 8), then "Tomorrow our data will increase the value of every building" (slide 9) ([SEC filing](https://www.sec.gov/Archives/edgar/data/1819394/000119312521031520/d42860dex992.htm)). Vision first, then the bridge.
-- Aurora's 2021 SPAC deck: trucking as the "tip of the spear" into adjacent verticals ([SEC filing](https://www.sec.gov/Archives/edgar/data/1828108/000119312521215991/d326572dex992.htm)). Hoffman sums up LinkedIn's: "a great recruiting business with an option for more".
+- Coinbase's 2012 seed deck crosses from "A Hosted Bitcoin Wallet" (slide 7) to "A New Payment Network" (slide 11), with traction in between; Matterport's SPAC deck from "Take your building online" to "Tomorrow our data will…"; Aurora's uses trucking as the "tip of the spear". Slide numbers and sources for these and four more: [library-deck-arcs.md §2](library-deck-arcs.md#2-seven-real-decks-a-big-vision-a-small-entry). LinkedIn's Series B carried Greylock's thesis, as Hoffman tells it: "a great recruiting business with an option for more".
 - Each one says why it starts small: a first product, a first market, a first vertical. The SPAC decks are late-stage; the bridge transfers, the stage doesn't.
 
 **The close returns to the cover.** Coinbase's last slide repeats its first, "Your hosted bitcoin wallet". The alternative from Geoff Ralston (YC): "list explicitly the 3 or 4 vertebrae you would like them to retain" ([Demo Day guide](https://www.ycombinator.com/blog/guide-to-demo-day-pitches/)).

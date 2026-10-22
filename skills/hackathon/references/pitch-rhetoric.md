@@ -1,4 +1,4 @@
-<!-- Written from the same study as what-separates-winners.md (Sep–Oct 2026; data and code: https://github.com/lucatrevisanii/colosseum-pitch-study). The first section is measured against controls; everything else is a pattern seen in pitch videos, with winners quoted under 25 words and linked to the project's Colosseum page, read 2026-10-08. -->
+<!-- Written from the same study as what-separates-winners.md (Sep–Oct 2026; data and code: https://github.com/lucatrevisanii/colosseum-pitch-study/tree/43e3f87). The first section is measured against controls; everything else is a pattern seen in pitch videos, with winners quoted under 25 words and linked to the project's Colosseum page, read 2026-10-08. -->
 
 # Pitch rhetoric: what was measured, what is illustration
 
