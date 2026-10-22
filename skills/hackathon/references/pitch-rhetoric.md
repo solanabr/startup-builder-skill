@@ -8,7 +8,7 @@ A checklist for the spoken script of a 2–3 minute pitch video, and for any sli
 
 Language metrics computed by script on the 43 winners' and 47 controls' pitch transcripts, Mann-Whitney, 14 metrics, no correction. None separated:
 
-- **Density of concrete numbers:** counted one per number ("$70,000" and "330 million" are one each), a median 1.9 numbers a minute for winners vs 1.8 for controls (p 0.05); share of sentences carrying a number, 0.17 vs 0.12 (p 0.13).
+- **Density of concrete numbers:** counted one per number ("$70,000" and "330 million" are one each), a median 1.9 numbers a minute for winners vs 1.8 for controls (p 0.04997 uncorrected, the smallest of 14 language tests; about 0.70 after Holm); share of sentences carrying a number, 0.17 vs 0.12 (p 0.13).
 - **Surface plainness:** sentence length (17 vs 14 words, p 0.41), Flesch reading ease (59 vs 65, p 0.41), share of short sentences, use of "you", analogies (a median of 0 in both groups).
 - Total words 490 vs 413 (p 0.08); words per minute (170 vs 153) was not tested.
 

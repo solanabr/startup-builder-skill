@@ -6,7 +6,7 @@ Read this before scripting the presentation video ([demo-video-script.md](demo-v
 
 ## The study, in five lines
 
-1. **Winners:** 43 of the 61 companies Colosseum took into its accelerator (cohorts 1–5, from Renaissance 2024 to Frontier 2026) whose hackathon pitch video could be downloaded.
+1. **Winners:** 43 of the 61 companies Colosseum took into its accelerator (cohorts 1–5, from Renaissance 2024 to Frontier 2026) whose hackathon pitch video could be downloaded. (The Demo Day section's 65 pitches are a different set; see there.)
 2. **Controls:** one project per accelerated company, drawn at random from the same hackathon and category, with no prize, honourable mention or accelerator place; 60 were drawn and 47 could be coded.
 3. **Coding:** a closed codebook, fixed before any transcript was read, applied by a language model to each video's transcript and up to 12 frames, blind to group.
 4. **Tests:** two-sided Fisher exact per variable, 22 tests. "Robust" means it survives a Holm correction across all 22, added after the original analysis.
@@ -51,7 +51,7 @@ Read this before scripting the presentation video ([demo-video-script.md](demo-v
 - "No difference detected" is not "doesn't matter". At these sample sizes a test with 80% power only catches gaps of roughly 25 to 35 points: with 64% of controls showing the product running, winners would have had to be at 30% or below, or 91% or above; with 29% of controls showing onchain proof, winners would have needed 64% or more.
 - Product on screen and onchain proof were judged from up to 12 still frames per video, not from the video itself.
 - Denominators below 43 and 47 leave out videos where the item couldn't be judged (no screen shown, for example).
-- Language, computed by script: numbers per minute, counted one per number, 1.9 vs 1.8 (p 0.05, uncorrected, one of 14 language metrics); sentence length 17 vs 14 words (p 0.41); Flesch reading ease 59 vs 65 (p 0.41); analogies a median of 0 in both groups. Same median length (177 s vs 176 s) and the same time to the problem (15.5 s vs 15 s).
+- Language, computed by script: numbers per minute, counted one per number, 1.9 vs 1.8 (p 0.04997 uncorrected, the smallest of 14 language metrics; about 0.70 after Holm, so not a finding); sentence length 17 vs 14 words (p 0.41); Flesch reading ease 59 vs 65 (p 0.41); analogies a median of 0 in both groups. Same median length (177 s vs 176 s) and the same time to the problem (15.5 s vs 15 s).
 - Dropped for low agreement, so unknown: the type of opening (agreement 0.57 when it was dropped, kappa about 0.3) and stated full-time commitment (0.5).
 
 **What it means for the two videos.** The pitch video reads as evidence of a company: who uses it, who pays, why this team. That matches Colosseum's own framing that its hackathons "are startup competitions" ([FAQ](https://colosseum.com/hackathon)). Spend pitch-video seconds on traction and team. For the product on screen and the explorer transaction the study detected no difference in the pitch video, in either direction; the walkthrough and the transaction belong in the demo video, which this study did not code ([demo-video-script.md](demo-video-script.md)).
@@ -77,7 +77,7 @@ Check the current edition's category in Copilot before treating a hot category a
 
 ## Demo Day: what changes after the hackathon
 
-65 Demo Day pitches from accelerator cohorts 1–5 (cohort 5's teams are listed in [Cohort V Demo Day](https://blog.colosseum.com/cohort-v-demo-day-solana-microscope-alpenglow-migration/)), coded with the same codebook by the same model. Unlike the hackathon videos, the company name was replaced in the transcript and blacked out on the frames where OCR found it (184 of 335).
+65 Demo Day pitches from accelerator cohorts 1–5: 59 of the 61 companies above, plus 6 with no Colosseum hackathon project in the data (MetaDAO, Boost, Slant, Tempo, Synthesis, Laso), while 2 of the 61 (adx.so, trenches.top) have no Demo Day pitch in the data (cohort 5's teams are listed in [Cohort V Demo Day](https://blog.colosseum.com/cohort-v-demo-day-solana-microscope-alpenglow-migration/)), coded with the same codebook by the same model. Unlike the hackathon videos, the company name was replaced in the transcript and blacked out on the frames where OCR found it (184 of 335).
 
 - **The same 43 companies, hackathon pitch vs Demo Day pitch** (paired, McNemar): median length 177 s → 133 s, and 33 of 43 got shorter; an ask or next steps 31 → 39 (p 0.06), and 58 of all 65 Demo Day pitches have one; a named, specific user 21 → 13 (p 0.04). Traction with a number 23 → 30 and "why Solana" 21 → 15, neither significant. Word rate (170 → 167 a minute) and numbers per minute (1.93 → 1.95) didn't change.
 - **Who raised afterwards vs the rest** (cohorts 1–4, 6 vs 38): mentioning a token, 5/6 vs 7/38 (p 0.004), the strongest signal, and it doesn't survive Holm across the 30 tests (0.11). Traction with a number did not separate (3/6 vs 23/38). Cohort mattered more than pitch: 4 of 11 raised from cohort 1, 2 of 12 from cohort 2, none from cohorts 3 and 4, which had had less time.
