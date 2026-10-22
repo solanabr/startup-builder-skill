@@ -97,3 +97,15 @@ pinned or point at stable pages, so **nothing has to be installed** for the skil
 Each skill's `references/upstream-packs.md` gives the details.
 
 Text adapted from solana-new, [beingsmit/technical-product-gtm](https://github.com/beingsmit/technical-product-gtm) and [jonathimer/devmarketing-skills](https://github.com/jonathimer/devmarketing-skills) keeps its MIT notice in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+## Checks
+
+`python3 .github/scripts/validate.py` (standard library only) checks what review used to:
+- skill frontmatter
+- relative links and anchors
+- GitHub links pinned to a commit
+- the charter's hazard rules (#1): only `.md`, `.html` and `LICENSE`, no `.mcp.json` or settings, no download piped into a shell, no telemetry
+- attribution against `THIRD_PARTY_NOTICES.md`
+- README coverage of every skill and context file
+
+CI runs it on every pull request, and a weekly job reports dead external links. A file other than Markdown or HTML needs an entry with a reason in the script's `ALLOWED_OTHER_FILES`.
