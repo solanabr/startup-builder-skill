@@ -103,6 +103,25 @@ def links_in(path: Path) -> list[str]:
     return MD_LINK.findall(body) + MD_IMAGE.findall(body) + HTML_REF.findall(body)
 
 
+def plain_scalar_problem(v: str) -> str | None:
+    """Why an unquoted frontmatter value is not valid YAML, if it isn't.
+
+    The parser above is lenient, but agents and the skills CLI read frontmatter
+    with a real YAML parser, which rejects a plain scalar containing ": " or
+    " #", or starting with an indicator character. Quoted, block and flow
+    values are left alone.
+    """
+    if not v or v[0] in "'\"|>[{":
+        return None
+    if v[0] in "&*!%@`,?-:#" and not (v[0] == "-" and len(v) > 1 and v[1] != " "):
+        return f"unquoted value starts with {v[0]!r}"
+    if ": " in v or v.endswith(":"):
+        return "unquoted value contains ': '"
+    if " #" in v:
+        return "unquoted value contains ' #', which YAML reads as a comment"
+    return None
+
+
 def check_frontmatter(skills: list[Path]) -> None:
     for d in skills:
         f = d / "SKILL.md"
@@ -118,6 +137,9 @@ def check_frontmatter(skills: list[Path]) -> None:
             if ":" in line and not line.startswith((" ", "\t")):
                 k, v = line.split(":", 1)
                 fm[k.strip()] = v.strip()
+                bad = plain_scalar_problem(v.strip())
+                if bad:
+                    fail(f, f"{k.strip()}: {bad}; quote the value")
         if fm.get("name") != d.name:
             fail(f, f"name is {fm.get('name')!r}, expected the directory name {d.name!r}")
         desc = fm.get("description", "").strip().strip("\"'")
